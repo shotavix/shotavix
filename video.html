@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- PRIMARY META -->
+  <title>Video & Filmmaking — SHOTAVIX Camera Blog</title>
+  <meta name="description" content="Master video creation with SHOTAVIX's filmmaking guides: camera reviews, lighting tutorials, stabilization tips, and professional post-production workflows.">
+  <meta name="author" content="Oli Sa">
+  <link rel="canonical" href="https://shotavix.com/video">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shotavix.com/video">
+  <meta property="og:title" content="Video & Filmmaking — SHOTAVIX Camera Blog">
+  <meta property="og:image" content="https://shotavix.com/video-archive.webp">
+  <meta property="og:site_name" content="SHOTAVIX Camera Blog">
+  <meta property="og:description" content="Master video creation with SHOTAVIX's filmmaking guides: camera reviews, lighting tutorials, stabilization tips, and professional post-production workflows.">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="https://shotavix.com/favicon.ico">
+
+  <!-- Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    /* MOBILE-FIRST */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fafafa;
+      color: #1e1e1e;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .video-container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* header */
+    .site-header {
+      padding: 1.2rem 0;
+      background-color: #ffffff;
+      border-bottom: 1px solid #eaeaea;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    .logo a {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: #1e1e1e;
+    }
+    .logo span {
+      color: #b85e3a;
+      font-style: italic;
+    }
+
+    /* desktop navigation */
+    .main-nav {
+      display: block;
+    }
+    .main-nav ul {
+      display: flex;
+      gap: 1.8rem;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    .main-nav a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #2e2e2e;
+      font-size: 1rem;
+      transition: color 0.2s;
+    }
+
+    .main-nav a:hover, .main-nav a.active {
+      color: #b85e3a;
+    }
+
+    /* hamburger */
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      width: 40px;
+      height: 40px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background-color: #2e2e2e;
+      transition: all 0.3s ease;
+      position: absolute;
+      left: 8px;
+    }
+    .hamburger span:nth-child(1) { top: 12px; }
+    .hamburger span:nth-child(2) { top: 19px; }
+    .hamburger span:nth-child(3) { top: 26px; }
+    .hamburger:hover span { background-color: #b85e3a; }
+
+    /* mobile overlay */
+    .mobile-nav-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(8px);
+      z-index: 200;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+    .mobile-nav-overlay.active {
+      display: block;
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .mobile-nav-panel {
+      position: fixed;
+      top: 0;
+      right: -300px;
+      width: 280px;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(16px);
+      box-shadow: -10px 0 40px rgba(0, 0, 0, 0.15);
+      padding: 2rem 1.8rem;
+      transition: right 0.3s ease;
+      z-index: 250;
+      overflow-y: auto;
+    }
+    .mobile-nav-overlay.active .mobile-nav-panel { right: 0; }
+
+    .mobile-nav-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 1rem;
+    }
+    .mobile-nav-header .logo { font-size: 1.6rem; }
+    .mobile-nav-header .close-btn {
+      background: none;
+      border: none;
+      font-size: 2.2rem;
+      cursor: pointer;
+      color: #555;
+    }
+    .mobile-nav-header .close-btn:hover { color: #b85e3a; }
+
+    .mobile-nav-list {
+      list-style: none;
+    }
+    .mobile-nav-list li { margin-bottom: 1.2rem; }
+    .mobile-nav-list a {
+      text-decoration: none;
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: #1e1e1e;
+      display: block;
+      padding: 0.3rem 0;
+    }
+    .mobile-nav-list a:hover { color: #b85e3a; padding-left: 8px; }
+
+    /* ---- video page specific styles ---- */
+    .video-hero {
+      margin: 3rem 0 2rem;
+      text-align: center;
+    }
+    .video-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 1rem;
+    }
+    .video-hero p {
+      font-size: 1.2rem;
+      color: #6b6b6b;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .category-filter {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.8rem;
+      margin: 3rem 0;
+    }
+    .filter-btn {
+      background: white;
+      border: 1px solid #e2e2e2;
+      padding: 0.6rem 1.5rem;
+      border-radius: 50px;
+      font-weight: 500;
+      color: #2e2e2e;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-size: 0.95rem;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: #b85e3a;
+      color: white;
+      border-color: #b85e3a;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+
+    .video-card {
+      background: white;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 12px 28px -8px rgba(0,0,0,0.05);
+      border: 1px solid #f0f0f0;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .video-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 28px 38px -14px rgba(0,0,0,0.15);
+    }
+
+    .video-img {
+      height: 200px;
+      overflow: hidden;
+    }
+    .video-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s;
+    }
+    .video-card:hover .video-img img { transform: scale(1.05); }
+
+    .video-content {
+      padding: 1.5rem;
+    }
+    .video-category {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #b85e3a;
+      margin-bottom: 0.3rem;
+    }
+    .video-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .video-title a {
+      text-decoration: none;
+      color: #1e1e1e;
+    }
+    .video-title a:hover { color: #b85e3a; }
+    .video-excerpt {
+      color: #4a4a4a;
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+    .video-meta {
+      display: flex;
+      justify-content: space-between;
+      color: #888;
+      font-size: 0.85rem;
+      border-top: 1px solid #eee;
+      padding-top: 0.8rem;
+    }
+    .read-more {
+      color: #b85e3a;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+    .read-more:hover { gap: 0.5rem; }
+
+    /* footer */
+    .site-footer {
+      background: #111;
+      color: #b5b5b5;
+      padding: 3rem 0 2rem;
+      border-radius: 3rem 3rem 0 0;
+      margin-top: 3rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    @media (min-width: 700px) {
+      .footer-grid { grid-template-columns: 2fr 1fr 1fr; }
+    }
+    .footer-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 600;
+      color: white;
+      margin-bottom: 1rem;
+    }
+    .footer-logo span { color: #b85e3a; }
+    .footer-about p { margin: 1rem 0 1.5rem; }
+    .socials a {
+      color: #b5b5b5;
+      font-size: 1.4rem;
+      margin-right: 1rem;
+      transition: color 0.2s;
+    }
+    .socials a:hover { color: #b85e3a; }
+    .footer-links h4 {
+      color: white;
+      margin-bottom: 1rem;
+    }
+    .footer-links ul {
+      list-style: none;
+    }
+    .footer-links li { margin-bottom: 0.6rem; }
+    .footer-links a {
+      color: #b5b5b5;
+      text-decoration: none;
+    }
+    .footer-links a:hover { color: #b85e3a; }
+    .copyright {
+      border-top: 1px solid #292929;
+      padding-top: 2rem;
+      text-align: center;
+    }
+
+    /* responsive */
+    @media (max-width: 700px) {
+      .video-hero h1 { font-size: 2.2rem; }
+      .main-nav { display: none; }
+      .hamburger { display: block; }
+      .filter-btn { padding: 0.5rem 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- header -->
+<header class="site-header">
+  <div class="container header-wrapper">
+    <div class="logo">
+      <a href="https://shotavix.com/">SHOTAVIX<span>·</span></a>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="https://shotavix.com/">Home</a></li>
+        <li><a href="https://shotavix.com/gear">Gear</a></li>
+        <li><a href="https://shotavix.com/techniques">Techniques</a></li>
+        <li><a href="https://shotavix.com/video" class="active">Video</a></li>
+        <li><a href="https://shotavix.com/beginners">Beginner's</a></li>
+        <li><a href="https://shotavix.com/editing">Editing</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- mobile overlay -->
+<div class="mobile-nav-overlay" id="mobileNavOverlay">
+  <div class="mobile-nav-panel">
+    <div class="mobile-nav-header">
+      <div class="logo">SHOTAVIX<span>·</span></div>
+      <button class="close-btn" id="closeNavBtn" aria-label="Close menu">×</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="https://shotavix.com/">Home</a></li>
+      <li><a href="https://shotavix.com/gear">Gear</a></li>
+      <li><a href="https://shotavix.com/techniques">Techniques</a></li>
+      <li><a href="https://shotavix.com/video" class="active">Video</a></li>
+      <li><a href="https://shotavix.com/beginners">Beginner's</a></li>
+      <li><a href="https://shotavix.com/editing">Editing</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- MAIN VIDEO PAGE CONTENT -->
+<main class="video-container">
+
+  <!-- Hero -->
+  <div class="video-hero">
+    <h1>Video & Filmmaking</h1>
+    <p>From cinematic lighting to audio recording — everything you need to create professional‑quality video content.</p>
+  </div>
+
+  <!-- Filter (visual only) -->
+  <div class="category-filter">
+    <span class="filter-btn active">All</span>
+    <span class="filter-btn">Cameras</span>
+    <span class="filter-btn">Techniques</span>
+    <span class="filter-btn">Lighting</span>
+    <span class="filter-btn">Audio</span>
+    <span class="filter-btn">Editing</span>
+  </div>
+
+  <!-- Video Grid - 12 articles with actual URLs and image paths -->
+  <div class="video-grid">
+
+    <!-- 1. Best Vlogging Cameras for YouTube Creators in 2026 -->
+    <article class="video-card">
+      <div class="video-img">
+        <img src="https://shotavix.com/best-vlogging-cameras-2026.webp" alt="Best vlogging cameras">
+      </div>
+      <div class="video-content">
+        <span class="video-category">Cameras</span>
+        <h3 class="video-title"><a href="https://shotavix.com/best-vlogging-cameras-2026">Best Vlogging Cameras for YouTube Creators 2026</a></h3>
+        <p class="video-excerpt">DJI Osmo Pocket 3, Sony ZV‑E10 II, Canon PowerShot V1, Fujifilm X‑S20 – the top tools for creators.</p>
+        <div class="video-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/best-vlogging-cameras-2026" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 2. Best Cameras for Video Recording in 2026 (Filmmakers Guide) -->
+    <article class="video-card">
+      <div class="video-img">
+        <img src="https://shotavix.com/best-video-cameras-2026.webp" alt="Best video cameras">
+      </div>
+      <div class="video-content">
+        <span class="video-category">Cameras</span>
+        <h3 class="video-title"><a href="https://shotavix.com/best-video-cameras-2026">Best Cameras for Video Recording 2026</a></h3>
+        <p class="video-excerpt">Panasonic S5IIX, Canon R5 II, Sony FX6, Nikon Z6 III, and more – expert picks for filmmakers.</p>
+        <div class="video-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/best-video-cameras-2026" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 3. How to Shoot Cinematic Video with Any Camera -->
+    <article class="video-card">
+      <div class="video-img">
+        <img src="https://shotavix.com/cinematic-video-guide.webp" alt="Cinematic video guide">
+      </div>
+      <div class="video-content">
+        <span class="video-category">Techniques</span>
+        <h3 class="video-title"><a href="https://shotavix.com/cinematic-video-guide">How to Shoot Cinematic Video with Any Camera</a></h3>
+        <p class="video-excerpt">24fps rule, 180° shutter, lighting setups, camera movement, color grading, and storytelling secrets.</p>
+        <div class="video-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/cinematic-video-guide" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 4. Best Cameras for YouTube Creators and Vloggers in 2026 -->
+    <article class="video-card">
+      <div class="video-img">
+        <img src="https://shotavix.com/best-youtube-cameras-2026.webp" alt="YouTube cameras">
+      </div>
+      <div class="video-content">
+        <span class="video-category">Cameras</span>
+        <h3 class="video-title"><a href="https://shotavix.com/best-youtube-cameras-2026">Best YouTube & Vlogging Cameras 2026</a></h3>
+        <p class="video-excerpt">DJI Osmo Pocket 3, Canon PowerShot V1, Sony ZV‑E10 II, Fujifilm X‑S20 – the ultimate creator picks.</p>
+        <div class="video-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/best-youtube-cameras-2026" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 5. How to Shoot Professional Videos with a Mirrorless Camera -->
+    <article class="video-card">
+      <div class="video-img">
+        <img src="https://shotavix.com/mirrorless-video-guide.webp" alt="Mirrorless video">
+      </div>
+      <div class="video-content">
+        <span class="video-category">Techniques</span>
+        <h3 class="video-title"><a href="https://shotavix.com/mirrorless-video-guide">Shoot Pro Video with a Mirrorless Camera</a></h3>
+        <p class="video-excerpt">4K settings, flat picture profiles, 24fps rule, audio setup, stabilization, and pro lighting techniques.</p>
+        <div class="video-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/mirrorless-video-guide" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 6. Best Budget Cameras for Filmmaking in 2026 -->
+    <article class="video-card">
+      <div class="video-img">
+        <img src="https://shotavix.com/budget-filmmaking-cameras-2026.webp" alt="Budget filmmaking">
+      </div>
+      <div class="video-content">
+        <span class="video-category">Cameras</span>
+        <h3 class="video-title"><a href="https://shotavix.com/budget-filmmaking-cameras-2026">Best Budget Cameras for Filmmaking 2026</a></h3>
+        <p class="video-excerpt">Sony ZV‑E10 II, Canon R50, Blackmagic Pocket 6K Pro, Sigma fp, and more – pro quality under $2000.</p>
+        <div class="video-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/budget-filmmaking-cameras-2026" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 7. Top Camera Settings for Cinematic Video Footage -->
+    <article class="video-card">
+      <div class="video-img">
+        <img src="https://shotavix.com/cinematic-settings-guide.webp" alt="Cinematic settings">
+      </div>
+      <div class="video-content">
+        <span class="video-category">Techniques</span>
+        <h3 class="video-title"><a href="https://shotavix.com/cinematic-settings-guide">Top Camera Settings for Cinematic Video</a></h3>
+        <p class="video-excerpt">24fps, 180° shutter, log profiles, focus modes, and pro tips for filmic motion and color in 2026.</p>
+        <div class="video-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/cinematic-settings-guide" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 8. Best Cameras for Documentary Filmmaking in 2026 -->
+    <article class="video-card">
+      <div class="video-img">
+        <img src="https://shotavix.com/best-documentary-cameras-2026.webp" alt="Documentary cameras">
+      </div>
+      <div class="video-content">
+        <span class="video-category">Cameras</span>
+        <h3 class="video-title"><a href="https://shotavix.com/best-documentary-cameras-2026">Best Documentary Cameras 2026</a></h3>
+        <p class="video-excerpt">Sony FX6, Canon C70, ARRI Alexa Mini, and real‑world insights from Sundance filmmakers.</p>
+        <div class="video-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/best-documentary-cameras-2026" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 9. How to Record High-Quality Audio for Camera Videos -->
+    <article class="video-card">
+      <div class="video-img">
+        <img src="https://shotavix.com/high-quality-audio-guide.webp" alt="Audio guide">
+      </div>
+      <div class="video-content">
+        <span class="video-category">Audio</span>
+        <h3 class="video-title"><a href="https://shotavix.com/high-quality-audio-guide">Record High‑Quality Audio for Video</a></h3>
+        <p class="video-excerpt">Microphone types, on‑camera audio settings, room acoustics, levels, and post‑production techniques.</p>
+        <div class="video-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/high-quality-audio-guide" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 10. Sony vs Canon for Video: Which Camera Is Better? -->
+    <article class="video-card">
+      <div class="video-img">
+        <img src="https://shotavix.com/sony-vs-canon-2026.webp" alt="Sony vs Canon">
+      </div>
+      <div class="video-content">
+        <span class="video-category">Comparisons</span>
+        <h3 class="video-title"><a href="https://shotavix.com/sony-vs-canon-2026">Sony vs Canon for Video 2026</a></h3>
+        <p class="video-excerpt">Head‑to‑head comparison of autofocus, color science, codecs, lens ecosystems, and real‑world workflow.</p>
+        <div class="video-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/sony-vs-canon-2026" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 11. How to Stabilize Video Without a Gimbal -->
+    <article class="video-card">
+      <div class="video-img">
+        <img src="https://shotavix.com/stabilize-video-without-gimbal.webp" alt="Stabilize video">
+      </div>
+      <div class="video-content">
+        <span class="video-category">Techniques</span>
+        <h3 class="video-title"><a href="https://shotavix.com/stabilize-video-without-gimbal">How to Stabilize Video Without a Gimbal</a></h3>
+        <p class="video-excerpt">Body stabilization, camera settings, DIY rigs, and free post‑production software for smooth footage.</p>
+        <div class="video-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/stabilize-video-without-gimbal" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 12. Best Lenses for Video Recording and Cinematic Shots -->
+    <article class="video-card">
+      <div class="video-img">
+        <img src="https://shotavix.com/best-video-lenses-2026.webp" alt="Best video lenses">
+      </div>
+      <div class="video-content">
+        <span class="video-category">Lenses</span>
+        <h3 class="video-title"><a href="https://shotavix.com/best-video-lenses-2026">Best Lenses for Video & Cinematic Shots</a></h3>
+        <p class="video-excerpt">Sigma, Nikon, Canon, Zeiss – from budget primes to cinema zooms. Expert picks for filmmakers.</p>
+        <div class="video-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/best-video-lenses-2026" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- More video content teaser -->
+  <div style="text-align: center; margin: 4rem 0; background: #f1ede9; padding: 3rem; border-radius: 40px;">
+    <h2 style="font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 1rem;">🎬 New video guides every week</h2>
+    <p style="color: #4a4a4a; max-width: 600px; margin: 0 auto;">We're constantly adding new filmmaking tutorials and gear tests. Bookmark this page and never miss an update.</p>
+  </div>
+</main>
+
+<!-- footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <div class="footer-logo">SHOTAVIX<span>·</span></div>
+        <p>In-depth camera reviews, honest buying advice, and photography inspiration — made for enthusiasts, by enthusiasts.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/olisashedi" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@shotavix" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.threads.com/@olisashedi" target="_blank"><i class="fab fa-threads"></i></a>
+          <a href="https://www.facebook.com/lisa.251771" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+          <ul>
+            <li><a href="https://shotavix.com/gear">Gear & Reviews</a></li>
+            <li><a href="https://shotavix.com/techniques">Tips & Techniques</a></li>
+            <li><a href="https://shotavix.com/video">Video & Film</a></li>
+            <li><a href="https://shotavix.com/beginners">Beginner's Corner</a></li>
+            <li><a href="https://shotavix.com/editing">Editing & Business</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://shotavix.com">Home</a></li>
+            <li><a href="https://shotavix.com/contact">Contact</a></li>
+            <li><a href="https://shotavix.com/about">About</a></li>
+            <li><a href="https://shotavix.com/privacy">Privacy</a></li>
+            <li><a href="https://shotavix.com/terms">Terms</a></li>
+          </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2026 SHOTAVIX Camera Blog. All rights reserved. Shot with passion.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- hamburger functionality -->
+<script>
+  (function() {
+    const hamburger = document.getElementById('hamburgerBtn');
+    const overlay = document.getElementById('mobileNavOverlay');
+    const closeBtn = document.getElementById('closeNavBtn');
+
+    function openMenu() {
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    if (hamburger) hamburger.addEventListener('click', openMenu);
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+
+    overlay.addEventListener('click', function(e) {
+      if (e.target === overlay) closeMenu();
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && overlay.classList.contains('active')) closeMenu();
+    });
+  })();
+</script>
+</body>
+</html>

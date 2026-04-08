@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- PRIMARY META -->
+  <title>Privacy Policy — SHOTAVIX Camera Blog</title>
+  <meta name="description" content="SHOTAVIX's privacy policy explains how we collect, use, and protect your personal information. We are committed to transparency and data security.">
+  <meta name="author" content="Oli Sa">
+  <link rel="canonical" href="https://shotavix.com/privacy">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shotavix.com/privacy">
+  <meta property="og:title" content="Privacy Policy — SHOTAVIX Camera Blog">
+  <meta property="og:image" content="https://shotavix.com/SHOTAVIX-privacy.webp">
+  <meta property="og:site_name" content="SHOTAVIX Camera Blog">
+  <meta property="og:description" content="SHOTAVIX's privacy policy explains how we collect, use, and protect your personal information. We are committed to transparency and data security.">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="https://shotavix.com/favicon.ico">
+
+  <!-- Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- SCHEMA MARKUP (AboutPage / WebPage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Privacy Policy",
+    "description": "SHOTAVIX's privacy policy explains how we collect, use, and protect your personal information.",
+    "url": "https://shotavix.com/privacy",
+    "publisher": {
+      "@type": "Organization",
+      "name": "SHOTAVIX",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://shotavix.com/logo.webp"
+      }
+    }
+  }
+  </script>
+
+  <style>
+    /* MOBILE-FIRST, ABSOLUTELY NO FIXED WIDTHS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fafafa;
+      color: #1e1e1e;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .policy-container {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* header (exact same as other pages) */
+    .site-header {
+      padding: 1.2rem 0;
+      background-color: #ffffff;
+      border-bottom: 1px solid #eaeaea;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    .logo a {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: #1e1e1e;
+    }
+    .logo span {
+      color: #b85e3a;
+      font-style: italic;
+    }
+
+    /* desktop navigation */
+    .main-nav {
+      display: block;
+    }
+    .main-nav ul {
+      display: flex;
+      gap: 1.8rem;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    .main-nav a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #2e2e2e;
+      font-size: 1rem;
+      transition: color 0.2s;
+      white-space: nowrap;
+    }
+
+    .main-nav a:hover, .main-nav a.active {
+      color: #b85e3a;
+    }
+
+    /* hamburger (same as previous) */
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      width: 40px;
+      height: 40px;
+      position: relative;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background-color: #2e2e2e;
+      margin: 0 auto;
+      transition: all 0.3s ease;
+      position: absolute;
+      left: 8px;
+    }
+
+    .hamburger span:nth-child(1) { top: 12px; }
+    .hamburger span:nth-child(2) { top: 19px; }
+    .hamburger span:nth-child(3) { top: 26px; }
+
+    .hamburger:hover span {
+      background-color: #b85e3a;
+    }
+
+    /* mobile overlay (exact same) */
+    .mobile-nav-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(8px);
+      z-index: 200;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+    .mobile-nav-overlay.active {
+      display: block;
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .mobile-nav-panel {
+      position: fixed;
+      top: 0;
+      right: -300px;
+      width: 280px;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(16px);
+      box-shadow: -10px 0 40px rgba(0, 0, 0, 0.15);
+      padding: 2rem 1.8rem;
+      transition: right 0.3s ease;
+      z-index: 250;
+      overflow-y: auto;
+    }
+    .mobile-nav-overlay.active .mobile-nav-panel {
+      right: 0;
+    }
+
+    .mobile-nav-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 1rem;
+    }
+    .mobile-nav-header .logo {
+      font-size: 1.6rem;
+    }
+    .mobile-nav-header .close-btn {
+      background: none;
+      border: none;
+      font-size: 2.2rem;
+      cursor: pointer;
+      color: #555;
+    }
+    .mobile-nav-header .close-btn:hover {
+      color: #b85e3a;
+    }
+
+    .mobile-nav-list {
+      list-style: none;
+    }
+    .mobile-nav-list li {
+      margin-bottom: 1.2rem;
+    }
+    .mobile-nav-list a {
+      text-decoration: none;
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: #1e1e1e;
+      display: block;
+      padding: 0.3rem 0;
+    }
+    .mobile-nav-list a:hover {
+      color: #b85e3a;
+      padding-left: 8px;
+    }
+
+    /* ---- privacy policy page specific styles ---- */
+    .policy-hero {
+      margin: 3rem 0 2rem;
+      text-align: center;
+    }
+    .policy-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+    .policy-hero p {
+      font-size: 1.1rem;
+      color: #6b6b6b;
+    }
+    .last-updated {
+      background: #f1ede9;
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      color: #b85e3a;
+      margin-top: 1rem;
+      font-weight: 500;
+    }
+
+    .policy-content {
+      background: white;
+      border-radius: 32px;
+      padding: 3rem;
+      margin: 2rem 0 4rem;
+      box-shadow: 0 12px 28px -8px rgba(0,0,0,0.05);
+      border: 1px solid #f0f0f0;
+    }
+
+    .policy-section {
+      margin-bottom: 3rem;
+    }
+    .policy-section:last-child {
+      margin-bottom: 0;
+    }
+    .policy-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: #1a1a1a;
+      margin-bottom: 1.5rem;
+      border-left: 6px solid #b85e3a;
+      padding-left: 1.5rem;
+    }
+    .policy-section h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin: 1.5rem 0 1rem;
+      color: #2e2e2e;
+    }
+    .policy-section p {
+      margin-bottom: 1.2rem;
+      color: #4a4a4a;
+    }
+    .policy-section ul, .policy-section ol {
+      margin: 1rem 0 1.5rem 2rem;
+    }
+    .policy-section li {
+      margin-bottom: 0.5rem;
+      color: #4a4a4a;
+    }
+    .policy-section strong {
+      color: #b85e3a;
+    }
+
+    .highlight-box {
+      background: #f8f8f8;
+      border-radius: 24px;
+      padding: 1.8rem;
+      margin: 2rem 0;
+      border-left: 6px solid #b85e3a;
+    }
+    .highlight-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .contact-privacy {
+      background: #f1ede9;
+      border-radius: 24px;
+      padding: 2rem;
+      margin: 2rem 0;
+      text-align: center;
+    }
+    .contact-privacy p {
+      margin-bottom: 1.5rem;
+    }
+    .privacy-btn {
+      background: #b85e3a;
+      color: white;
+      text-decoration: none;
+      padding: 0.8rem 2rem;
+      border-radius: 50px;
+      display: inline-block;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .privacy-btn:hover {
+      background: #9f4d2d;
+    }
+
+    /* footer (same as previous) */
+    .site-footer {
+      background: #111;
+      color: #b5b5b5;
+      padding: 3rem 0 2rem;
+      border-radius: 3rem 3rem 0 0;
+      margin-top: 3rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    @media (min-width: 700px) {
+      .footer-grid { grid-template-columns: 2fr 1fr 1fr; }
+    }
+    .footer-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 600;
+      color: white;
+      margin-bottom: 1rem;
+    }
+    .footer-logo span { color: #b85e3a; }
+    .footer-about p { margin: 1rem 0 1.5rem; }
+    .socials a {
+      color: #b5b5b5;
+      font-size: 1.4rem;
+      margin-right: 1rem;
+      transition: color 0.2s;
+    }
+    .socials a:hover { color: #b85e3a; }
+    .footer-links h4 {
+      color: white;
+      margin-bottom: 1rem;
+    }
+    .footer-links ul {
+      list-style: none;
+    }
+    .footer-links li {
+      margin-bottom: 0.6rem;
+    }
+    .footer-links a {
+      color: #b5b5b5;
+      text-decoration: none;
+    }
+    .footer-links a:hover { color: #b85e3a; }
+    .copyright {
+      border-top: 1px solid #292929;
+      padding-top: 2rem;
+      text-align: center;
+    }
+
+    /* responsive */
+    @media (max-width: 700px) {
+      .policy-hero h1 { font-size: 2.2rem; }
+      .policy-content { padding: 2rem; }
+      .main-nav { display: none; }
+      .hamburger { display: block; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- header (same as all pages) -->
+<header class="site-header">
+  <div class="container header-wrapper">
+    <div class="logo">
+      <a href="https://shotavix.com/">SHOTAVIX<span>·</span></a>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="https://shotavix.com/">Home</a></li>
+        <li><a href="https://shotavix.com/gear">Gear</a></li>
+        <li><a href="https://shotavix.com/techniques">Techniques</a></li>
+        <li><a href="https://shotavix.com/video">Video</a></li>
+        <li><a href="https://shotavix.com/beginners">Beginner's</a></li>
+        <li><a href="https://shotavix.com/editing">Editing</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- mobile overlay (same as all pages) -->
+<div class="mobile-nav-overlay" id="mobileNavOverlay">
+  <div class="mobile-nav-panel">
+    <div class="mobile-nav-header">
+      <div class="logo">SHOTAVIX<span>·</span></div>
+      <button class="close-btn" id="closeNavBtn" aria-label="Close menu">×</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="https://shotavix.com/">Home</a></li>
+      <li><a href="https://shotavix.com/gear">Gear</a></li>
+      <li><a href="https://shotavix.com/techniques">Techniques</a></li>
+      <li><a href="https://shotavix.com/video">Video</a></li>
+      <li><a href="https://shotavix.com/beginners">Beginner's</a></li>
+      <li><a href="https://shotavix.com/editing">Editing</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- MAIN PRIVACY POLICY CONTENT -->
+<main class="policy-container">
+
+  <!-- Hero -->
+  <div class="policy-hero">
+    <h1>Privacy Policy</h1>
+    <p>Your privacy matters to us. Here's how we collect, use, and protect your information.</p>
+    <div class="last-updated"><i class="fas fa-calendar-alt" style="margin-right:0.5rem;"></i>Last updated: April 8, 2026</div>
+  </div>
+
+  <!-- Policy Content -->
+  <div class="policy-content">
+
+    <!-- Introduction -->
+    <section class="policy-section">
+      <h2>Our Commitment</h2>
+      <p>SHOTAVIX ("we," "our," or "us") is committed to protecting your personal information and your right to privacy. This policy describes how we handle your data when you visit our website, interact with our content, or communicate with us.</p>
+      <p>We believe in complete transparency. If you have any questions after reading this policy, please <a href="#" style="color:#b85e3a; text-decoration:none; font-weight:600;">contact us</a>.</p>
+    </section>
+
+    <!-- Information We Collect -->
+    <section class="policy-section">
+      <h2>1. Information We Collect</h2>
+
+      <h3>1.1 Information you provide directly</h3>
+      <ul>
+        <li><strong>Contact details:</strong> When you subscribe to our newsletter, comment on articles, or contact us, we may collect your name, email address, and any other information you choose to provide.</li>
+        <li><strong>Account information:</strong> If you create an account (e.g., for commenting or forums), we store your username, email, and hashed password.</li>
+        <li><strong>Communications:</strong> Any messages you send to us, including inquiries, feedback, or support requests.</li>
+      </ul>
+
+      <h3>1.2 Information collected automatically</h3>
+      <ul>
+        <li><strong>Log data:</strong> Our servers automatically record information such as your IP address, browser type, referring pages, and access times.</li>
+        <li><strong>Usage data:</strong> We use analytics tools (like Google Analytics) to understand how visitors interact with our site – which articles are most popular, how long you stay, etc.</li>
+        <li><strong>Cookies and similar technologies:</strong> We use cookies to remember your preferences, analyze site traffic, and personalize content. You can control cookies through your browser settings.</li>
+      </ul>
+
+      <div class="highlight-box">
+        <p><i class="fas fa-shield-alt" style="color:#b85e3a; margin-right:0.5rem;"></i> <strong>Note:</strong> We never collect sensitive information like your exact location, health data, or financial details unless you explicitly provide them (e.g., making a purchase).</p>
+      </div>
+    </section>
+
+    <!-- How We Use Your Information -->
+    <section class="policy-section">
+      <h2>2. How We Use Your Information</h2>
+      <p>We use the information we collect to:</p>
+      <ul>
+        <li><strong>Provide and improve our services:</strong> Deliver content, respond to comments, and personalize your experience.</li>
+        <li><strong>Communicate with you:</strong> Send newsletters, respond to inquiries, and notify you of changes to our policies or features.</li>
+        <li><strong>Analyze and optimize:</strong> Understand how our audience engages with our content, improve site performance, and develop new features.</li>
+        <li><strong>Prevent fraud and ensure security:</strong> Monitor for suspicious activity and protect the integrity of our site.</li>
+      </ul>
+      <p>We do not sell, rent, or trade your personal information to third parties. Ever.</p>
+    </section>
+
+    <!-- Cookies & Tracking -->
+    <section class="policy-section">
+      <h2>3. Cookies & Tracking</h2>
+      <p>Cookies are small text files placed on your device. We use the following types:</p>
+      <ul>
+        <li><strong>Essential cookies:</strong> Required for basic site functions (e.g., logging in, commenting).</li>
+        <li><strong>Performance cookies:</strong> Help us understand how visitors use our site (Google Analytics).</li>
+        <li><strong>Functionality cookies:</strong> Remember your preferences (e.g., dark mode, language).</li>
+      </ul>
+      <p>You can manage or disable cookies through your browser settings. However, some features may not function properly without them.</p>
+    </section>
+
+    <!-- Third-Party Services -->
+    <section class="policy-section">
+      <h2>4. Third-Party Services</h2>
+      <p>We may use third-party tools to enhance your experience:</p>
+      <ul>
+        <li><strong>Google Analytics:</strong> Anonymized traffic analysis. <a href="https://policies.google.com/privacy" target="_blank" style="color:#b85e3a;">View Google's privacy policy</a>.</li>
+        <li><strong>Mailchimp (or similar):</strong> For managing our newsletter subscriptions. Their privacy practices are governed by their own policies.</li>
+        <li><strong>Social media plugins:</strong> If you interact with our Instagram or YouTube links, those platforms may collect data according to their policies.</li>
+      </ul>
+      <p>We choose partners who are committed to data protection. However, we encourage you to review their privacy policies as well.</p>
+    </section>
+
+    <!-- Data Retention -->
+    <section class="policy-section">
+      <h2>5. Data Retention</h2>
+      <p>We retain your personal information only as long as necessary to fulfill the purposes outlined in this policy, unless a longer retention period is required or permitted by law.</p>
+      <ul>
+        <li><strong>Newsletter subscribers:</strong> Until you unsubscribe.</li>
+        <li><strong>Account information:</strong> Until you delete your account or request removal.</li>
+        <li><strong>Comments:</strong> Retained indefinitely to maintain conversation history (you can request deletion of individual comments).</li>
+      </ul>
+    </section>
+
+    <!-- Your Rights -->
+    <section class="policy-section">
+      <h2>6. Your Rights</h2>
+      <p>Depending on your location, you may have the following rights regarding your personal data:</p>
+      <ul>
+        <li><strong>Access:</strong> Request a copy of the information we hold about you.</li>
+        <li><strong>Rectification:</strong> Correct inaccurate or incomplete data.</li>
+        <li><strong>Erasure:</strong> Request deletion of your data ("right to be forgotten").</li>
+        <li><strong>Restriction:</strong> Limit how we process your data.</li>
+        <li><strong>Portability:</strong> Receive your data in a structured, commonly used format.</li>
+        <li><strong>Objection:</strong> Object to certain types of processing (e.g., direct marketing).</li>
+      </ul>
+      <p>To exercise any of these rights, please <a href="https://shotavix.com/contact" style="color:#b85e3a; font-weight:600;">contact us</a>. We will respond within 30 days.</p>
+    </section>
+
+    <!-- Children's Privacy -->
+    <section class="policy-section">
+      <h2>7. Children's Privacy</h2>
+      <p>Our website is not intended for children under 13. We do not knowingly collect personal information from children under 13. If you become aware that a child has provided us with personal information, please contact us immediately.</p>
+    </section>
+
+    <!-- International Transfers -->
+    <section class="policy-section">
+      <h2>8. International Data Transfers</h2>
+      <p>SHOTAVIX is based in the United States. If you are accessing our site from outside the U.S., be aware that your information may be transferred to, stored, and processed in the U.S. where our servers are located. By using our site, you consent to this transfer.</p>
+    </section>
+
+    <!-- Changes to Policy -->
+    <section class="policy-section">
+      <h2>9. Changes to This Policy</h2>
+      <p>We may update this privacy policy from time to time to reflect changes in our practices or legal requirements. We will notify you of significant changes by posting a prominent notice on our website or, if you are a subscriber, by email.</p>
+      <p>The "Last updated" date at the top of this page indicates when the policy was last revised.</p>
+    </section>
+
+    <!-- Contact Us (Privacy Specific) -->
+    <section class="policy-section">
+      <h2>10. Contact Us</h2>
+      <p>If you have questions or concerns about this privacy policy or your data, please reach out:</p>
+      <div class="contact-privacy">
+        <p><i class="fas fa-envelope" style="color:#b85e3a; margin-right:0.5rem;"></i> <strong>Email:</strong> <a href="mailto:shotavixofficial@gmail.com" style="color: inherit;">shotavixofficial@gmail.com</a></p>
+        <p><i class="fas fa-map-marker-alt" style="color:#b85e3a; margin-right:0.5rem;"></i> <strong>Mail:</strong> SHOTAVIX, Shop 10 Nnamdi Azikiwe Stadium Enugu</p>
+        <a href="https://shotavix.com/contact" class="privacy-btn" style="margin-top:1rem;">Contact Privacy Team</a>
+      </div>
+    </section>
+
+    <!-- Consent Acknowledgement -->
+    <div class="highlight-box" style="background: white; border: 1px solid #f0f0f0;">
+      <p style="font-size:0.95rem;"><i class="fas fa-check-circle" style="color:#2e7d32; margin-right:0.5rem;"></i> By using SHOTAVIX, you acknowledge that you have read and understood this privacy policy. If you do not agree with our practices, please do not use our website.</p>
+    </div>
+  </div>
+</main>
+
+<!-- footer (same as all pages) -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <div class="footer-logo">SHOTAVIX<span>·</span></div>
+        <p>In-depth camera reviews, honest buying advice, and photography inspiration — made for enthusiasts, by enthusiasts.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/olisashedi" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@shotavix" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.threads.com/@olisashedi" target="_blank"><i class="fab fa-threads"></i></a>
+          <a href="https://www.facebook.com/lisa.251771" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+          <ul>
+            <li><a href="https://shotavix.com/gear">Gear & Reviews</a></li>
+            <li><a href="https://shotavix.com/techniques">Tips & Techniques</a></li>
+            <li><a href="https://shotavix.com/video">Video & Film</a></li>
+            <li><a href="https://shotavix.com/beginners">Beginner's Corner</a></li>
+            <li><a href="https://shotavix.com/editing">Editing & Business</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://shotavix.com">Home</a></li>
+            <li><a href="https://shotavix.com/contact">Contact</a></li>
+            <li><a href="https://shotavix.com/about">About</a></li>
+            <li><a href="https://shotavix.com/privacy">Privacy</a></li>
+            <li><a href="https://shotavix.com/terms">Terms</a></li>
+          </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2026 SHOTAVIX Camera Blog. All rights reserved. Shot with passion.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- hamburger functionality (same as all pages) -->
+<script>
+  (function() {
+    const hamburger = document.getElementById('hamburgerBtn');
+    const overlay = document.getElementById('mobileNavOverlay');
+    const closeBtn = document.getElementById('closeNavBtn');
+
+    function openMenu() {
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    if (hamburger) hamburger.addEventListener('click', openMenu);
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+
+    overlay.addEventListener('click', function(e) {
+      if (e.target === overlay) closeMenu();
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && overlay.classList.contains('active')) closeMenu();
+    });
+  })();
+</script>
+</body>
+</html>

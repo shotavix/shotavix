@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- robots meta -->
+  <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+  <!-- PRIMARY META -->
+  <title>Camera Settings Cheat Sheet for Perfect Photos (2026 Guide)</title>
+  <meta name="description" content="Your complete camera settings cheat sheet: master the exposure triangle, white balance, focus modes, metering, and genre-specific settings for perfect photos.">
+  <meta name="author" content="Oli Sa">
+  <link rel="canonical" href="https://shotavix.com/camera-settings-cheat-sheet">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shotavix.com/camera-settings-cheat-sheet">
+  <meta property="og:title" content="Camera Settings Cheat Sheet for Perfect Photos">
+  <meta property="og:image" content="https://shotavix.com/camera-settings-cheat-sheet.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="SHOTAVIX Camera Blog">
+  <meta property="og:description" content="Your complete camera settings cheat sheet: master the exposure triangle, white balance, focus modes, metering, and genre-specific settings for perfect photos.">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="https://shotavix.com/favicon.ico">
+
+  <!-- SCHEMA MARKUP (Article) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Camera Settings Cheat Sheet for Perfect Photos (2026 Guide)",
+    "description": "Your complete camera settings cheat sheet: master the exposure triangle, white balance, focus modes, metering, and genre-specific settings for perfect photos.",
+    "image": "https://shotavix.com/camera-settings-cheat-sheet.webp",
+    "author": {
+      "@type": "Person",
+      "name": "Oli Sa",
+      "url": "https://shotavix.com/author/oli-sa"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "SHOTAVIX",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://shotavix.com/logo.webp"
+      }
+    },
+    "datePublished": "2026-04-08T10:00:00+00:00",
+    "dateModified": "2026-04-08T10:00:00+00:00",
+    "mainEntityOfPage": "https://shotavix.com/camera-settings-cheat-sheet"
+  }
+  </script>
+
+  <!-- Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Only minimal specific styles for this article, no full CSS reset -->
+  <style>
+    /* Only article-specific enhancements, no broad layout changes */
+    .cheat-badge {
+      display: inline-block;
+      background: #b85e3a15;
+      color: #b85e3a;
+      font-weight: 600;
+      font-size: 0.8rem;
+      padding: 0.3rem 1rem;
+      border-radius: 50px;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.8rem;
+      border-left: 3px solid #b85e3a;
+    }
+    
+    .card {
+      background: white;
+      border-radius: 28px;
+      padding: 1.8rem 2rem;
+      margin: 2.5rem 0;
+      box-shadow: 0 12px 28px -8px rgba(0,0,0,0.05);
+      border: 1px solid #f0f0f0;
+      transition: transform 0.2s;
+    }
+    
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 32px -12px rgba(0,0,0,0.1);
+    }
+    
+    .card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: #1a1a1a;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+    
+    .number-icon {
+      display: inline-block;
+      background: #b85e3a;
+      color: white;
+      font-weight: bold;
+      font-size: 1.2rem;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 40px;
+      margin-right: 1rem;
+    }
+    
+    .pro-tip-box {
+      background: #e8f4e8;
+      border-radius: 20px;
+      padding: 1.2rem 1.8rem;
+      margin: 2rem 0;
+      border-left: 6px solid #2e7d32;
+    }
+    
+    .quote-box {
+      background: #f1ede9;
+      border-radius: 20px;
+      padding: 1.2rem 1.8rem;
+      margin: 1.5rem 0;
+      font-style: italic;
+      border-left: 6px solid #b85e3a;
+    }
+    
+    .triangle-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .triangle-item {
+      background: #f8f8f8;
+      border-radius: 20px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    
+    .triangle-item h4 {
+      color: #b85e3a;
+      margin-bottom: 0.5rem;
+    }
+    
+    .settings-table {
+      background: #1e1e1e;
+      color: white;
+      border-radius: 28px;
+      padding: 2rem;
+      margin: 3rem 0;
+    }
+    
+    .settings-table h3 {
+      color: white;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .settings-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.8rem 0;
+      border-bottom: 1px solid #333;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    
+    .settings-label {
+      font-weight: 600;
+      color: #f7b731;
+      min-width: 160px;
+    }
+    
+    .settings-value {
+      flex: 1;
+      color: #ddd;
+    }
+    
+    .dos-donts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .dos-box, .donts-box {
+      background: #f8f8f8;
+      border-radius: 20px;
+      padding: 1.5rem;
+    }
+    
+    .dos-box h4 { color: #2e7d32; }
+    .donts-box h4 { color: #b85e3a; }
+    
+    .dos-box ul, .donts-box ul {
+      margin-top: 1rem;
+      padding-left: 1.2rem;
+    }
+    
+    .mode-table {
+      background: #f8f8f8;
+      border-radius: 20px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .mode-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+      border-bottom: 1px dashed #ccc;
+    }
+    
+    .mode-row:last-child {
+      border-bottom: none;
+    }
+    
+    @media (max-width: 600px) {
+      .triangle-grid, .dos-donts {
+        grid-template-columns: 1fr;
+      }
+      .card h3 {
+        font-size: 1.6rem;
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<!-- header with hamburger (same as previous articles) -->
+<header class="site-header">
+  <div class="container header-wrapper">
+    <div class="logo">
+      <a href="https://shotavix.com/">SHOTAVIX<span>·</span></a>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="https://shotavix.com/">Home</a></li>
+        <li><a href="https://shotavix.com/gear">Gear</a></li>
+        <li><a href="https://shotavix.com/techniques">Techniques</a></li>
+        <li><a href="https://shotavix.com/video">Video</a></li>
+        <li><a href="https://shotavix.com/beginners">Beginner's</a></li>
+        <li><a href="https://shotavix.com/editing">Editing</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- mobile overlay -->
+<div class="mobile-nav-overlay" id="mobileNavOverlay">
+  <div class="mobile-nav-panel">
+    <div class="mobile-nav-header">
+      <div class="logo">SHOTAVIX<span>·</span></div>
+      <button class="close-btn" id="closeNavBtn" aria-label="Close menu">×</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="https://shotavix.com/">Home</a></li>
+      <li><a href="https://shotavix.com/gear">Gear</a></li>
+      <li><a href="https://shotavix.com/techniques">Techniques</a></li>
+      <li><a href="https://shotavix.com/video">Video</a></li>
+      <li><a href="https://shotavix.com/beginners">Beginner's</a></li>
+      <li><a href="https://shotavix.com/editing">Editing</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- MAIN ARTICLE CONTENT -->
+<main class="article-container">
+  <div class="article-hero">
+    <h1>Camera Settings Cheat Sheet for Perfect Photos (2026 Guide)</h1>
+    <div class="article-meta">
+      <span><i class="fas fa-calendar-alt"></i> Published: April 8, 2026</span>
+      <span><i class="fas fa-user"></i> by <a href="https://shotavix.com/author/oli-sa" class="author-intro">Oli Sa</a></span>
+    </div>
+  </div>
+
+  
+  <div class="featured-image">
+    <img src="https://shotavix.com/camera-settings-cheat-sheet.webp" alt="Camera settings diagram showing aperture, shutter speed and ISO controls">
+    <div class="image-caption">Master these settings and you'll never rely on Auto mode again</div>
+  </div>
+
+  <div class="article-content">
+    <p><strong>Behind every sharp, well-exposed photo lies a delicate balance of three critical elements: aperture, shutter speed, and ISO.</strong> When these settings are misunderstood, even the best compositions fail . But once you master the exposure triangle, you'll have complete creative control over your images—freezing motion, blurring backgrounds, or shooting in low light with confidence .</p>
+    
+    <p>This cheat sheet is your quick-reference guide to camera settings. Whether you're shooting portraits, landscapes, action, or nighttime scenes, you'll find the exact settings to start with—plus the knowledge to adjust them for any situation.</p>
+
+    <div class="pro-tip-box">
+      <strong><i class="fas fa-lightbulb" style="color:#2e7d32; margin-right:0.5rem;"></i>The Golden Rule:</strong> The exposure triangle—aperture, shutter speed, and ISO—controls how much light reaches your camera sensor . Change one setting and you must adjust another to maintain proper exposure. This relationship is the foundation of photography .
+    </div>
+
+    <h2>Master the Exposure Triangle</h2>
+
+    <!-- Aperture -->
+    <div class="card">
+      <div class="cheat-badge">EXPOSURE TRIANGLE • ELEMENT 1</div>
+      <h3><span class="number-icon">A</span> Aperture: Depth of Field Control</h3>
+      
+      <p><strong>Aperture</strong> is the adjustable opening in your lens that controls how much light reaches the sensor . It's measured in f-stops (e.g., f/1.4, f/2.8, f/8, f/16).</p>
+      
+      <div class="triangle-grid">
+        <div class="triangle-item">
+          <h4>Wide Aperture (f/1.4–f/2.8)</h4>
+          <p>Large opening, more light, shallow depth of field (blurry background). Perfect for portraits and low light .</p>
+        </div>
+        <div class="triangle-item">
+          <h4>Mid Aperture (f/5.6–f/8)</h4>
+          <p>Balanced, often sharpest for your lens. Good for general photography.</p>
+        </div>
+        <div class="triangle-item">
+          <h4>Narrow Aperture (f/11–f/16)</h4>
+          <p>Small opening, less light, deep depth of field (everything sharp). Ideal for landscapes .</p>
+        </div>
+      </div>
+      
+      <p><strong>Pro tip:</strong> Lower f-number = wider aperture = more light + more background blur. Higher f-number = narrower aperture = less light + more depth of field .</p>
+    </div>
+
+    <!-- Shutter Speed -->
+    <div class="card">
+      <div class="cheat-badge">EXPOSURE TRIANGLE • ELEMENT 2</div>
+      <h3><span class="number-icon">S</span> Shutter Speed: Motion Control</h3>
+      
+      <p><strong>Shutter speed</strong> is the duration the sensor is exposed to light, measured in seconds or fractions of a second (1/4000s to 30s) .</p>
+      
+      <div class="triangle-grid">
+        <div class="triangle-item">
+          <h4>Fast (1/500s–1/4000s)</h4>
+          <p>Freezes motion—sports, wildlife, action .</p>
+        </div>
+        <div class="triangle-item">
+          <h4>Moderate (1/60s–1/250s)</h4>
+          <p>Handheld general shooting, portraits.</p>
+        </div>
+        <div class="triangle-item">
+          <h4>Slow (1/30s–30s+)</h4>
+          <p>Requires tripod, creates motion blur (light trails, waterfalls) .</p>
+        </div>
+      </div>
+      
+      <p><strong>Rule of thumb:</strong> When handholding, use a shutter speed faster than 1/(focal length). For 50mm, use 1/50s or faster .</p>
+    </div>
+
+    <!-- ISO -->
+    <div class="card">
+      <div class="cheat-badge">EXPOSURE TRIANGLE • ELEMENT 3</div>
+      <h3><span class="number-icon">I</span> ISO: Light Sensitivity</h3>
+      
+      <p><strong>ISO</strong> measures your sensor's sensitivity to light . Lower values give cleaner images; higher values allow shooting in dim conditions but introduce noise .</p>
+      
+      <div class="triangle-grid">
+        <div class="triangle-item">
+          <h4>Low (100–400)</h4>
+          <p>Cleanest images, use in bright light .</p>
+        </div>
+        <div class="triangle-item">
+          <h4>Medium (800–3200)</h4>
+          <p>Indoor, overcast, handheld low light.</p>
+        </div>
+        <div class="triangle-item">
+          <h4>High (6400+)</h4>
+          <p>Dim conditions, expect noise/grain .</p>
+        </div>
+      </div>
+      
+      <p><strong>Pro tip:</strong> Keep ISO as low as possible. Increase it only when you can't use a wider aperture or slower shutter speed .</p>
+    </div>
+
+    <div class="settings-table">
+      <h3>Exposure Triangle Cheat Sheet</h3>
+      
+      <div class="settings-row"><span class="settings-label">Wider Aperture (f/1.4)</span><span class="settings-value">More light, shallow DOF, blurry background</span></div>
+      <div class="settings-row"><span class="settings-label">Narrower Aperture (f/16)</span><span class="settings-value">Less light, deep DOF, everything sharp</span></div>
+      <div class="settings-row"><span class="settings-label">Faster Shutter (1/1000s)</span><span class="settings-value">Freezes motion, less light</span></div>
+      <div class="settings-row"><span class="settings-label">Slower Shutter (1/30s)</span><span class="settings-value">Motion blur, more light, use tripod</span></div>
+      <div class="settings-row"><span class="settings-label">Lower ISO (100)</span><span class="settings-value">Clean image, requires good light</span></div>
+      <div class="settings-row"><span class="settings-label">Higher ISO (6400+)</span><span class="settings-value">Shoot in dark, introduces noise</span></div>
+    </div>
+
+    <h2>Shooting Modes: When to Use Each</h2>
+
+    <div class="mode-table">
+      <div class="mode-row"><span><strong>Auto Mode</strong></span><span>Camera controls everything. Good for beginners but limits creativity .</span></div>
+      <div class="mode-row"><span><strong>Program (P) Mode</strong></span><span>Camera sets aperture/shutter, you control ISO and other settings .</span></div>
+      <div class="mode-row"><span><strong>Aperture Priority (Av/A)</strong></span><span>You set aperture and ISO, camera picks shutter speed. Best for portraits (control DOF) .</span></div>
+      <div class="mode-row"><span><strong>Shutter Priority (Tv/S)</strong></span><span>You set shutter speed and ISO, camera picks aperture. Best for sports/wildlife (freeze motion) .</span></div>
+      <div class="mode-row"><span><strong>Manual (M) Mode</strong></span><span>You control everything. Full creative control .</span></div>
+    </div>
+
+    <h2>Additional Essential Settings</h2>
+
+    <!-- White Balance -->
+    <div class="card">
+      <div class="cheat-badge">COLOR</div>
+      <h3><span class="number-icon">WB</span> White Balance</h3>
+      
+      <p>White balance removes color casts so whites appear neutral . Auto WB can struggle in tricky lighting, so use presets for accuracy .</p>
+      
+      <div class="triangle-grid">
+        <div class="triangle-item"><h4>Daylight</h4><p>Sunny conditions</p></div>
+        <div class="triangle-item"><h4>Cloudy</h4><p>Adds warmth, good for overcast</p></div>
+        <div class="triangle-item"><h4>Tungsten</h4><p>Counteracts yellow indoor bulbs</p></div>
+        <div class="triangle-item"><h4>Fluorescent</h4><p>Corrects greenish tint</p></div>
+        <div class="triangle-item"><h4>Custom</h4><p>Use gray card for accuracy </p></div>
+      </div>
+    </div>
+
+    <!-- Focus Modes -->
+    <div class="card">
+      <div class="cheat-badge">FOCUS</div>
+      <h3><span class="number-icon">AF</span> Autofocus Modes</h3>
+      
+      <ul>
+        <li><strong>One-Shot AF (AF-S):</strong> Locks focus when half-pressed. Use for still subjects .</li>
+        <li><strong>Continuous AF (AF-C):</strong> Tracks moving subjects. Use for action .</li>
+        <li><strong>Manual Focus:</strong> Full control, use in low light or for precise focus .</li>
+      </ul>
+    </div>
+
+    <!-- Metering Modes -->
+    <div class="card">
+      <div class="cheat-badge">EXPOSURE METERING</div>
+      <h3><span class="number-icon">M</span> Metering Modes</h3>
+      
+      <ul>
+        <li><strong>Evaluative/Matrix:</strong> Whole scene average. Best for general use.</li>
+        <li><strong>Center-Weighted:</strong> Emphasizes center. Good for portraits.</li>
+        <li><strong>Spot Metering:</strong> Tiny area (2–5%). Use for backlit subjects or high contrast .</li>
+      </ul>
+    </div>
+
+    <h2>Genre-Specific Settings Cheat Sheet</h2>
+
+    <div class="card">
+      <h3><span class="number-icon">📷</span> Portrait Settings</h3>
+      <ul>
+        <li><strong>Aperture Priority (Av) mode</strong></li>
+        <li><strong>Aperture:</strong> f/1.8–f/2.8 for blurry background </li>
+        <li><strong>ISO:</strong> 100–400</li>
+        <li><strong>Focus:</strong> Single point, focus on the eye</li>
+        <li><strong>White Balance:</strong> Cloudy for warmth </li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="number-icon">🏔️</span> Landscape Settings</h3>
+      <ul>
+        <li><strong>Aperture Priority (Av) or Manual</strong></li>
+        <li><strong>Aperture:</strong> f/8–f/16 for deep depth of field </li>
+        <li><strong>ISO:</strong> 100 (lowest native)</li>
+        <li><strong>Focus:</strong> Manual, hyperfocal distance</li>
+        <li><strong>Tripod:</strong> Essential for sharpness</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="number-icon">🏃</span> Action / Sports Settings</h3>
+      <ul>
+        <li><strong>Shutter Priority (Tv) or Manual</strong></li>
+        <li><strong>Shutter Speed:</strong> 1/500s–1/2000s to freeze motion </li>
+        <li><strong>Aperture:</strong> f/2.8–f/4 (if light permits)</li>
+        <li><strong>ISO:</strong> Auto or adjust for exposure</li>
+        <li><strong>Focus:</strong> Continuous AF (AF-C) </li>
+        <li><strong>Drive Mode:</strong> Continuous/burst shooting</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="number-icon">🌙</span> Low Light / Night Settings</h3>
+      <ul>
+        <li><strong>Manual Mode</strong></li>
+        <li><strong>Aperture:</strong> Widest possible (f/1.4–f/2.8)</li>
+        <li><strong>Shutter Speed:</strong> Slow (use tripod) </li>
+        <li><strong>ISO:</strong> Raise as needed, but expect noise</li>
+        <li><strong>Focus:</strong> Manual (autofocus struggles in dark)</li>
+        <li><strong>Remote shutter or self-timer</strong></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><span class="number-icon">📦</span> Product / Still Life Settings</h3>
+      <ul>
+        <li><strong>Manual Mode</strong></li>
+        <li><strong>Aperture:</strong> f/8–f/11 for sharpness </li>
+        <li><strong>ISO:</strong> 100 (lowest) </li>
+        <li><strong>Shutter Speed:</strong> Moderate, use tripod </li>
+        <li><strong>White Balance:</strong> Custom with gray card </li>
+      </ul>
+    </div>
+
+    <h2>File Format: RAW vs JPEG</h2>
+    
+    <div class="mode-table">
+      <div class="mode-row"><span><strong>RAW</strong></span><span>Maximum data, more editing flexibility, retains highlight/shadow detail. Larger files, requires processing .</span></div>
+      <div class="mode-row"><span><strong>JPEG</strong></span><span>Processed in-camera, smaller files, ready to share. Less editing latitude .</span></div>
+    </div>
+    
+    <p><strong>Pro tip:</strong> Shoot RAW if you want full control in post-processing. Use JPEG+RAW if you need quick JPEGs but want RAW backup.</p>
+
+    <h2>Quick Reference: Common Situations</h2>
+    
+    <div class="settings-table">
+      <h3>Situation-Based Cheat Sheet</h3>
+      
+      <div class="settings-row"><span class="settings-label">Sunny day, family photos</span><span class="settings-value">Aperture Priority, f/5.6, ISO 100, auto shutter</span></div>
+      <div class="settings-row"><span class="settings-label">Portrait with blurry background</span><span class="settings-value">Aperture Priority, f/1.8–f/2.8, ISO 100–400</span></div>
+      <div class="settings-row"><span class="settings-label">Kids playing (action)</span><span class="settings-value">Shutter Priority, 1/500s+, Auto ISO, continuous AF</span></div>
+      <div class="settings-row"><span class="settings-label">Sunset landscape</span><span class="settings-value">Aperture Priority, f/8–f/11, ISO 100, tripod</span></div>
+      <div class="settings-row"><span class="settings-label">Indoor party, low light</span><span class="settings-value">Aperture Priority, widest aperture, raise ISO (1600–6400)</span></div>
+      <div class="settings-row"><span class="settings-label">Waterfall (silky effect)</span><span class="settings-value">Manual, slow shutter (1–5s), ISO 100, tripod, ND filter </span></div>
+      <div class="settings-row"><span class="settings-label">Night cityscape</span><span class="settings-value">Manual, f/8–f/11, 10–30s, ISO 100, tripod, remote shutter</span></div>
+    </div>
+
+    <h2>Common Mistakes to Avoid</h2>
+    
+    <div class="dos-donts">
+      <div class="dos-box">
+        <h4><i class="fas fa-check-circle"></i> Do</h4>
+        <ul>
+          <li>Check your ISO before shooting—don't leave it on auto if you want low noise </li>
+          <li>Use a tripod for shutter speeds below 1/60s </li>
+          <li>Keep lens clean—smudges reduce sharpness </li>
+          <li>Use exposure compensation to adjust brightness in semi-auto modes </li>
+          <li>Review histogram to check exposure </li>
+        </ul>
+      </div>
+      <div class="donts-box">
+        <h4><i class="fas fa-times-circle"></i> Don't</h4>
+        <ul>
+          <li>Don't rely on Auto White Balance—it kills mood </li>
+          <li>Don't use too high ISO when you could use a tripod </li>
+          <li>Don't shoot wide open (f/1.4) if you need everything in focus</li>
+          <li>Don't ignore shutter speed for your lens—watch for camera shake</li>
+          <li>Don't delete photos without reviewing—you might miss a keeper</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>Your 7-Day Settings Challenge</h2>
+    
+    <ul>
+      <li><strong>Day 1:</strong> Shoot in Aperture Priority. Experiment with f/1.8, f/5.6, and f/16. Notice how background blur changes .</li>
+      <li><strong>Day 2:</strong> Shoot in Shutter Priority. Try 1/30s (blur), 1/250s, and 1/1000s (frozen) .</li>
+      <li><strong>Day 3:</strong> Manual mode only. Practice balancing all three settings for correct exposure .</li>
+      <li><strong>Day 4:</strong> Low light practice. Use widest aperture, raise ISO, test your camera's noise limits.</li>
+      <li><strong>Day 5:</strong> Focus modes. Shoot moving subjects with AF-S and AF-C. Compare keepers .</li>
+      <li><strong>Day 6:</strong> White balance. Shoot same scene in Daylight, Cloudy, Tungsten, and Auto. See differences .</li>
+      <li><strong>Day 7:</strong> Shoot RAW+JPEG. Edit RAW file to match your vision—see the difference .</li>
+    </ul>
+
+    <h2>Final Thoughts</h2>
+    
+    <p>Understanding your camera's settings isn't about memorizing numbers—it's about knowing which trade-offs to make for your creative vision . Every change to aperture, shutter speed, or ISO affects both exposure and the artistic look of your image .</p>
+    
+    <p>Start with these cheat sheet settings, experiment, and soon you'll adjust them instinctively. As photographer Joe Yablonsky notes, learning to capture the depth of field, motion effects, and exposure you want comes from making quick adjustments in the field .</p>
+    
+    <div class="pro-tip-box">
+      <strong><i class="fas fa-gem" style="color:#2e7d32; margin-right:0.5rem;"></i>Final Challenge:</strong> Take your camera off Auto mode today. Even if you just try Aperture Priority, you're on your way to mastering these settings. Your BEST shot is your NEXT shot!
+    </div>
+
+  </div>
+
+  <!-- related posts -->
+<aside class="related-posts">
+  <h2 class="section-title">You may also like</h2>
+  <div class="related-grid">
+
+    <div class="related-card">
+      <img src="https://shotavix.com/10-photography-tips-2026.webp" alt="Photography tips">
+      <h4><a href="https://shotavix.com/10-photography-tips-2026">10 Photography Tips That Instantly Improve Your Photos</a></h4>
+      <div class="meta">Apr 8</div>
+    </div>
+
+    <div class="related-card">
+      <img src="https://shotavix.com/shoot-professional-photos-beginner-guide.webp" alt="Professional photos guide">
+      <h4><a href="https://shotavix.com/shoot-professional-photos-beginner-guide">How to Shoot Professional Photos with Any Camera</a></h4>
+      <div class="meta">Apr 8</div>
+    </div>
+
+    <div class="related-card">
+      <img src="https://shotavix.com/night-photography-tips-2026.webp" alt="Night photography">
+      <h4><a href="https://shotavix.com/night-photography-tips-2026">Night Photography Tips: Stunning Low-Light Photos</a></h4>
+      <div class="meta">Apr 8</div>
+    </div>
+
+    <div class="related-card">
+      <img src="https://shotavix.com/golden-hour-photography-guide.webp" alt="Golden hour photography">
+      <h4><a href="https://shotavix.com/golden-hour-photography-guide">Golden Hour Photography: Perfect Natural Light</a></h4>
+      <div class="meta">Apr 8</div>
+    </div>
+
+    <div class="related-card">
+      <img src="https://shotavix.com/10-composition-rules-2026.webp" alt="Composition rules">
+      <h4><a href="https://shotavix.com/10-composition-rules-2026">10 Composition Rules Every Photographer Should Know</a></h4>
+      <div class="meta">Apr 8</div>
+    </div>
+
+    <div class="related-card">
+      <img src="https://shotavix.com/shoot-sharp-photos-guide.webp" alt="Sharp photos guide">
+      <h4><a href="https://shotavix.com/shoot-sharp-photos-guide">How to Shoot Sharp Photos Every Time</a></h4>
+      <div class="meta">Apr 8</div>
+    </div>
+
+  </div>
+</aside>
+</main>
+
+<!-- footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <div class="footer-logo">SHOTAVIX<span>·</span></div>
+        <p>In-depth camera reviews, honest buying advice, and photography inspiration — made for enthusiasts, by enthusiasts.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/olisashedi" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@shotavix" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.threads.com/@olisashedi" target="_blank"><i class="fab fa-threads"></i></a>
+          <a href="https://www.facebook.com/lisa.251771" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+          <ul>
+            <li><a href="https://shotavix.com/gear">Gear & Reviews</a></li>
+            <li><a href="https://shotavix.com/techniques">Tips & Techniques</a></li>
+            <li><a href="https://shotavix.com/video">Video & Film</a></li>
+            <li><a href="https://shotavix.com/beginners">Beginner's Corner</a></li>
+            <li><a href="https://shotavix.com/editing">Editing & Business</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://shotavix.com">Home</a></li>
+            <li><a href="https://shotavix.com/contact">Contact</a></li>
+            <li><a href="https://shotavix.com/about">About</a></li>
+            <li><a href="https://shotavix.com/privacy">Privacy</a></li>
+            <li><a href="https://shotavix.com/terms">Terms</a></li>
+          </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2026 SHOTAVIX Camera Blog. All rights reserved. Shot with passion.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- hamburger functionality -->
+<script>
+  (function() {
+    const hamburger = document.getElementById('hamburgerBtn');
+    const overlay = document.getElementById('mobileNavOverlay');
+    const closeBtn = document.getElementById('closeNavBtn');
+
+    function openMenu() {
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    if (hamburger) hamburger.addEventListener('click', openMenu);
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+
+    overlay.addEventListener('click', function(e) {
+      if (e.target === overlay) closeMenu();
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && overlay.classList.contains('active')) closeMenu();
+    });
+  })();
+</script>
+</body>
+</html>

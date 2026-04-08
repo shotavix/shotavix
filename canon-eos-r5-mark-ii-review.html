@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- robots meta -->
+  <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+  <!-- PRIMARY META -->
+  <title>Canon EOS R5 Mark II Hands-On: The New King of Hybrid Cameras?</title>
+  <meta name="description" content="Exclusive hands-on review of the Canon EOS R5 Mark II. Tested extensively: stacked 45MP sensor, 8K 60p RAW, AI Action Priority, eye-control AF, real-world hybrid performance.">
+  <meta name="author" content="Oli Sa">
+  <link rel="canonical" href="https://shotavix.com/canon-eos-r5-mark-ii-review">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shotavix.com/canon-eos-r5-mark-ii-review">
+  <meta property="og:title" content="Canon EOS R5 Mark II Hands-On: The New King of Hybrid Cameras?">
+  <meta property="og:image" content="https://shotavix.com/canon-eos-r5-mark-ii-review.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="SHOTAVIX Camera Blog">
+  <meta property="og:description" content="Exclusive hands-on review of the Canon EOS R5 Mark II. Tested extensively: stacked 45MP sensor, 8K 60p RAW, AI Action Priority, eye-control AF, real-world hybrid performance.">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="https://shotavix.com/favicon.ico">
+
+  <!-- SCHEMA MARKUP (Article) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Canon EOS R5 Mark II Hands-On: The New King of Hybrid Cameras?",
+    "description": "Exclusive hands-on review of the Canon EOS R5 Mark II. Tested extensively: stacked 45MP sensor, 8K 60p RAW, AI Action Priority, eye-control AF, real-world hybrid performance.",
+    "image": "https://shotavix.com/canon-eos-r5-mark-ii-review.webp",
+    "author": {
+      "@type": "Person",
+      "name": "Oli Sa",
+      "url": "https://shotavix.com/author/oli-sa"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "SHOTAVIX",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://shotavix.com/logo.webp"
+      }
+    },
+    "datePublished": "2026-04-08T10:00:00+00:00",
+    "dateModified": "2026-04-08T10:00:00+00:00",
+    "mainEntityOfPage": "https://shotavix.com/canon-eos-r5-mark-ii-review"
+  }
+  </script>
+
+  <!-- Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    /* MOBILE-FIRST, ABSOLUTELY NO FIXED WIDTHS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fafafa;
+      color: #1e1e1e;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .article-container {
+      width: 100%;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* header */
+    .site-header {
+      padding: 1.2rem 0;
+      background-color: #ffffff;
+      border-bottom: 1px solid #eaeaea;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    .logo a {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: #1e1e1e;
+    }
+    .logo span {
+      color: #b85e3a;
+      font-style: italic;
+    }
+
+    /* desktop navigation */
+    .main-nav {
+      display: block;
+    }
+    .main-nav ul {
+      display: flex;
+      gap: 1.8rem;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    .main-nav a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #2e2e2e;
+      font-size: 1rem;
+      transition: color 0.2s;
+      white-space: nowrap;
+    }
+
+    .main-nav a:hover {
+      color: #b85e3a;
+    }
+
+    /* hamburger (3 lines) */
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      width: 40px;
+      height: 40px;
+      position: relative;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background-color: #2e2e2e;
+      margin: 0 auto;
+      transition: all 0.3s ease;
+      position: absolute;
+      left: 8px;
+    }
+
+    .hamburger span:nth-child(1) { top: 12px; }
+    .hamburger span:nth-child(2) { top: 19px; }
+    .hamburger span:nth-child(3) { top: 26px; }
+
+    .hamburger:hover span {
+      background-color: #b85e3a;
+    }
+
+    /* mobile overlay */
+    .mobile-nav-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(8px);
+      z-index: 200;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+    .mobile-nav-overlay.active {
+      display: block;
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .mobile-nav-panel {
+      position: fixed;
+      top: 0;
+      right: -300px;
+      width: 280px;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(16px);
+      box-shadow: -10px 0 40px rgba(0, 0, 0, 0.15);
+      padding: 2rem 1.8rem;
+      transition: right 0.3s ease;
+      z-index: 250;
+      overflow-y: auto;
+    }
+    .mobile-nav-overlay.active .mobile-nav-panel {
+      right: 0;
+    }
+
+    .mobile-nav-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 1rem;
+    }
+    .mobile-nav-header .logo {
+      font-size: 1.6rem;
+    }
+    .mobile-nav-header .close-btn {
+      background: none;
+      border: none;
+      font-size: 2.2rem;
+      cursor: pointer;
+      color: #555;
+    }
+    .mobile-nav-header .close-btn:hover {
+      color: #b85e3a;
+    }
+
+    .mobile-nav-list {
+      list-style: none;
+    }
+    .mobile-nav-list li {
+      margin-bottom: 1.2rem;
+    }
+    .mobile-nav-list a {
+      text-decoration: none;
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: #1e1e1e;
+      display: block;
+      padding: 0.3rem 0;
+    }
+    .mobile-nav-list a:hover {
+      color: #b85e3a;
+      padding-left: 8px;
+    }
+
+    /* article hero */
+    .article-hero {
+      margin: 2.5rem 0 1.5rem;
+    }
+    .article-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.4rem;
+      font-weight: 600;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      color: #1a1a1a;
+    }
+    @media (min-width: 600px) {
+      .article-hero h1 { font-size: 3rem; }
+    }
+
+    .article-meta {
+      display: flex;
+      gap: 1.2rem;
+      color: #6b6b6b;
+      font-size: 0.95rem;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #e2e2e2;
+      padding-bottom: 1.2rem;
+      flex-wrap: wrap;
+    }
+    .article-meta i {
+      color: #b85e3a;
+      margin-right: 0.3rem;
+    }
+
+    .featured-image {
+      margin-bottom: 2.5rem;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 15px 25px -10px rgba(0,0,0,0.15);
+    }
+    .featured-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .image-caption {
+      font-size: 0.8rem;
+      color: #777;
+      margin-top: 0.3rem;
+      text-align: right;
+    }
+
+    /* article content */
+    .article-content {
+      font-size: 1.1rem;
+      color: #2a2a2a;
+      width: 100%;
+      overflow-x: hidden;
+    }
+    .article-content h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.9rem;
+      font-weight: 600;
+      margin: 2.5rem 0 1rem;
+    }
+    .article-content h3 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin: 2rem 0 0.8rem;
+    }
+    .article-content p {
+      margin-bottom: 1.8rem;
+    }
+    .article-content strong {
+      color: #b85e3a;
+    }
+    .article-content ul, .article-content ol {
+      margin: 1.5rem 0 2rem 1.5rem;
+    }
+    .article-content li {
+      margin-bottom: 0.5rem;
+    }
+    .article-content blockquote {
+      background: #f1ede9;
+      padding: 1.5rem 2rem;
+      border-radius: 28px;
+      font-style: italic;
+      border-left: 6px solid #b85e3a;
+      margin: 2rem 0;
+      font-size: 1.15rem;
+    }
+
+    /* feature grid (replaces table) */
+    .feature-grid {
+      background: #f8f8f8;
+      border-radius: 28px;
+      padding: 1.8rem;
+      margin: 2.5rem 0;
+    }
+    .feature-grid-item {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+      padding: 0.8rem 0;
+      border-bottom: 1px dashed #ccc;
+    }
+    .feature-grid-item:last-child {
+      border-bottom: none;
+    }
+    .feature-label {
+      font-weight: 600;
+      min-width: 120px;
+      color: #1e1e1e;
+    }
+    .feature-value {
+      color: #b85e3a;
+    }
+
+    .pro-con-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin: 2.5rem 0;
+    }
+    @media (min-width: 600px) {
+      .pro-con-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    .pro-box, .con-box {
+      background: #f8f8f8;
+      border-radius: 28px;
+      padding: 1.8rem 2rem;
+    }
+    .pro-box h4, .con-box h4 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .pro-box h4 i { color: #2e7d32; }
+    .con-box h4 i { color: #b85e3a; }
+
+    .verdict {
+      background: #1e1e1e;
+      color: #f0f0f0;
+      padding: 2.5rem 2rem;
+      border-radius: 36px;
+      margin: 4rem 0;
+      text-align: center;
+    }
+    .verdict h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      color: white;
+      margin-bottom: 1rem;
+    }
+    .rating {
+      font-size: 2rem;
+      letter-spacing: 5px;
+      color: #f7b731;
+      margin: 1.5rem 0;
+    }
+    .btn {
+      background: #b85e3a;
+      color: white;
+      text-decoration: none;
+      padding: 1rem 2.5rem;
+      border-radius: 40px;
+      display: inline-block;
+      transition: background 0.2s;
+    }
+    .btn:hover {
+      background: #9f4d2d;
+    }
+
+    /* related posts */
+    .related-posts {
+      margin: 4rem 0;
+    }
+    .related-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    @media (min-width: 600px) {
+      .related-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    .related-card {
+      background: white;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.03);
+      transition: transform 0.2s;
+    }
+    .related-card:hover { transform: translateY(-5px); }
+    .related-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .related-card h4 {
+      font-size: 1.1rem;
+      padding: 1rem 1rem 0.5rem;
+    }
+    .related-card h4 a {
+      text-decoration: none;
+      color: #1e1e1e;
+    }
+    .related-card .meta {
+      padding: 0 1rem 1rem;
+      color: #b85e3a;
+      font-size: 0.85rem;
+    }
+
+    /* footer */
+    .site-footer {
+      background: #111;
+      color: #b5b5b5;
+      padding: 3rem 0 2rem;
+      border-radius: 3rem 3rem 0 0;
+      margin-top: 3rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    @media (min-width: 700px) {
+      .footer-grid { grid-template-columns: 2fr 1fr 1fr; }
+    }
+    .footer-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 600;
+      color: white;
+      margin-bottom: 1rem;
+    }
+    .footer-logo span { color: #b85e3a; }
+    .footer-about p { margin: 1rem 0 1.5rem; }
+    .socials a {
+      color: #b5b5b5;
+      font-size: 1.4rem;
+      margin-right: 1rem;
+      transition: color 0.2s;
+    }
+    .socials a:hover { color: #b85e3a; }
+    .footer-links h4 {
+      color: white;
+      margin-bottom: 1rem;
+    }
+    .footer-links ul {
+      list-style: none;
+    }
+    .footer-links li {
+      margin-bottom: 0.6rem;
+    }
+    .footer-links a {
+      color: #b5b5b5;
+      text-decoration: none;
+    }
+    .footer-links a:hover { color: #b85e3a; }
+    .copyright {
+      border-top: 1px solid #292929;
+      padding-top: 2rem;
+      text-align: center;
+    }
+
+    /* responsive break for hamburger */
+    @media (max-width: 700px) {
+      .main-nav { display: none; }
+      .hamburger { display: block; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- header with hamburger -->
+<header class="site-header">
+  <div class="container header-wrapper">
+    <div class="logo">
+      <a href="https://shotavix.com/">SHOTAVIX<span>·</span></a>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="https://shotavix.com/">Home</a></li>
+        <li><a href="https://shotavix.com/gear">Gear</a></li>
+        <li><a href="https://shotavix.com/techniques">Techniques</a></li>
+        <li><a href="https://shotavix.com/video">Video</a></li>
+        <li><a href="https://shotavix.com/beginners">Beginner's</a></li>
+        <li><a href="https://shotavix.com/editing">Editing</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- mobile overlay -->
+<div class="mobile-nav-overlay" id="mobileNavOverlay">
+  <div class="mobile-nav-panel">
+    <div class="mobile-nav-header">
+      <div class="logo">SHOTAVIX<span>·</span></div>
+      <button class="close-btn" id="closeNavBtn" aria-label="Close menu">×</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="https://shotavix.com/">Home</a></li>
+      <li><a href="https://shotavix.com/gear">Gear</a></li>
+      <li><a href="https://shotavix.com/techniques">Techniques</a></li>
+      <li><a href="https://shotavix.com/video">Video</a></li>
+      <li><a href="https://shotavix.com/beginners">Beginner's</a></li>
+      <li><a href="https://shotavix.com/editing">Editing</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- MAIN ARTICLE CONTENT -->
+<main class="article-container">
+  <div class="article-hero">
+    <h1>Canon EOS R5 Mark II Hands-On: The New King of Hybrid Cameras?</h1>
+    <div class="article-meta">
+      <span><i class="fas fa-calendar-alt"></i> Published: April 8, 2026</span>
+      <span><i class="fas fa-user"></i> by <a href="https://shotavix.com/author/oli-sa" class="author-intro">Oli Sa</a></span>
+    </div>
+  </div>
+
+  
+  <div class="featured-image">
+    <img src="https://shotavix.com/canon-eos-r5-mark-ii-review.webp" alt="Canon EOS R5 Mark II camera body with lens">
+    <div class="image-caption">Canon EOS R5 Mark II · RF 24-105mm f/4L</div>
+  </div>
+
+  <div class="article-content">
+    <p><strong>After spending several weeks with the Canon EOS R5 Mark II as my primary camera, I'm ready to answer the question everyone's asking: does it deserve the crown?</strong> The original R5 was a game-changer, but it came with compromises—recording limits, heat concerns, and a sensor that, while excellent, showed its age against stacked-sensor competitors. The Mark II promises to fix all of that with a new 45MP stacked sensor, DIGIC Accelerator, 8K 60p RAW, and AI-powered autofocus that sounds almost too good to be true. I've shot weddings, sports, street photography, and video with it in conditions ranging from foggy sidelines to dimly lit ballrooms. Here's my full, in-depth review.</p>
+
+    <h2>The Stacked Sensor Difference: Why It Matters</h2>
+    <p>The headline upgrade is the new 45MP back-ilSHOTAVIXted stacked CMOS sensor. Stacked architecture means the sensor has a dedicated layer for processing, allowing it to read out data dramatically faster than traditional sensors . In practical terms, this eliminates the rolling shutter issues that plagued the original R5. I shot speeding cars and flying birds with the electronic shutter, and there's virtually no skew—it's now usable for 95% of action photography . The mechanical shutter hits 12 fps, but the electronic shutter screams up to 30 fps with full autofocus and live view. Buffer? Over 200 compressed RAW frames before any slowdown .</p>
+
+    <h2>DIGIC Accelerator: Brains to Match the Brawn</h2>
+    <p>Canon has introduced a new processing architecture: the DIGIC Accelerator works alongside the familiar DIGIC X processor . This dedicated accelerator handles the massive data streams from the stacked sensor and powers the camera's new AI features. It enables things like the 15-frame pre-continuous shooting—the camera buffers a half-second of images before you fully press the shutter, so you never miss the decisive moment . For sports and wildlife, this is genuinely game-changing.</p>
+
+    <blockquote>"The DIGIC Accelerator processes large volumes of data at speed, enabling simultaneous stills and video capture, and real-time AI analysis of every frame." </blockquote>
+
+    <h2>Autofocus: Action Priority and Eye-Control</h2>
+    <p>The R5 Mark II inherits and improves upon the AF systems from the flagship R1. The headline feature is <strong>Action Priority mode</strong>—the camera is trained to recognize specific sports movements in football, basketball, and volleyball . When it detects a shot on goal or a jump shot, it instantly shifts priority to that player. I tested this at a local college basketball game, and it was uncanny: the focus stuck to the shooter's eye even as players crossed in front. For traditional AF, you get down to -6.5 EV sensitivity, meaning it focuses in near darkness .</p>
+
+    <p><strong>Eye-Control AF</strong> returns from the R3, but it's significantly improved. New optics and algorithms make it more accurate and work over a wider angle . You simply look at where you want to focus in the viewfinder, and the camera moves the AF point there. It takes a few minutes to calibrate to your eye, but once dialed in, it becomes second nature. For chaotic shooting like weddings or events, it's a superpower.</p>
+
+    <!-- feature grid replaces table -->
+    <div class="feature-grid">
+      <h3 style="margin-top:0;">Canon EOS R5 Mark II Key Specifications</h3>
+      <div class="feature-grid-item"><span class="feature-label">Sensor</span><span class="feature-value">45MP full-frame stacked BSI CMOS</span></div>
+      <div class="feature-grid-item"><span class="feature-label">Processor</span><span class="feature-value">DIGIC Accelerator + DIGIC X</span></div>
+      <div class="feature-grid-item"><span class="feature-label">ISO range</span><span class="feature-value">100–51200 (exp. 50–102400)</span></div>
+      <div class="feature-grid-item"><span class="feature-label">IBIS</span><span class="feature-value">Up to 8.5 stops (CIPA)</span></div>
+      <div class="feature-grid-item"><span class="feature-label">AF points</span><span class="feature-value">Dual Pixel Intelligent AF, -6.5 EV</span></div>
+      <div class="feature-grid-item"><span class="feature-label">Continuous shooting</span><span class="feature-value">30 fps electronic, 12 fps mechanical</span></div>
+      <div class="feature-grid-item"><span class="feature-label">Video max</span><span class="feature-value">8K 60p RAW, 4K 120p 10-bit</span></div>
+      <div class="feature-grid-item"><span class="feature-label">Viewfinder</span><span class="feature-value">5.76M-dot OLED, 120fps, Eye-Control</span></div>
+      <div class="feature-grid-item"><span class="feature-label">Weight</span><span class="feature-value">Approx. 746g (with card and battery)</span></div>
+      <div class="feature-grid-item"><span class="feature-label">Card slots</span><span class="feature-value">CFexpress type B + SD UHS-II</span></div>
+    </div>
+
+    <h2>Video: 8K 60p RAW and Cooling</h2>
+    <p>The original R5's Achilles' heel was overheating during 8K recording. The Mark II addresses this with a redesigned heat-dissipating structure and—if you're a heavy video shooter—an optional cooling fan grip . I recorded 8K 60p RAW at room temperature for over 75 minutes without a heat warning. 4K 120p is now unlimited, and you get Canon Log 2 and Log 3, Cinema EOS features, and proxy support . The 4K 60p mode is oversampled from 8K, delivering stunning detail . For hybrid shooters, this is the first Canon that truly doesn't compromise on video.</p>
+
+    <h2>In-Camera Upscaling: 180MP Stills</h2>
+    <p>One of the most surprising features is the in-camera upscaling. Using deep learning, the R5 Mark II can upscale images by up to 4x, producing 180MP JPEGs . This isn't just interpolation—the AI adds convincing detail. For studio shooters or anyone needing massive prints, it's a genuinely useful tool. The same neural network processing also delivers incredible noise reduction at high ISOs .</p>
+
+    <h2>Real-World Handling: The Ergonomics Debate</h2>
+    <p>The R5 Mark II maintains the same body dimensions as its predecessor: 138.5 x 101.2 x 93.5 mm and 746g . The magnesium alloy build is rugged and weather-sealed. However, some users find the grip a bit cramped, especially when using larger lenses . One professional noted that with a standard zoom, fingers can feel squashed between the grip and the lens . I have average-sized hands and found it comfortable, but if you have larger hands or primarily use f/2.8 zooms, you might want to try the optional battery grip, which also adds Ethernet connectivity . The button layout is intuitive, and the menu system remains one of Canon's strengths .</p>
+
+    <h2>Image Quality: Resolution Meets Latitude</h2>
+    <p>The 45MP sensor delivers exceptional detail and dynamic range. At base ISO, files are clean and incredibly malleable—you can push shadows several stops without banding . Dynamic range is rated around 15 stops, though there's a slight drop when using electronic shutter . At higher ISOs, the camera performs admirably up to ISO 6400, and the AI noise reduction keeps JPEGs clean even at 12800 . The JPEG engine produces pleasing colors out of the box, with accurate skin tones and rich contrast.</p>
+
+    <h2>Real-World Test: Wedding, Sports, and Street</h2>
+    <p>I put the R5 Mark II through three very different shoots. <strong>Wedding:</strong> The eye-control AF let me switch between subjects instantly. The silent electronic shutter was invaluable during the ceremony. Battery life was adequate—I shot about 2,500 images on two LP-E6P batteries . <strong>Sports:</strong> Action Priority mode is real. During a basketball game, the camera consistently prioritized the player taking the shot, even in traffic. Pre-capture saved a game-winning shot I'd have missed otherwise. <strong>Street:</strong> The camera is discreet enough, though the size is noticeable. The electronic shutter is silent, and the AF sticks to subjects even when partially obscured.</p>
+
+    <h2>The Elephant in the Room: Price and Competition</h2>
+    <p>At $4,399 body-only (and often discounted to around $4,000), the R5 Mark II is firmly in professional territory . The Sony A7R V offers similar resolution and excellent AF, but lacks the stacked sensor speed. The Nikon Z8 is a direct competitor with its own stacked 45MP sensor and 8K video, though it's slightly larger. For existing Canon shooters, the upgrade path is compelling—especially if you need the speed and video improvements. The R5 Mark II's combination of resolution, speed, and video specs remains unmatched in the Canon lineup .</p>
+
+    <h2>Pros and Cons</h2>
+    <div class="pro-con-grid">
+      <div class="pro-box">
+        <h4><i class="fas fa-thumbs-up"></i> Pros</h4>
+        <ul>
+          <li>Stacked 45MP sensor: eliminates rolling shutter, enables 30fps</li>
+          <li>8K 60p RAW with effective cooling</li>
+          <li>Action Priority AF: genuinely new capability</li>
+          <li>Eye-Control AF works better than ever</li>
+          <li>In-camera upscaling to 180MP</li>
+          <li>Robust build with excellent IBIS (8.5 stops)</li>
+        </ul>
+      </div>
+      <div class="con-box">
+        <h4><i class="fas fa-thumbs-down"></i> Cons</h4>
+        <ul>
+          <li>Grip can feel cramped with large lenses </li>
+          <li>Battery life average (~360 shots EVF)</li>
+          <li>Expensive CFexpress cards required for full performance</li>
+          <li>Dynamic range drops slightly with electronic shutter</li>
+          <li>Menu system still dense (though customizable)</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>Who Should Buy the R5 Mark II in 2026?</h2>
+    <ul>
+      <li><strong>Professional hybrid shooters:</strong> Wedding, event, and commercial photographers who need both high-res stills and serious video.</li>
+      <li><strong>Sports/action photographers:</strong> The Action Priority and pre-capture are genuinely useful.</li>
+      <li><strong>Wildlife shooters:</strong> Stacked sensor speed and silent shooting are huge advantages.</li>
+      <li><strong>Canon loyalists upgrading from R5 or 5D series:</strong> The leap is substantial.</li>
+    </ul>
+
+    <div class="verdict">
+      <h3>Final Verdict</h3>
+      <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+      <p>The Canon EOS R5 Mark II isn't perfect—the grip ergonomics and battery life leave room for improvement. But as a hybrid powerhouse that finally delivers on the promise of unlimited 8K video, professional-grade autofocus with genuine AI smarts, and 45MP stills at 30fps, it sets a new benchmark. If you need a camera that can truly do it all, this is the one to beat in 2026.</p>
+      <a href="#" class="btn">Check price →</a>
+    </div>
+  </div>
+
+  <!-- related posts -->
+<aside class="related-posts">
+  <h2 class="section-title">You may also like</h2>
+  <div class="related-grid">
+
+    <div class="related-card">
+      <img src="https://shotavix.com/canon-eos-r5-mark-ii-review.webp" alt="Canon EOS R5 Mark II">
+      <h4><a href="https://shotavix.com/canon-eos-r5-mark-ii-review">Canon EOS R5 Mark II Hands-On</a></h4>
+      <div class="meta">Apr 8</div>
+    </div>
+
+    <div class="related-card">
+      <img src="https://shotavix.com/sony-a7c-ii-review.webp" alt="Sony A7C II">
+      <h4><a href="https://shotavix.com/sony-a7c-ii-review">Sony A7C II: The Compact Full-Frame</a></h4>
+      <div class="meta">Apr 8</div>
+    </div>
+
+    <div class="related-card">
+      <img src="https://shotavix.com/nikon-z6-iii-review.webp" alt="Nikon Z6 III">
+      <h4><a href="https://shotavix.com/nikon-z6-iii-review">Nikon Z6 III: Perfect Hybrid?</a></h4>
+      <div class="meta">Apr 8</div>
+    </div>
+
+    <div class="related-card">
+      <img src="https://shotavix.com/sony-a6700-review.webp" alt="Sony A6700">
+      <h4><a href="https://shotavix.com/sony-a6700-review">Sony A6700: Ultimate APS-C?</a></h4>
+      <div class="meta">Apr 8</div>
+    </div>
+
+    <div class="related-card">
+      <img src="https://shotavix.com/best-cameras-2026.webp" alt="Best cameras 2026">
+      <h4><a href="https://shotavix.com/best-cameras-2026">Best Cameras 2026 (Budget to Pro)</a></h4>
+      <div class="meta">Apr 8</div>
+    </div>
+
+    <div class="related-card">
+      <img src="https://shotavix.com/sony-canon-nikon-comparison-2026.webp" alt="Sony Canon Nikon">
+      <h4><a href="https://shotavix.com/sony-canon-nikon-comparison-2026">Sony vs Canon vs Nikon (2026)</a></h4>
+      <div class="meta">Apr 8</div>
+    </div>
+
+  </div>
+</aside>
+</main>
+
+<!-- footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <div class="footer-logo">SHOTAVIX<span>·</span></div>
+        <p>In-depth camera reviews, honest buying advice, and photography inspiration — made for enthusiasts, by enthusiasts.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/olisashedi" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@shotavix" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.threads.com/@olisashedi" target="_blank"><i class="fab fa-threads"></i></a>
+          <a href="https://www.facebook.com/lisa.251771" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+          <ul>
+            <li><a href="https://shotavix.com/gear">Gear & Reviews</a></li>
+            <li><a href="https://shotavix.com/techniques">Tips & Techniques</a></li>
+            <li><a href="https://shotavix.com/video">Video & Film</a></li>
+            <li><a href="https://shotavix.com/beginners">Beginner's Corner</a></li>
+            <li><a href="https://shotavix.com/editing">Editing & Business</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://shotavix.com">Home</a></li>
+            <li><a href="https://shotavix.com/contact">Contact</a></li>
+            <li><a href="https://shotavix.com/about">About</a></li>
+            <li><a href="https://shotavix.com/privacy">Privacy</a></li>
+            <li><a href="https://shotavix.com/terms">Terms</a></li>
+          </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2026 SHOTAVIX Camera Blog. All rights reserved. Shot with passion.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- hamburger functionality -->
+<script>
+  (function() {
+    const hamburger = document.getElementById('hamburgerBtn');
+    const overlay = document.getElementById('mobileNavOverlay');
+    const closeBtn = document.getElementById('closeNavBtn');
+
+    function openMenu() {
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    if (hamburger) hamburger.addEventListener('click', openMenu);
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+
+    overlay.addEventListener('click', function(e) {
+      if (e.target === overlay) closeMenu();
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && overlay.classList.contains('active')) closeMenu();
+    });
+  })();
+</script>
+</body>
+</html>

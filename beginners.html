@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- PRIMARY META -->
+  <title>Beginner's Corner — SHOTAVIX Camera Blog</title>
+  <meta name="description" content="Start your photography journey here. Beginner-friendly guides on camera settings, composition, gear, and editing. No jargon, just clear advice.">
+  <meta name="author" content="Oli Sa">
+  <link rel="canonical" href="https://shotavix.com/beginners">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shotavix.com/beginners">
+  <meta property="og:title" content="Beginner's Corner — SHOTAVIX Camera Blog">
+  <meta property="og:image" content="https://shotavix.com/beginners-archive.webp">
+  <meta property="og:site_name" content="SHOTAVIX Camera Blog">
+  <meta property="og:description" content="Start your photography journey here. Beginner-friendly guides on camera settings, composition, gear, and editing. No jargon, just clear advice.">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="https://shotavix.com/favicon.ico">
+
+  <!-- Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    /* MOBILE-FIRST */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fafafa;
+      color: #1e1e1e;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .beginners-container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* header */
+    .site-header {
+      padding: 1.2rem 0;
+      background-color: #ffffff;
+      border-bottom: 1px solid #eaeaea;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    .logo a {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: #1e1e1e;
+    }
+    .logo span {
+      color: #b85e3a;
+      font-style: italic;
+    }
+
+    /* desktop navigation */
+    .main-nav {
+      display: block;
+    }
+    .main-nav ul {
+      display: flex;
+      gap: 1.8rem;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    .main-nav a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #2e2e2e;
+      font-size: 1rem;
+      transition: color 0.2s;
+    }
+
+    .main-nav a:hover, .main-nav a.active {
+      color: #b85e3a;
+    }
+
+    /* hamburger */
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      width: 40px;
+      height: 40px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background-color: #2e2e2e;
+      transition: all 0.3s ease;
+      position: absolute;
+      left: 8px;
+    }
+    .hamburger span:nth-child(1) { top: 12px; }
+    .hamburger span:nth-child(2) { top: 19px; }
+    .hamburger span:nth-child(3) { top: 26px; }
+    .hamburger:hover span { background-color: #b85e3a; }
+
+    /* mobile overlay */
+    .mobile-nav-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(8px);
+      z-index: 200;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+    .mobile-nav-overlay.active {
+      display: block;
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .mobile-nav-panel {
+      position: fixed;
+      top: 0;
+      right: -300px;
+      width: 280px;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(16px);
+      box-shadow: -10px 0 40px rgba(0, 0, 0, 0.15);
+      padding: 2rem 1.8rem;
+      transition: right 0.3s ease;
+      z-index: 250;
+      overflow-y: auto;
+    }
+    .mobile-nav-overlay.active .mobile-nav-panel { right: 0; }
+
+    .mobile-nav-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 1rem;
+    }
+    .mobile-nav-header .logo { font-size: 1.6rem; }
+    .mobile-nav-header .close-btn {
+      background: none;
+      border: none;
+      font-size: 2.2rem;
+      cursor: pointer;
+      color: #555;
+    }
+    .mobile-nav-header .close-btn:hover { color: #b85e3a; }
+
+    .mobile-nav-list {
+      list-style: none;
+    }
+    .mobile-nav-list li { margin-bottom: 1.2rem; }
+    .mobile-nav-list a {
+      text-decoration: none;
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: #1e1e1e;
+      display: block;
+      padding: 0.3rem 0;
+    }
+    .mobile-nav-list a:hover { color: #b85e3a; padding-left: 8px; }
+
+    /* ---- beginners page specific styles ---- */
+    .beginners-hero {
+      margin: 3rem 0 2rem;
+      text-align: center;
+    }
+    .beginners-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 1rem;
+    }
+    .beginners-hero p {
+      font-size: 1.2rem;
+      color: #6b6b6b;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .category-filter {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.8rem;
+      margin: 3rem 0;
+    }
+    .filter-btn {
+      background: white;
+      border: 1px solid #e2e2e2;
+      padding: 0.6rem 1.5rem;
+      border-radius: 50px;
+      font-weight: 500;
+      color: #2e2e2e;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-size: 0.95rem;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: #b85e3a;
+      color: white;
+      border-color: #b85e3a;
+    }
+
+    .beginners-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+
+    .beginners-card {
+      background: white;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 12px 28px -8px rgba(0,0,0,0.05);
+      border: 1px solid #f0f0f0;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .beginners-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 28px 38px -14px rgba(0,0,0,0.15);
+    }
+
+    .beginners-img {
+      height: 200px;
+      overflow: hidden;
+    }
+    .beginners-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s;
+    }
+    .beginners-card:hover .beginners-img img { transform: scale(1.05); }
+
+    .beginners-content {
+      padding: 1.5rem;
+    }
+    .beginners-category {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #b85e3a;
+      margin-bottom: 0.3rem;
+    }
+    .beginners-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .beginners-title a {
+      text-decoration: none;
+      color: #1e1e1e;
+    }
+    .beginners-title a:hover { color: #b85e3a; }
+    .beginners-excerpt {
+      color: #4a4a4a;
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+    .beginners-meta {
+      display: flex;
+      justify-content: space-between;
+      color: #888;
+      font-size: 0.85rem;
+      border-top: 1px solid #eee;
+      padding-top: 0.8rem;
+    }
+    .read-more {
+      color: #b85e3a;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+    .read-more:hover { gap: 0.5rem; }
+
+    /* footer */
+    .site-footer {
+      background: #111;
+      color: #b5b5b5;
+      padding: 3rem 0 2rem;
+      border-radius: 3rem 3rem 0 0;
+      margin-top: 3rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    @media (min-width: 700px) {
+      .footer-grid { grid-template-columns: 2fr 1fr 1fr; }
+    }
+    .footer-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 600;
+      color: white;
+      margin-bottom: 1rem;
+    }
+    .footer-logo span { color: #b85e3a; }
+    .footer-about p { margin: 1rem 0 1.5rem; }
+    .socials a {
+      color: #b5b5b5;
+      font-size: 1.4rem;
+      margin-right: 1rem;
+      transition: color 0.2s;
+    }
+    .socials a:hover { color: #b85e3a; }
+    .footer-links h4 {
+      color: white;
+      margin-bottom: 1rem;
+    }
+    .footer-links ul {
+      list-style: none;
+    }
+    .footer-links li { margin-bottom: 0.6rem; }
+    .footer-links a {
+      color: #b5b5b5;
+      text-decoration: none;
+    }
+    .footer-links a:hover { color: #b85e3a; }
+    .copyright {
+      border-top: 1px solid #292929;
+      padding-top: 2rem;
+      text-align: center;
+    }
+
+    /* responsive */
+    @media (max-width: 700px) {
+      .beginners-hero h1 { font-size: 2.2rem; }
+      .main-nav { display: none; }
+      .hamburger { display: block; }
+      .filter-btn { padding: 0.5rem 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- header -->
+<header class="site-header">
+  <div class="container header-wrapper">
+    <div class="logo">
+      <a href="https://shotavix.com/">SHOTAVIX<span>·</span></a>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="https://shotavix.com/">Home</a></li>
+        <li><a href="https://shotavix.com/gear">Gear</a></li>
+        <li><a href="https://shotavix.com/techniques">Techniques</a></li>
+        <li><a href="https://shotavix.com/video">Video</a></li>
+        <li><a href="https://shotavix.com/beginners" class="active">Beginner's</a></li>
+        <li><a href="https://shotavix.com/editing">Editing</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- mobile overlay -->
+<div class="mobile-nav-overlay" id="mobileNavOverlay">
+  <div class="mobile-nav-panel">
+    <div class="mobile-nav-header">
+      <div class="logo">SHOTAVIX<span>·</span></div>
+      <button class="close-btn" id="closeNavBtn" aria-label="Close menu">×</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="https://shotavix.com/">Home</a></li>
+      <li><a href="https://shotavix.com/gear">Gear</a></li>
+      <li><a href="https://shotavix.com/techniques">Techniques</a></li>
+      <li><a href="https://shotavix.com/video">Video</a></li>
+      <li><a href="https://shotavix.com/beginners" class="active">Beginner's</a></li>
+      <li><a href="https://shotavix.com/editing">Editing</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- MAIN BEGINNER'S PAGE CONTENT -->
+<main class="beginners-container">
+
+  <!-- Hero -->
+  <div class="beginners-hero">
+    <h1>Beginner's Corner</h1>
+    <p>Everything you need to get started with photography. Clear, jargon‑free guides for your first camera and beyond.</p>
+  </div>
+
+  <!-- Filter (visual only) -->
+  <div class="category-filter">
+    <span class="filter-btn active">All</span>
+    <span class="filter-btn">Getting Started</span>
+    <span class="filter-btn">Camera Basics</span>
+    <span class="filter-btn">Buying Guides</span>
+    <span class="filter-btn">Mistakes</span>
+    <span class="filter-btn">Editing</span>
+  </div>
+
+  <!-- Beginners Grid - 12 articles with actual URLs and image paths -->
+  <div class="beginners-grid">
+
+    <!-- 1. Photography for Beginners: Complete Guide to Using Your First Camera -->
+    <article class="beginners-card">
+      <div class="beginners-img">
+        <img src="https://shotavix.com/photography-for-beginners-guide.webp" alt="Photography for beginners">
+      </div>
+      <div class="beginners-content">
+        <span class="beginners-category">Getting Started</span>
+        <h3 class="beginners-title"><a href="https://shotavix.com/photography-for-beginners-guide">Photography for Beginners: Complete Guide</a></h3>
+        <p class="beginners-excerpt">Learn camera setup, exposure triangle, composition, lighting, and practical tips to master your first camera.</p>
+        <div class="beginners-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/photography-for-beginners-guide" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 2. 10 Photography Tips That Instantly Improve Your Photos -->
+    <article class="beginners-card">
+      <div class="beginners-img">
+        <img src="https://shotavix.com/10-photography-tips-2026.webp" alt="Photography tips">
+      </div>
+      <div class="beginners-content">
+        <span class="beginners-category">Tips</span>
+        <h3 class="beginners-title"><a href="https://shotavix.com/10-photography-tips-2026">10 Photography Tips That Instantly Improve Your Photos</a></h3>
+        <p class="beginners-excerpt">Rule of thirds, exposure triangle, natural light techniques, composition hacks, and editing secrets from pros.</p>
+        <div class="beginners-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/10-photography-tips-2026" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 3. How to Shoot Professional Photos with Any Camera -->
+    <article class="beginners-card">
+      <div class="beginners-img">
+        <img src="https://shotavix.com/shoot-professional-photos-beginner-guide.webp" alt="Professional photos">
+      </div>
+      <div class="beginners-content">
+        <span class="beginners-category">Techniques</span>
+        <h3 class="beginners-title"><a href="https://shotavix.com/shoot-professional-photos-beginner-guide">How to Shoot Professional Photos with Any Camera</a></h3>
+        <p class="beginners-excerpt">Master lighting, composition, exposure, and editing with this step‑by‑step beginner's guide.</p>
+        <div class="beginners-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/shoot-professional-photos-beginner-guide" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 4. How to Take Professional Portrait Photos at Home -->
+    <article class="beginners-card">
+      <div class="beginners-img">
+        <img src="https://shotavix.com/professional-portrait-photos-at-home.webp" alt="Portrait at home">
+      </div>
+      <div class="beginners-content">
+        <span class="beginners-category">Portraits</span>
+        <h3 class="beginners-title"><a href="https://shotavix.com/professional-portrait-photos-at-home">How to Take Professional Portrait Photos at Home</a></h3>
+        <p class="beginners-excerpt">Window light, DIY lighting, backgrounds, camera settings, and posing. Create studio‑quality portraits with any camera.</p>
+        <div class="beginners-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/professional-portrait-photos-at-home" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 5. Best Mirrorless Cameras for Beginners in 2026 -->
+    <article class="beginners-card">
+      <div class="beginners-img">
+        <img src="https://shotavix.com/best-mirrorless-cameras-beginners-2026.webp" alt="Best beginner mirrorless">
+      </div>
+      <div class="beginners-content">
+        <span class="beginners-category">Buying Guides</span>
+        <h3 class="beginners-title"><a href="https://shotavix.com/best-mirrorless-cameras-beginners-2026">Best Mirrorless Cameras for Beginners 2026</a></h3>
+        <p class="beginners-excerpt">Canon R50, Nikon Z50II, Fujifilm X‑T30 III, Sony ZV‑E10 – the perfect starter cameras.</p>
+        <div class="beginners-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/best-mirrorless-cameras-beginners-2026" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 6. Best Budget Cameras Under $1000 for Photography in 2026 -->
+    <article class="beginners-card">
+      <div class="beginners-img">
+        <img src="https://shotavix.com/best-cameras-under-1000-2026.webp" alt="Cameras under 1000">
+      </div>
+      <div class="beginners-content">
+        <span class="beginners-category">Buying Guides</span>
+        <h3 class="beginners-title"><a href="https://shotavix.com/best-cameras-under-1000-2026">Best Budget Cameras Under $1000 2026</a></h3>
+        <p class="beginners-excerpt">Canon R10, Nikon Z50II, Sony a6100, Fujifilm X‑T30 III. Great cameras that won't break the bank.</p>
+        <div class="beginners-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/best-cameras-under-1000-2026" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 7. Best Cameras for Beginners in 2026 (Easy to Use Picks) -->
+    <article class="beginners-card">
+      <div class="beginners-img">
+        <img src="https://shotavix.com/best-beginner-cameras-2026.webp" alt="Best beginner cameras">
+      </div>
+      <div class="beginners-content">
+        <span class="beginners-category">Buying Guides</span>
+        <h3 class="beginners-title"><a href="https://shotavix.com/best-beginner-cameras-2026">Best Cameras for Beginners 2026</a></h3>
+        <p class="beginners-excerpt">Canon EOS R50, PowerShot V1, Sony ZV‑E10 II, Nikon Z50II – easy‑to‑use picks for new photographers.</p>
+        <div class="beginners-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/best-beginner-cameras-2026" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 8. Camera Settings Explained: ISO, Aperture and Shutter Speed Made Simple -->
+    <article class="beginners-card">
+      <div class="beginners-img">
+        <img src="https://shotavix.com/camera-settings-explained.webp" alt="Camera settings explained">
+      </div>
+      <div class="beginners-content">
+        <span class="beginners-category">Camera Basics</span>
+        <h3 class="beginners-title"><a href="https://shotavix.com/camera-settings-explained">Camera Settings Explained: ISO, Aperture, Shutter Speed</a></h3>
+        <p class="beginners-excerpt">Simple analogies and practical tips to master the exposure triangle.</p>
+        <div class="beginners-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/camera-settings-explained" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 9. DSLR vs Mirrorless for Beginners: Which Camera Should You Buy? -->
+    <article class="beginners-card">
+      <div class="beginners-img">
+        <img src="https://shotavix.com/dslr-vs-mirrorless-beginners-2026.webp" alt="DSLR vs mirrorless">
+      </div>
+      <div class="beginners-content">
+        <span class="beginners-category">Buying Guides</span>
+        <h3 class="beginners-title"><a href="https://shotavix.com/dslr-vs-mirrorless-beginners-2026">DSLR vs Mirrorless for Beginners</a></h3>
+        <p class="beginners-excerpt">Compare size, battery life, autofocus, video, and used market value to make the right choice.</p>
+        <div class="beginners-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/dslr-vs-mirrorless-beginners-2026" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 10. 10 Beginner Photography Mistakes and How to Avoid Them -->
+    <article class="beginners-card">
+      <div class="beginners-img">
+        <img src="https://shotavix.com/beginner-photography-mistakes.webp" alt="Beginner mistakes">
+      </div>
+      <div class="beginners-content">
+        <span class="beginners-category">Mistakes</span>
+        <h3 class="beginners-title"><a href="https://shotavix.com/beginner-photography-mistakes">10 Beginner Photography Mistakes & How to Avoid Them</a></h3>
+        <p class="beginners-excerpt">From composition errors to exposure issues, improve your photos instantly by avoiding these common pitfalls.</p>
+        <div class="beginners-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/beginner-photography-mistakes" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 11. How to Choose Your First Camera in 2026 -->
+    <article class="beginners-card">
+      <div class="beginners-img">
+        <img src="https://shotavix.com/choose-first-camera-2026.webp" alt="Choose first camera">
+      </div>
+      <div class="beginners-content">
+        <span class="beginners-category">Buying Guides</span>
+        <h3 class="beginners-title"><a href="https://shotavix.com/choose-first-camera-2026">How to Choose Your First Camera in 2026</a></h3>
+        <p class="beginners-excerpt">Step‑by‑step guide to mirrorless vs DSLR, sensor sizes, key features, and top beginner models.</p>
+        <div class="beginners-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/choose-first-camera-2026" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 12. Beginner Photography Gear: What You Actually Need to Start -->
+    <article class="beginners-card">
+      <div class="beginners-img">
+        <img src="https://shotavix.com/beginner-gear-guide.webp" alt="Beginner gear guide">
+      </div>
+      <div class="beginners-content">
+        <span class="beginners-category">Gear</span>
+        <h3 class="beginners-title"><a href="https://shotavix.com/beginner-gear-guide">Beginner Photography Gear: What You Actually Need</a></h3>
+        <p class="beginners-excerpt">Cameras, lenses, tripods, bags, and accessories. No fluff, just practical advice for starting out.</p>
+        <div class="beginners-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/beginner-gear-guide" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- More beginner content teaser -->
+  <div style="text-align: center; margin: 4rem 0; background: #f1ede9; padding: 3rem; border-radius: 40px;">
+    <h2 style="font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 1rem;">📘 New to photography?</h2>
+    <p style="color: #4a4a4a; max-width: 600px; margin: 0 auto;">Start here. All our beginner guides in one place, updated weekly with fresh content to help you grow.</p>
+  </div>
+</main>
+
+<!-- footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <div class="footer-logo">SHOTAVIX<span>·</span></div>
+        <p>In-depth camera reviews, honest buying advice, and photography inspiration — made for enthusiasts, by enthusiasts.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/olisashedi" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@shotavix" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.threads.com/@olisashedi" target="_blank"><i class="fab fa-threads"></i></a>
+          <a href="https://www.facebook.com/lisa.251771" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+          <ul>
+            <li><a href="https://shotavix.com/gear">Gear & Reviews</a></li>
+            <li><a href="https://shotavix.com/techniques">Tips & Techniques</a></li>
+            <li><a href="https://shotavix.com/video">Video & Film</a></li>
+            <li><a href="https://shotavix.com/beginners">Beginner's Corner</a></li>
+            <li><a href="https://shotavix.com/editing">Editing & Business</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://shotavix.com">Home</a></li>
+            <li><a href="https://shotavix.com/contact">Contact</a></li>
+            <li><a href="https://shotavix.com/about">About</a></li>
+            <li><a href="https://shotavix.com/privacy">Privacy</a></li>
+            <li><a href="https://shotavix.com/terms">Terms</a></li>
+          </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2026 SHOTAVIX Camera Blog. All rights reserved. Shot with passion.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- hamburger functionality -->
+<script>
+  (function() {
+    const hamburger = document.getElementById('hamburgerBtn');
+    const overlay = document.getElementById('mobileNavOverlay');
+    const closeBtn = document.getElementById('closeNavBtn');
+
+    function openMenu() {
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    if (hamburger) hamburger.addEventListener('click', openMenu);
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+
+    overlay.addEventListener('click', function(e) {
+      if (e.target === overlay) closeMenu();
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && overlay.classList.contains('active')) closeMenu();
+    });
+  })();
+</script>
+</body>
+</html>

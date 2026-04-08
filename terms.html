@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- PRIMARY META -->
+  <title>Terms of Service — SHOTAVIX Camera Blog</title>
+  <meta name="description" content="SHOTAVIX's terms of service govern your use of our website, content, and community. Please read them carefully.">
+  <meta name="author" content="Oli Sa">
+  <link rel="canonical" href="https://shotavix.com/terms">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shotavix.com/terms">
+  <meta property="og:title" content="Terms of Service — SHOTAVIX Camera Blog">
+  <meta property="og:image" content="https://shotavix.com/SHOTAVIX-terms.webp">
+  <meta property="og:site_name" content="SHOTAVIX Camera Blog">
+  <meta property="og:description" content="SHOTAVIX's terms of service govern your use of our website, content, and community. Please read them carefully.">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="https://shotavix.com/favicon.ico">
+
+  <!-- Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- SCHEMA MARKUP -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Terms of Service",
+    "description": "SHOTAVIX's terms of service govern your use of our website, content, and community.",
+    "url": "https://shotavix.com/terms",
+    "publisher": {
+      "@type": "Organization",
+      "name": "SHOTAVIX",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://shotavix.com/logo.webp"
+      }
+    }
+  }
+  </script>
+
+  <style>
+    /* MOBILE-FIRST, ABSOLUTELY NO FIXED WIDTHS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fafafa;
+      color: #1e1e1e;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .terms-container {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* header (exact same as other pages) */
+    .site-header {
+      padding: 1.2rem 0;
+      background-color: #ffffff;
+      border-bottom: 1px solid #eaeaea;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    .logo a {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: #1e1e1e;
+    }
+    .logo span {
+      color: #b85e3a;
+      font-style: italic;
+    }
+
+    /* desktop navigation */
+    .main-nav {
+      display: block;
+    }
+    .main-nav ul {
+      display: flex;
+      gap: 1.8rem;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    .main-nav a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #2e2e2e;
+      font-size: 1rem;
+      transition: color 0.2s;
+      white-space: nowrap;
+    }
+
+    .main-nav a:hover, .main-nav a.active {
+      color: #b85e3a;
+    }
+
+    /* hamburger (same as previous) */
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      width: 40px;
+      height: 40px;
+      position: relative;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background-color: #2e2e2e;
+      margin: 0 auto;
+      transition: all 0.3s ease;
+      position: absolute;
+      left: 8px;
+    }
+
+    .hamburger span:nth-child(1) { top: 12px; }
+    .hamburger span:nth-child(2) { top: 19px; }
+    .hamburger span:nth-child(3) { top: 26px; }
+
+    .hamburger:hover span {
+      background-color: #b85e3a;
+    }
+
+    /* mobile overlay (exact same) */
+    .mobile-nav-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(8px);
+      z-index: 200;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+    .mobile-nav-overlay.active {
+      display: block;
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .mobile-nav-panel {
+      position: fixed;
+      top: 0;
+      right: -300px;
+      width: 280px;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(16px);
+      box-shadow: -10px 0 40px rgba(0, 0, 0, 0.15);
+      padding: 2rem 1.8rem;
+      transition: right 0.3s ease;
+      z-index: 250;
+      overflow-y: auto;
+    }
+    .mobile-nav-overlay.active .mobile-nav-panel {
+      right: 0;
+    }
+
+    .mobile-nav-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 1rem;
+    }
+    .mobile-nav-header .logo {
+      font-size: 1.6rem;
+    }
+    .mobile-nav-header .close-btn {
+      background: none;
+      border: none;
+      font-size: 2.2rem;
+      cursor: pointer;
+      color: #555;
+    }
+    .mobile-nav-header .close-btn:hover {
+      color: #b85e3a;
+    }
+
+    .mobile-nav-list {
+      list-style: none;
+    }
+    .mobile-nav-list li {
+      margin-bottom: 1.2rem;
+    }
+    .mobile-nav-list a {
+      text-decoration: none;
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: #1e1e1e;
+      display: block;
+      padding: 0.3rem 0;
+    }
+    .mobile-nav-list a:hover {
+      color: #b85e3a;
+      padding-left: 8px;
+    }
+
+    /* ---- terms page specific styles ---- */
+    .terms-hero {
+      margin: 3rem 0 2rem;
+      text-align: center;
+    }
+    .terms-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+    .terms-hero p {
+      font-size: 1.1rem;
+      color: #6b6b6b;
+    }
+    .last-updated {
+      background: #f1ede9;
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      color: #b85e3a;
+      margin-top: 1rem;
+      font-weight: 500;
+    }
+
+    .terms-content {
+      background: white;
+      border-radius: 32px;
+      padding: 3rem;
+      margin: 2rem 0 4rem;
+      box-shadow: 0 12px 28px -8px rgba(0,0,0,0.05);
+      border: 1px solid #f0f0f0;
+    }
+
+    .terms-section {
+      margin-bottom: 3rem;
+    }
+    .terms-section:last-child {
+      margin-bottom: 0;
+    }
+    .terms-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: #1a1a1a;
+      margin-bottom: 1.5rem;
+      border-left: 6px solid #b85e3a;
+      padding-left: 1.5rem;
+    }
+    .terms-section h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin: 1.5rem 0 1rem;
+      color: #2e2e2e;
+    }
+    .terms-section p {
+      margin-bottom: 1.2rem;
+      color: #4a4a4a;
+    }
+    .terms-section ul, .terms-section ol {
+      margin: 1rem 0 1.5rem 2rem;
+    }
+    .terms-section li {
+      margin-bottom: 0.5rem;
+      color: #4a4a4a;
+    }
+    .terms-section strong {
+      color: #b85e3a;
+    }
+
+    .highlight-box {
+      background: #f8f8f8;
+      border-radius: 24px;
+      padding: 1.8rem;
+      margin: 2rem 0;
+      border-left: 6px solid #b85e3a;
+    }
+    .highlight-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .contact-terms {
+      background: #f1ede9;
+      border-radius: 24px;
+      padding: 2rem;
+      margin: 2rem 0;
+      text-align: center;
+    }
+    .contact-terms p {
+      margin-bottom: 1.5rem;
+    }
+    .terms-btn {
+      background: #b85e3a;
+      color: white;
+      text-decoration: none;
+      padding: 0.8rem 2rem;
+      border-radius: 50px;
+      display: inline-block;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .terms-btn:hover {
+      background: #9f4d2d;
+    }
+
+    /* footer (same as previous) */
+    .site-footer {
+      background: #111;
+      color: #b5b5b5;
+      padding: 3rem 0 2rem;
+      border-radius: 3rem 3rem 0 0;
+      margin-top: 3rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    @media (min-width: 700px) {
+      .footer-grid { grid-template-columns: 2fr 1fr 1fr; }
+    }
+    .footer-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 600;
+      color: white;
+      margin-bottom: 1rem;
+    }
+    .footer-logo span { color: #b85e3a; }
+    .footer-about p { margin: 1rem 0 1.5rem; }
+    .socials a {
+      color: #b5b5b5;
+      font-size: 1.4rem;
+      margin-right: 1rem;
+      transition: color 0.2s;
+    }
+    .socials a:hover { color: #b85e3a; }
+    .footer-links h4 {
+      color: white;
+      margin-bottom: 1rem;
+    }
+    .footer-links ul {
+      list-style: none;
+    }
+    .footer-links li {
+      margin-bottom: 0.6rem;
+    }
+    .footer-links a {
+      color: #b5b5b5;
+      text-decoration: none;
+    }
+    .footer-links a:hover { color: #b85e3a; }
+    .copyright {
+      border-top: 1px solid #292929;
+      padding-top: 2rem;
+      text-align: center;
+    }
+
+    /* responsive */
+    @media (max-width: 700px) {
+      .terms-hero h1 { font-size: 2.2rem; }
+      .terms-content { padding: 2rem; }
+      .main-nav { display: none; }
+      .hamburger { display: block; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- header (same as all pages) -->
+<header class="site-header">
+  <div class="container header-wrapper">
+    <div class="logo">
+      <a href="https://shotavix.com/">SHOTAVIX<span>·</span></a>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="https://shotavix.com/">Home</a></li>
+        <li><a href="https://shotavix.com/gear">Gear</a></li>
+        <li><a href="https://shotavix.com/techniques">Techniques</a></li>
+        <li><a href="https://shotavix.com/video">Video</a></li>
+        <li><a href="https://shotavix.com/beginners">Beginner's</a></li>
+        <li><a href="https://shotavix.com/editing">Editing</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- mobile overlay (same as all pages) -->
+<div class="mobile-nav-overlay" id="mobileNavOverlay">
+  <div class="mobile-nav-panel">
+    <div class="mobile-nav-header">
+      <div class="logo">SHOTAVIX<span>·</span></div>
+      <button class="close-btn" id="closeNavBtn" aria-label="Close menu">×</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="https://shotavix.com/">Home</a></li>
+      <li><a href="https://shotavix.com/gear">Gear</a></li>
+      <li><a href="https://shotavix.com/techniques">Techniques</a></li>
+      <li><a href="https://shotavix.com/video">Video</a></li>
+      <li><a href="https://shotavix.com/beginners">Beginner's</a></li>
+      <li><a href="https://shotavix.com/editing">Editing</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- MAIN TERMS OF SERVICE CONTENT -->
+<main class="terms-container">
+
+  <!-- Hero -->
+  <div class="terms-hero">
+    <h1>Terms of Service</h1>
+    <p>Please read these terms carefully before using SHOTAVIX.</p>
+    <div class="last-updated"><i class="fas fa-calendar-alt" style="margin-right:0.5rem;"></i>Last updated: April 8, 2026</div>
+  </div>
+
+  <!-- Terms Content -->
+  <div class="terms-content">
+
+    <!-- Acceptance -->
+    <section class="terms-section">
+      <h2>1. Acceptance of Terms</h2>
+      <p>By accessing or using SHOTAVIX ("the Website"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to all of these Terms, please do not use the Website. SHOTAVIX is owned and operated by SHOTAVIX Media LLC ("we," "our," or "us").</p>
+    </section>
+
+    <!-- Changes -->
+    <section class="terms-section">
+      <h2>2. Changes to Terms</h2>
+      <p>We reserve the right to modify these Terms at any time. We will post the revised Terms on this page with an updated effective date. Your continued use of the Website after any changes constitutes your acceptance of the new Terms. Please check this page periodically for updates.</p>
+    </section>
+
+    <!-- Use of Website -->
+    <section class="terms-section">
+      <h2>3. Use of Website</h2>
+      <h3>3.1 Eligibility</h3>
+      <p>You must be at least 13 years old to use this Website. By using SHOTAVIX, you represent and warrant that you meet this age requirement.</p>
+
+      <h3>3.2 Permitted Use</h3>
+      <p>You may access and use the Website for personal, non-commercial purposes in accordance with these Terms. You agree not to:</p>
+      <ul>
+        <li>Use the Website in any way that violates applicable laws or regulations.</li>
+        <li>Attempt to gain unauthorized access to any part of the Website, servers, or networks.</li>
+        <li>Interfere with or disrupt the Website or its services.</li>
+        <li>Copy, reproduce, distribute, or create derivative works of any content without our express written permission.</li>
+        <li>Use automated means (such as bots or scrapers) to access the Website without our prior consent.</li>
+      </ul>
+
+      <div class="highlight-box">
+        <p><i class="fas fa-info-circle" style="color:#b85e3a; margin-right:0.5rem;"></i> <strong>Note:</strong> We welcome linking to our content, but please do not republish entire articles without permission. Contact us if you'd like to collaborate.</p>
+      </div>
+    </section>
+
+    <!-- User Accounts & Comments -->
+    <section class="terms-section">
+      <h2>4. User Accounts & Comments</h2>
+      <h3>4.1 Accounts</h3>
+      <p>Some features (e.g., commenting, forums) may require you to create an account. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. You agree to notify us immediately of any unauthorized use.</p>
+
+      <h3>4.2 Comments and User Content</h3>
+      <p>We welcome thoughtful discussion. By posting comments, you grant us a non-exclusive, worldwide, royalty-free license to use, reproduce, and display your content in connection with the Website. You represent that you own or have the necessary rights to post such content.</p>
+      <p><strong>You agree NOT to post content that:</strong></p>
+      <ul>
+        <li>Is unlawful, harassing, defamatory, or obscene.</li>
+        <li>Impersonates another person or entity.</li>
+        <li>Contains spam, advertising, or promotional content without our permission.</li>
+        <li>Infringes on any third party's intellectual property rights.</li>
+      </ul>
+      <p>We reserve the right to remove any comments and to suspend or terminate accounts that violate these rules.</p>
+    </section>
+
+    <!-- Intellectual Property -->
+    <section class="terms-section">
+      <h2>5. Intellectual Property</h2>
+      <p>All content on SHOTAVIX—including articles, photographs, graphics, logos, and software—is the property of SHOTAVIX Media LLC or its content suppliers and is protected by copyright, trademark, and other intellectual property laws. Unauthorized use is strictly prohibited.</p>
+      <p>You may download or print single copies of articles for personal, non-commercial use, provided you retain all copyright and other proprietary notices.</p>
+    </section>
+
+    <!-- Third-Party Links -->
+    <section class="terms-section">
+      <h2>6. Third-Party Links</h2>
+      <p>Our Website may contain links to third-party websites or services that are not owned or controlled by SHOTAVIX. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party sites. You acknowledge and agree that SHOTAVIX is not liable for any damage or loss caused by your use of such websites.</p>
+    </section>
+
+    <!-- Disclaimers -->
+    <section class="terms-section">
+      <h2>7. Disclaimers</h2>
+      <p><strong>As-Is Basis:</strong> SHOTAVIX is provided on an "as is" and "as available" basis. We make no warranties, express or implied, regarding the operation of the Website or the information, content, materials, or products included.</p>
+      <p><strong>Accuracy:</strong> While we strive for accuracy, we do not warrant that the content is complete, reliable, or error-free. The views expressed in articles are those of the authors and do not necessarily reflect our official policy.</p>
+      <p><strong>Technical Issues:</strong> We do not guarantee that the Website will be uninterrupted, secure, or free of bugs or viruses.</p>
+    </section>
+
+    <!-- Limitation of Liability -->
+    <section class="terms-section">
+      <h2>8. Limitation of Liability</h2>
+      <p>To the fullest extent permitted by law, SHOTAVIX Media LLC, its officers, employees, and affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the Website.</p>
+      <p>This includes, without limitation, damages for loss of profits, goodwill, data, or other intangible losses, even if we were advised of the possibility of such damages.</p>
+    </section>
+
+    <!-- Indemnification -->
+    <section class="terms-section">
+      <h2>9. Indemnification</h2>
+      <p>You agree to defend, indemnify, and hold harmless SHOTAVIX Media LLC, its officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, and expenses (including reasonable attorneys' fees) arising out of or in any way connected with your violation of these Terms or your use of the Website.</p>
+    </section>
+
+    <!-- Governing Law -->
+    <section class="terms-section">
+      <h2>10. Governing Law</h2>
+      <p>These Terms shall be governed by and construed in accordance with the laws of the State of California, without regard to its conflict of law provisions. Any legal action or proceeding arising under these Terms shall be brought exclusively in the federal or state courts located in San Francisco County, California.</p>
+    </section>
+
+    <!-- Termination -->
+    <section class="terms-section">
+      <h2>11. Termination</h2>
+      <p>We reserve the right to terminate or suspend your access to the Website immediately, without prior notice or liability, for any reason, including breach of these Terms. Provisions that by their nature should survive termination shall survive, including ownership provisions, warranty disclaimers, indemnity, and limitations of liability.</p>
+    </section>
+
+    <!-- Entire Agreement -->
+    <section class="terms-section">
+      <h2>12. Entire Agreement</h2>
+      <p>These Terms constitute the entire agreement between you and SHOTAVIX regarding your use of the Website and supersede any prior agreements.</p>
+    </section>
+
+    <!-- Contact -->
+    <section class="terms-section">
+      <h2>13. Contact Us</h2>
+      <p>If you have any questions about these Terms, please contact us:</p>
+      <div class="contact-terms">
+        <p><i class="fas fa-envelope" style="color:#b85e3a; margin-right:0.5rem;"></i> <strong>Email:</strong> <a href="mailto:shotavixofficial@gmail.com" style="color: inherit;">shotavixofficial@gmail.com</a></p>
+        <p><i class="fas fa-map-marker-alt" style="color:#b85e3a; margin-right:0.5rem;"></i> <strong>Mail:</strong> SHOTAVIX, Shop 10 Nnamdi Azikiwe Stadium Enugu</p>
+        <a href="https://shotavix.com/contact" class="terms-btn">Contact Legal Team</a>
+      </div>
+    </section>
+
+    <!-- Acknowledgment -->
+    <div class="highlight-box" style="background: white; border: 1px solid #f0f0f0;">
+      <p style="font-size:0.95rem;"><i class="fas fa-check-circle" style="color:#2e7d32; margin-right:0.5rem;"></i> By using SHOTAVIX, you acknowledge that you have read and understood these Terms of Service. If you do not agree, please discontinue use of the Website.</p>
+    </div>
+  </div>
+</main>
+
+<!-- footer (same as all pages) -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <div class="footer-logo">SHOTAVIX<span>·</span></div>
+        <p>In-depth camera reviews, honest buying advice, and photography inspiration — made for enthusiasts, by enthusiasts.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/olisashedi" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@shotavix" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.threads.com/@olisashedi" target="_blank"><i class="fab fa-threads"></i></a>
+          <a href="https://www.facebook.com/lisa.251771" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+          <ul>
+            <li><a href="https://shotavix.com/gear">Gear & Reviews</a></li>
+            <li><a href="https://shotavix.com/techniques">Tips & Techniques</a></li>
+            <li><a href="https://shotavix.com/video">Video & Film</a></li>
+            <li><a href="https://shotavix.com/beginners">Beginner's Corner</a></li>
+            <li><a href="https://shotavix.com/editing">Editing & Business</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://shotavix.com">Home</a></li>
+            <li><a href="https://shotavix.com/contact">Contact</a></li>
+            <li><a href="https://shotavix.com/about">About</a></li>
+            <li><a href="https://shotavix.com/privacy">Privacy</a></li>
+            <li><a href="https://shotavix.com/terms">Terms</a></li>
+          </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2026 SHOTAVIX Camera Blog. All rights reserved. Shot with passion.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- hamburger functionality (same as all pages) -->
+<script>
+  (function() {
+    const hamburger = document.getElementById('hamburgerBtn');
+    const overlay = document.getElementById('mobileNavOverlay');
+    const closeBtn = document.getElementById('closeNavBtn');
+
+    function openMenu() {
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    if (hamburger) hamburger.addEventListener('click', openMenu);
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+
+    overlay.addEventListener('click', function(e) {
+      if (e.target === overlay) closeMenu();
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && overlay.classList.contains('active')) closeMenu();
+    });
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- robots meta -->
+  <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+  <!-- PRIMARY META -->
+  <title>Camera Settings Explained: ISO, Aperture and Shutter Speed Made Simple (2026)</title>
+  <meta name="description" content="Camera settings demystified: learn how ISO, aperture, and shutter speed work together in the exposure triangle. Simple analogies and practical tips for beginners.">
+  <meta name="author" content="Oli Sa">
+  <link rel="canonical" href="https://shotavix.com/camera-settings-explained">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shotavix.com/camera-settings-explained">
+  <meta property="og:title" content="Camera Settings Explained: ISO, Aperture and Shutter Speed Made Simple">
+  <meta property="og:image" content="https://shotavix.com/camera-settings-explained.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="SHOTAVIX Camera Blog">
+  <meta property="og:description" content="Camera settings demystified: learn how ISO, aperture, and shutter speed work together in the exposure triangle. Simple analogies and practical tips for beginners.">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="https://shotavix.com/favicon.ico">
+
+  <!-- SCHEMA MARKUP (Article) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Camera Settings Explained: ISO, Aperture and Shutter Speed Made Simple",
+    "description": "Camera settings demystified: learn how ISO, aperture, and shutter speed work together in the exposure triangle. Simple analogies and practical tips for beginners.",
+    "image": "https://shotavix.com/camera-settings-explained.webp",
+    "author": {
+      "@type": "Person",
+      "name": "Oli Sa",
+      "url": "https://shotavix.com/author/oli-sa"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "SHOTAVIX",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://shotavix.com/logo.webp"
+      }
+    },
+    "datePublished": "2026-04-08T10:00:00+00:00",
+    "dateModified": "2026-04-08T10:00:00+00:00",
+    "mainEntityOfPage": "https://shotavix.com/camera-settings-explained"
+  }
+  </script>
+
+  <!-- Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Only minimal specific styles for this article, no full CSS reset -->
+  <style>
+    /* Only article-specific enhancements, no broad layout changes */
+    .settings-badge {
+      display: inline-block;
+      background: #b85e3a15;
+      color: #b85e3a;
+      font-weight: 600;
+      font-size: 0.8rem;
+      padding: 0.3rem 1rem;
+      border-radius: 50px;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.8rem;
+      border-left: 3px solid #b85e3a;
+    }
+    
+    .tip-card {
+      background: white;
+      border-radius: 28px;
+      padding: 1.8rem 2rem;
+      margin: 2.5rem 0;
+      box-shadow: 0 12px 28px -8px rgba(0,0,0,0.05);
+      border: 1px solid #f0f0f0;
+      transition: transform 0.2s;
+    }
+    
+    .tip-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 32px -12px rgba(0,0,0,0.1);
+    }
+    
+    .tip-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: #1a1a1a;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+    
+    .tip-number {
+      display: inline-block;
+      background: #b85e3a;
+      color: white;
+      font-weight: bold;
+      font-size: 1.2rem;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 40px;
+      margin-right: 1rem;
+    }
+    
+    .pro-tip-box {
+      background: #e8f4e8;
+      border-radius: 20px;
+      padding: 1.2rem 1.8rem;
+      margin: 2rem 0;
+      border-left: 6px solid #2e7d32;
+    }
+    
+    .quote-box {
+      background: #f1ede9;
+      border-radius: 20px;
+      padding: 1.2rem 1.8rem;
+      margin: 1.5rem 0;
+      font-style: italic;
+      border-left: 6px solid #b85e3a;
+    }
+    
+    .analogy-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .analogy-item {
+      background: #f8f8f8;
+      border-radius: 20px;
+      padding: 1.5rem;
+    }
+    
+    .analogy-item h4 {
+      color: #b85e3a;
+      margin-bottom: 0.5rem;
+    }
+    
+    .analogy-icon {
+      font-size: 2rem;
+      color: #b85e3a;
+      margin-bottom: 0.5rem;
+    }
+    
+    .comparison-table {
+      background: #1e1e1e;
+      color: white;
+      border-radius: 28px;
+      padding: 2rem;
+      margin: 3rem 0;
+      overflow-x: auto;
+    }
+    
+    .comparison-table table {
+      width: 100%;
+      border-collapse: collapse;
+      color: white;
+    }
+    
+    .comparison-table th {
+      background: #333;
+      padding: 1rem;
+      font-weight: 600;
+      color: #f7b731;
+      text-align: left;
+    }
+    
+    .comparison-table td {
+      padding: 1rem;
+      border-bottom: 1px solid #333;
+    }
+    
+    .comparison-table tr:last-child td {
+      border-bottom: none;
+    }
+    
+    .settings-guide {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .guide-item {
+      background: #f8f8f8;
+      border-radius: 20px;
+      padding: 1.5rem;
+    }
+    
+    .guide-item h4 {
+      color: #b85e3a;
+      margin-bottom: 0.5rem;
+    }
+    
+    .dos-donts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .dos-box, .donts-box {
+      background: #f8f8f8;
+      border-radius: 20px;
+      padding: 1.5rem;
+    }
+    
+    .dos-box h4 { color: #2e7d32; }
+    .donts-box h4 { color: #b85e3a; }
+    
+    .dos-box ul, .donts-box ul {
+      margin-top: 1rem;
+      padding-left: 1.2rem;
+    }
+    
+    .histogram-tip {
+      background: #1e1e1e;
+      color: white;
+      border-radius: 20px;
+      padding: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .histogram-tip strong {
+      color: #f7b731;
+    }
+    
+    @media (max-width: 600px) {
+      .analogy-grid, .settings-guide, .dos-donts {
+        grid-template-columns: 1fr;
+      }
+      .tip-card h3 {
+        font-size: 1.6rem;
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<!-- header with hamburger (same as previous articles) -->
+<header class="site-header">
+  <div class="container header-wrapper">
+    <div class="logo">
+      <a href="https://shotavix.com/">SHOTAVIX<span>·</span></a>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="https://shotavix.com/">Home</a></li>
+        <li><a href="https://shotavix.com/gear">Gear</a></li>
+        <li><a href="https://shotavix.com/techniques">Techniques</a></li>
+        <li><a href="https://shotavix.com/video">Video</a></li>
+        <li><a href="https://shotavix.com/beginners">Beginner's</a></li>
+        <li><a href="https://shotavix.com/editing">Editing</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- mobile overlay -->
+<div class="mobile-nav-overlay" id="mobileNavOverlay">
+  <div class="mobile-nav-panel">
+    <div class="mobile-nav-header">
+      <div class="logo">SHOTAVIX<span>·</span></div>
+      <button class="close-btn" id="closeNavBtn" aria-label="Close menu">×</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="https://shotavix.com/">Home</a></li>
+      <li><a href="https://shotavix.com/gear">Gear</a></li>
+      <li><a href="https://shotavix.com/techniques">Techniques</a></li>
+      <li><a href="https://shotavix.com/video">Video</a></li>
+      <li><a href="https://shotavix.com/beginners">Beginner's</a></li>
+      <li><a href="https://shotavix.com/editing">Editing</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- MAIN ARTICLE CONTENT -->
+<main class="article-container">
+  <div class="article-hero">
+    <h1>Camera Settings Explained: ISO, Aperture and Shutter Speed Made Simple (2026)</h1>
+    <div class="article-meta">
+      <span><i class="fas fa-calendar-alt"></i> Published: April 8, 2026</span>
+      <span><i class="fas fa-user"></i> by <a href="https://shotavix.com/author/oli-sa" class="author-intro">Oli Sa</a></span>
+    </div>
+  </div>
+
+  
+  <div class="featured-image">
+    <img src="https://shotavix.com/camera-settings-explained.webp" alt="Camera dial showing aperture, shutter speed and ISO settings">
+    <div class="image-caption">The three pillars of photography: ISO, Aperture, and Shutter Speed</div>
+  </div>
+
+  <div class="article-content">
+    <p><strong>Getting the hang of exposure can be intimidating for new photographers. Balancing the many variables and learning how they interact takes time .</strong> But manipulating exposure becomes instinctive once you get over the initial learning curve . The good news? It's not as complicated as it seems. Once you understand the three basic camera settings—aperture, shutter speed, and ISO—you'll have full creative control over your photos.</p>
+    
+    <p>Think of exposure as a game with three players. If you raise one, you need to lower another to maintain balance . This guide breaks down each setting with simple analogies, practical examples, and a step-by-step approach to putting it all together.</p>
+
+    <div class="pro-tip-box">
+      <strong><i class="fas fa-lightbulb" style="color:#2e7d32; margin-right:0.5rem;"></i>The Golden Rule:</strong> There are no exact perfect settings for every situation, only general guidelines . The key is understanding what you want your image to look like and working backward from there.
+    </div>
+
+    <h2>What is the Exposure Triangle?</h2>
+    
+    <p>The exposure triangle is a fundamental model that focuses on the artistically technical side of capturing engaging images . Three elements properly expose your photo, each making up a 'side' of the exposure triangle: aperture, shutter speed, and ISO .</p>
+    
+    <p>Each element affects the brightness of your image in different ways, using different mechanisms. You can also control more creative aspects of your image depending on which setting you change . The exposure triangle determines how much light reaches your sensor and shapes how the photo looks .</p>
+    
+    <div class="analogy-grid">
+      <div class="analogy-item">
+        <div class="analogy-icon"><i class="fas fa-circle"></i></div>
+        <h4>Aperture</h4>
+        <p>The size of the opening in your lens. Like a window—wider lets in more light .</p>
+      </div>
+      <div class="analogy-item">
+        <div class="analogy-icon"><i class="fas fa-clock"></i></div>
+        <h4>Shutter Speed</h4>
+        <p>How long the shutter stays open. Like a door—open longer lets in more light .</p>
+      </div>
+      <div class="analogy-item">
+        <div class="analogy-icon"><i class="fas fa-wave-square"></i></div>
+        <h4>ISO</h4>
+        <p>The sensor's sensitivity to light. Like the volume knob—higher sensitivity amplifies the signal .</p>
+      </div>
+    </div>
+
+    <h2>Aperture: The Window of Light</h2>
+
+    <!-- Aperture Explanation -->
+    <div class="tip-card">
+      <div class="settings-badge">SETTING 1 • APERTURE</div>
+      <h3><span class="tip-number">1</span> Aperture (f-stop): The Size of the Opening</h3>
+      
+      <p>The aperture is the opening inside your camera's lens that lets light through to the sensor. It can vary in size to let more or less light in, thereby brightening or darkening your image . Think of it like the pupil in your eye—in bright light, your pupils get smaller; in dim light, they expand to let in more light .</p>
+      
+      <p><strong>How it's measured:</strong> Aperture settings are called f-stops, like f/1.4, f/2.8, f/5.6, f/8, f/11, f/16. This numbering system might seem confusing at first, but it's actually pretty easy to understand: <strong>the lower the number, the wider the aperture</strong> (and the brighter the image) . So f/1.4 is a very wide opening, while f/16 is a tiny opening .</p>
+      
+      <div class="quote-box">
+        <i class="fas fa-quote-left" style="color:#b85e3a; margin-right:0.5rem;"></i> One thing I do to explain the use of fast aperture lenses is to liken them to butterfly nets, with the butterflies representing the photons of light. The wider the aperture, the bigger the net, and the smaller the aperture, the smaller the net. So, by using a wide aperture, you capture more butterflies, hence getting more photons of light .
+      </div>
+      
+      <p><strong>Creative effect: Depth of Field</strong></p>
+      <p>Very wide apertures let a lot of light in, but only a sliver of what you see will be in focus. Smaller ones provide a sharper image across the frame, but don't let as much light through . This is called <strong>depth of field</strong>—how much of your photo is in sharp focus .</p>
+      
+      <ul>
+        <li><strong>Wide aperture (f/1.4–f/2.8):</strong> Shallow depth of field. Only the subject is in focus; background is beautifully blurred. Perfect for portraits, isolating subjects, and creating that dreamy "bokeh" look .</li>
+        <li><strong>Narrow aperture (f/8–f/16):</strong> Deep depth of field. Everything from foreground to background is sharp. Ideal for landscapes and architectural photography .</li>
+      </ul>
+      
+      <p><strong>Practice tip:</strong> If you're shooting in dim conditions, you might use a wide aperture like f/2.8 to let in more light. But if you're shooting in bright daylight, a narrow aperture like f/11 will prevent overexposure .</p>
+    </div>
+
+    <h2>Shutter Speed: Freezing or Blurring Motion</h2>
+
+    <!-- Shutter Speed Explanation -->
+    <div class="tip-card">
+      <div class="settings-badge">SETTING 2 • SHUTTER SPEED</div>
+      <h3><span class="tip-number">2</span> Shutter Speed: How Long the Light Hits the Sensor</h3>
+      
+      <p>Your shutter is the part inside your camera that opens and closes to let light through to the sensor, like shutters on a window . Shutter speed is how fast it will open and close, measured in fractions of a second to full seconds .</p>
+      
+      <p>Think of it as blinking your eyes. A fast blink is like a fast shutter speed—you get a quick snapshot of the scene. A slow blink lets you see the scene longer, capturing more movement .</p>
+      
+      <p><strong>How it's measured:</strong> Shutter speeds are written as fractions like 1/1000s, 1/250s, 1/60s, 1/30s, or whole seconds like 1s, 5s. <strong>The larger the denominator, the faster the shutter speed</strong> (and the darker the image) .</p>
+      
+      <p><strong>Creative effect: Motion Control</strong></p>
+      <ul>
+        <li><strong>Fast shutter speed (1/500s–1/4000s):</strong> Freezes motion. Perfect for sports, wildlife, and capturing fast-moving subjects with crisp detail .</li>
+        <li><strong>Slow shutter speed (1/30s–30s):</strong> Creates motion blur. Use it for silky waterfalls, light trails from traffic, or conveying a sense of movement .</li>
+      </ul>
+      
+      <p><strong>The handholding rule:</strong> To avoid camera shake when shooting handheld, use a shutter speed faster than 1/(focal length). For a 50mm lens, use 1/50s or faster. For a 200mm lens, use 1/200s or faster . When using slow shutter speeds, it's best to put your camera on a tripod or another sturdy surface to avoid an image that is entirely blurry .</p>
+      
+      <div class="quote-box">
+        <i class="fas fa-quote-left" style="color:#b85e3a; margin-right:0.5rem;"></i> For extremely fast-moving subjects, such as a race car, a shutter speed of 1/2000 sec or more is necessary. Slower movement allows for a slower shutter speed while still stopping movement in the image .
+      </div>
+    </div>
+
+    <h2>ISO: Light Sensitivity</h2>
+
+    <!-- ISO Explanation -->
+    <div class="tip-card">
+      <div class="settings-badge">SETTING 3 • ISO</div>
+      <h3><span class="tip-number">3</span> ISO: The Sensor's Sensitivity to Light</h3>
+      
+      <p>ISO refers to how your sensor reads light, specifically its sensitivity to light . Physical film has a set ISO number, but digital cameras can change it on the fly . Think of it as the gain knob on an old radio—you can boost the gain (ISO) and make the radio louder (image brighter), but you will get a lot more noise .</p>
+      
+      <p><strong>How it's measured:</strong> ISO values like ISO 100, 200, 400, 800, 1600, 3200. <strong>The higher the number, the more sensitive the sensor</strong> (and the brighter the image) .</p>
+      
+      <p><strong>The trade-off: Digital Noise</strong></p>
+      <p>Higher ISO settings will produce digital grain in your photos called 'noise' . A lower ISO (like 100) produces clean, detailed images. A higher ISO (like 3200) brightens the image but adds a grainy texture .</p>
+      
+      <ul>
+        <li><strong>Low ISO (100–400):</strong> Clean, noise-free images. Use in bright conditions like sunny days .</li>
+        <li><strong>Medium ISO (800–1600):</strong> Slight noise, often acceptable. Good for overcast days or indoor shooting .</li>
+        <li><strong>High ISO (3200+):</strong> Noticeable noise. Necessary for low-light situations like concerts, night photography, or dim interiors .</li>
+      </ul>
+      
+      <p><strong>When to raise ISO:</strong> A high ISO is helpful in situations where you can't capture a lot of light through your exposure settings, such as at night or in dark interior spaces . Modern cameras have improved noise reduction, so don't be afraid to raise ISO when needed .</p>
+      
+      <div class="pro-tip-box">
+        <strong><i class="fas fa-lightbulb" style="color:#2e7d32; margin-right:0.5rem;"></i>ISO Tip:</strong> ISO itself doesn't cause noise, but capturing less light will result in noisy images compared to bright, well-lit situations. If image quality is most important, you'll want to prioritize getting enough light so that you can use lower ISOs .
+      </div>
+    </div>
+
+    <h2>Putting It All Together: The Balancing Act</h2>
+
+    <!-- Putting It Together -->
+    <div class="tip-card">
+      <div class="settings-badge">PUTTING IT TOGETHER</div>
+      <h3><span class="tip-number">4</span> How They Work Together</h3>
+      
+      <p>Changing one setting almost always means changing others to accommodate it . A faster shutter speed, for example, may require you to boost your ISO or open your aperture wider for a bright enough image .</p>
+      
+      <p>Here's the simple formula:</p>
+      <ul>
+        <li><strong>To brighten an image:</strong> widen the aperture, slow down the shutter speed, or raise the ISO .</li>
+        <li><strong>To darken an image:</strong> narrow the aperture, speed up the shutter speed, or lower the ISO .</li>
+      </ul>
+      
+      <p>And if you adjust two variables in different directions—you lower the ISO plus you widen the aperture, for instance—the effects will (roughly) cancel each other out .</p>
+      
+      <div class="comparison-table">
+        <h3 style="color:white;">Quick Reference: Settings Cheat Sheet</h3>
+        <table>
+          <thead>
+            <tr><th>Setting</th><th>Controls</th><th>Lower Number =</th><th>Higher Number =</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Aperture</td><td>Depth of field (background blur)</td><td>Wider opening, more light, blurry background</td><td>Narrower opening, less light, sharp background</td></tr>
+            <tr><td>Shutter Speed</td><td>Motion blur</td><td>Slower, more light, motion blur</td><td>Faster, less light, freezes motion</td></tr>
+            <tr><td>ISO</td><td>Light sensitivity / noise</td><td>Less sensitive, cleaner image</td><td>More sensitive, brighter but noisier</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <h2>Real-World Example: A Step-by-Step Approach</h2>
+
+    <!-- Example Scenario -->
+    <div class="tip-card">
+      <div class="settings-badge">PRACTICAL EXAMPLE</div>
+      <h3><span class="tip-number">5</span> How to Choose Your Settings</h3>
+      
+      <p>Say you're photographing birds in the wild. You want a shot that freezes one in flight with no blur .</p>
+      
+      <p><strong>Step 1: Determine your priority.</strong> In this situation, shutter speed is most essential because you need to freeze motion. You'll need a speed of at least 1/2000th of a second .</p>
+      
+      <p><strong>Step 2: Work backward.</strong> A fast shutter speed darkens your image. How can you get a brighter image with your other settings? You could: open your aperture wider, or boost your ISO .</p>
+      
+      <p><strong>Step 3: Consider your next priority.</strong> You also want an aperture that gets everything in focus. Since you want to be sure your image is sharp, you'll avoid very wide settings like f/1.4 or f/1.8, because those only get a small slice of your image in focus. You'll need to choose a setting that's still relatively wide to let in more light while narrow enough to get the bird in focus—probably f/4 to f/5.6 .</p>
+      
+      <p><strong>Step 4: Adjust ISO last.</strong> To avoid noise, you'll want to keep it on the lower side, but don't be afraid to raise it enough to get a bright photo. Take a few test shots to dial in your ISO .</p>
+      
+      <div class="quote-box">
+        <i class="fas fa-quote-left" style="color:#b85e3a; margin-right:0.5rem;"></i> When determining which numbers to use, it's important to first decide if motion or depth of field is most important or if you need to balance the two .
+      </div>
+    </div>
+
+    <h2>Easy Analogies to Remember</h2>
+    
+    <div class="settings-guide">
+      <div class="guide-item">
+        <h4>The Window Analogy</h4>
+        <p><strong>Aperture</strong> is like the size of the window. A big window lets in more light, a small window lets in less .</p>
+        <p><strong>Shutter speed</strong> is like how long you leave the curtains open. Open them longer, more light comes in .</p>
+        <p><strong>ISO</strong> is like wearing sunglasses. Sunglasses make your eyes less sensitive to light—lower ISO. Take them off, and your eyes become more sensitive—higher ISO .</p>
+      </div>
+      <div class="guide-item">
+        <h4>The Cooking Analogy</h4>
+        <p><strong>Aperture</strong> is the size of the pot you use. A bigger pot lets in more ingredients (light) .</p>
+        <p><strong>Shutter speed</strong> is how long you cook the meal. Cooking quickly means less time for heat (light), resulting in a darker dish .</p>
+        <p><strong>ISO</strong> is the quality of the ingredients. Using high-quality ingredients (lower ISO) produces clearer flavors (images), but you might need more heat (light) to cook them properly .</p>
+      </div>
+    </div>
+
+    <h2>Shooting Modes: Your Training Wheels</h2>
+    
+    <p>As you learn to balance these settings, use your camera's semi-automatic modes to focus on one setting at a time :</p>
+    
+    <ul>
+      <li><strong>Aperture Priority (A or Av):</strong> You set the aperture, and the camera picks the shutter speed. Perfect for practicing depth of field control .</li>
+      <li><strong>Shutter Priority (S or Tv):</strong> You set the shutter speed, and the camera picks the aperture. Great for learning motion control .</li>
+      <li><strong>Manual Mode (M):</strong> You control everything. Use this once you're comfortable with how settings interact .</li>
+    </ul>
+    
+    <p>As with the other tenets of photography, mastering the rules of the exposure triangle will help you to bend them later .</p>
+
+    <h2>Common Beginner Mistakes to Avoid</h2>
+    
+    <div class="dos-donts">
+      <div class="dos-box">
+        <h4><i class="fas fa-check-circle"></i> Do</h4>
+        <ul>
+          <li>Start with a low ISO and raise it only when needed </li>
+          <li>Use a tripod for slow shutter speeds </li>
+          <li>Check the histogram to verify exposure </li>
+          <li>Practice one setting at a time using priority modes </li>
+          <li>Remember that shallow depth of field requires wide apertures (small f-numbers) </li>
+        </ul>
+      </div>
+      <div class="donts-box">
+        <h4><i class="fas fa-times-circle"></i> Don't</h4>
+        <ul>
+          <li>Don't raise ISO unnecessarily—it adds noise </li>
+          <li>Don't handhold shutter speeds slower than 1/60s without stabilization </li>
+          <li>Don't forget that higher f-numbers mean less light </li>
+          <li>Don't assume one "perfect" setting exists—it depends on your creative goal </li>
+          <li>Don't ignore the relationship between settings—changing one affects the others </li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>Bonus: Using the Histogram</h2>
+    
+    <div class="histogram-tip">
+      <strong><i class="fas fa-chart-bar" style="color:#f7b731;"></i> What is the Histogram?</strong>
+      <p style="margin-top:0.8rem; color:#ddd;">The histogram shows how light is distributed in an image. If the graph is bunched on the left, the image is too dark; on the right, it's too bright. Balanced histograms mean balanced exposure .</p>
+      <p style="margin-top:0.8rem; color:#ddd;">It's a great tool for spotting exposure issues that might not be obvious on your camera's display .</p>
+    </div>
+
+    <h2>Your 7-Day Settings Challenge</h2>
+    
+    <ul>
+      <li><strong>Day 1:</strong> Aperture Priority. Shoot the same scene at f/2.8, f/5.6, and f/11. Notice how background blur changes .</li>
+      <li><strong>Day 2:</strong> Shutter Priority. Shoot moving water or traffic at 1/30s, 1/250s, and 1/1000s .</li>
+      <li><strong>Day 3:</strong> ISO test. Shoot indoors at ISO 100, 800, and 3200. Compare noise levels .</li>
+      <li><strong>Day 4:</strong> Manual mode. Practice balancing all three for correct exposure .</li>
+      <li><strong>Day 5:</strong> Low light practice. Use wide aperture, slow shutter, and raise ISO as needed .</li>
+      <li><strong>Day 6:</strong> Portrait day. Use wide aperture (f/1.8–f/2.8) to blur background .</li>
+      <li><strong>Day 7:</strong> Landscape day. Use narrow aperture (f/8–f/11) to get everything sharp .</li>
+    </ul>
+
+    <h2>Final Thoughts</h2>
+    
+    <p>Mastering the exposure triangle isn't about memorizing numbers—it's about understanding which trade-offs to make for your creative vision . Every change to aperture, shutter speed, or ISO affects both exposure and the artistic look of your image .</p>
+    
+    <p>Start small. Focus on one setting at a time using modes such as aperture priority or shutter priority and build out from there . As with the other tenets of photography, mastering the rules of the exposure triangle will help you to bend them later .</p>
+    
+    <div class="pro-tip-box">
+      <strong><i class="fas fa-gem" style="color:#2e7d32; margin-right:0.5rem;"></i>Final Challenge:</strong> Take your camera off Auto mode today. Even if you just try Aperture Priority, you're on your way to mastering these fundamentals. Your BEST shot is your NEXT shot!
+    </div>
+
+  </div>
+
+  <!-- related posts -->
+<aside class="related-posts">
+  <h2 class="section-title">You may also like</h2>
+  <div class="related-grid">
+
+    <div class="related-card">
+      <img src="https://shotavix.com/photography-for-beginners-guide.webp" alt="Photography for beginners">
+      <h4><a href="https://shotavix.com/photography-for-beginners-guide">Photography for Beginners: Complete Guide</a></h4>
+      <div class="meta">Apr 8</div>
+    </div>
+
+    <div class="related-card">
+      <img src="https://shotavix.com/10-photography-tips-2026.webp" alt="Photography tips">
+      <h4><a href="https://shotavix.com/10-photography-tips-2026">10 Photography Tips That Instantly Improve Your Photos</a></h4>
+      <div class="meta">Apr 8</div>
+    </div>
+
+    <div class="related-card">
+      <img src="https://shotavix.com/shoot-professional-photos-beginner-guide.webp" alt="Professional photos">
+      <h4><a href="https://shotavix.com/shoot-professional-photos-beginner-guide">How to Shoot Professional Photos with Any Camera</a></h4>
+      <div class="meta">Apr 8</div>
+    </div>
+
+    <div class="related-card">
+      <img src="https://shotavix.com/professional-portrait-photos-at-home.webp" alt="Portrait at home">
+      <h4><a href="https://shotavix.com/professional-portrait-photos-at-home">How to Take Professional Portrait Photos at Home</a></h4>
+      <div class="meta">Apr 8</div>
+    </div>
+
+    <div class="related-card">
+      <img src="https://shotavix.com/best-mirrorless-cameras-beginners-2026.webp" alt="Best beginner mirrorless">
+      <h4><a href="https://shotavix.com/best-mirrorless-cameras-beginners-2026">Best Mirrorless Cameras for Beginners 2026</a></h4>
+      <div class="meta">Apr 8</div>
+    </div>
+
+    <div class="related-card">
+      <img src="https://shotavix.com/best-cameras-under-1000-2026.webp" alt="Cameras under 1000">
+      <h4><a href="https://shotavix.com/best-cameras-under-1000-2026">Best Budget Cameras Under $1000 2026</a></h4>
+      <div class="meta">Apr 8</div>
+    </div>
+
+  </div>
+</aside>
+</main>
+
+<!-- footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <div class="footer-logo">SHOTAVIX<span>·</span></div>
+        <p>In-depth camera reviews, honest buying advice, and photography inspiration — made for enthusiasts, by enthusiasts.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/olisashedi" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@shotavix" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.threads.com/@olisashedi" target="_blank"><i class="fab fa-threads"></i></a>
+          <a href="https://www.facebook.com/lisa.251771" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+          <ul>
+            <li><a href="https://shotavix.com/gear">Gear & Reviews</a></li>
+            <li><a href="https://shotavix.com/techniques">Tips & Techniques</a></li>
+            <li><a href="https://shotavix.com/video">Video & Film</a></li>
+            <li><a href="https://shotavix.com/beginners">Beginner's Corner</a></li>
+            <li><a href="https://shotavix.com/editing">Editing & Business</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://shotavix.com">Home</a></li>
+            <li><a href="https://shotavix.com/contact">Contact</a></li>
+            <li><a href="https://shotavix.com/about">About</a></li>
+            <li><a href="https://shotavix.com/privacy">Privacy</a></li>
+            <li><a href="https://shotavix.com/terms">Terms</a></li>
+          </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2026 SHOTAVIX Camera Blog. All rights reserved. Shot with passion.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- hamburger functionality -->
+<script>
+  (function() {
+    const hamburger = document.getElementById('hamburgerBtn');
+    const overlay = document.getElementById('mobileNavOverlay');
+    const closeBtn = document.getElementById('closeNavBtn');
+
+    function openMenu() {
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    if (hamburger) hamburger.addEventListener('click', openMenu);
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+
+    overlay.addEventListener('click', function(e) {
+      if (e.target === overlay) closeMenu();
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && overlay.classList.contains('active')) closeMenu();
+    });
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- PRIMARY META -->
+  <title>Gear & Reviews — SHOTAVIX Camera Blog</title>
+  <meta name="description" content="In-depth gear reviews, buying guides, and lens recommendations from the SHOTAVIX team. Find the perfect camera for your photography journey.">
+  <meta name="author" content="Oli Sa">
+  <link rel="canonical" href="https://shotavix.com/gear">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shotavix.com/gear">
+  <meta property="og:title" content="Gear & Reviews — SHOTAVIX Camera Blog">
+  <meta property="og:image" content="https://shotavix.com/gear-archive.webp">
+  <meta property="og:site_name" content="SHOTAVIX Camera Blog">
+  <meta property="og:description" content="In-depth gear reviews, buying guides, and lens recommendations. Find the perfect camera for your photography journey.">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="https://shotavix.com/favicon.ico">
+
+  <!-- Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    /* MOBILE-FIRST */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fafafa;
+      color: #1e1e1e;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .gear-container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* header */
+    .site-header {
+      padding: 1.2rem 0;
+      background-color: #ffffff;
+      border-bottom: 1px solid #eaeaea;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    .logo a {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: #1e1e1e;
+    }
+    .logo span {
+      color: #b85e3a;
+      font-style: italic;
+    }
+
+    /* desktop navigation */
+    .main-nav {
+      display: block;
+    }
+    .main-nav ul {
+      display: flex;
+      gap: 1.8rem;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    .main-nav a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #2e2e2e;
+      font-size: 1rem;
+      transition: color 0.2s;
+    }
+
+    .main-nav a:hover, .main-nav a.active {
+      color: #b85e3a;
+    }
+
+    /* hamburger */
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      width: 40px;
+      height: 40px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background-color: #2e2e2e;
+      transition: all 0.3s ease;
+      position: absolute;
+      left: 8px;
+    }
+    .hamburger span:nth-child(1) { top: 12px; }
+    .hamburger span:nth-child(2) { top: 19px; }
+    .hamburger span:nth-child(3) { top: 26px; }
+    .hamburger:hover span { background-color: #b85e3a; }
+
+    /* mobile overlay */
+    .mobile-nav-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(8px);
+      z-index: 200;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+    .mobile-nav-overlay.active {
+      display: block;
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .mobile-nav-panel {
+      position: fixed;
+      top: 0;
+      right: -300px;
+      width: 280px;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(16px);
+      box-shadow: -10px 0 40px rgba(0, 0, 0, 0.15);
+      padding: 2rem 1.8rem;
+      transition: right 0.3s ease;
+      z-index: 250;
+      overflow-y: auto;
+    }
+    .mobile-nav-overlay.active .mobile-nav-panel { right: 0; }
+
+    .mobile-nav-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 1rem;
+    }
+    .mobile-nav-header .logo { font-size: 1.6rem; }
+    .mobile-nav-header .close-btn {
+      background: none;
+      border: none;
+      font-size: 2.2rem;
+      cursor: pointer;
+      color: #555;
+    }
+    .mobile-nav-header .close-btn:hover { color: #b85e3a; }
+
+    .mobile-nav-list {
+      list-style: none;
+    }
+    .mobile-nav-list li { margin-bottom: 1.2rem; }
+    .mobile-nav-list a {
+      text-decoration: none;
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: #1e1e1e;
+      display: block;
+      padding: 0.3rem 0;
+    }
+    .mobile-nav-list a:hover { color: #b85e3a; padding-left: 8px; }
+
+    /* ---- gear page specific styles ---- */
+    .gear-hero {
+      margin: 3rem 0 2rem;
+      text-align: center;
+    }
+    .gear-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 1rem;
+    }
+    .gear-hero p {
+      font-size: 1.2rem;
+      color: #6b6b6b;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .category-filter {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.8rem;
+      margin: 3rem 0;
+    }
+    .filter-btn {
+      background: white;
+      border: 1px solid #e2e2e2;
+      padding: 0.6rem 1.5rem;
+      border-radius: 50px;
+      font-weight: 500;
+      color: #2e2e2e;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-size: 0.95rem;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: #b85e3a;
+      color: white;
+      border-color: #b85e3a;
+    }
+
+    .gear-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+
+    .gear-card {
+      background: white;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 12px 28px -8px rgba(0,0,0,0.05);
+      border: 1px solid #f0f0f0;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .gear-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 28px 38px -14px rgba(0,0,0,0.15);
+    }
+
+    .gear-img {
+      height: 200px;
+      overflow: hidden;
+    }
+    .gear-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s;
+    }
+    .gear-card:hover .gear-img img { transform: scale(1.05); }
+
+    .gear-content {
+      padding: 1.5rem;
+    }
+    .gear-category {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #b85e3a;
+      margin-bottom: 0.3rem;
+    }
+    .gear-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .gear-title a {
+      text-decoration: none;
+      color: #1e1e1e;
+    }
+    .gear-title a:hover { color: #b85e3a; }
+    .gear-excerpt {
+      color: #4a4a4a;
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+    .gear-meta {
+      display: flex;
+      justify-content: space-between;
+      color: #888;
+      font-size: 0.85rem;
+      border-top: 1px solid #eee;
+      padding-top: 0.8rem;
+    }
+    .read-more {
+      color: #b85e3a;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+    .read-more:hover { gap: 0.5rem; }
+
+    /* footer */
+    .site-footer {
+      background: #111;
+      color: #b5b5b5;
+      padding: 3rem 0 2rem;
+      border-radius: 3rem 3rem 0 0;
+      margin-top: 3rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    @media (min-width: 700px) {
+      .footer-grid { grid-template-columns: 2fr 1fr 1fr; }
+    }
+    .footer-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 600;
+      color: white;
+      margin-bottom: 1rem;
+    }
+    .footer-logo span { color: #b85e3a; }
+    .footer-about p { margin: 1rem 0 1.5rem; }
+    .socials a {
+      color: #b5b5b5;
+      font-size: 1.4rem;
+      margin-right: 1rem;
+      transition: color 0.2s;
+    }
+    .socials a:hover { color: #b85e3a; }
+    .footer-links h4 {
+      color: white;
+      margin-bottom: 1rem;
+    }
+    .footer-links ul {
+      list-style: none;
+    }
+    .footer-links li { margin-bottom: 0.6rem; }
+    .footer-links a {
+      color: #b5b5b5;
+      text-decoration: none;
+    }
+    .footer-links a:hover { color: #b85e3a; }
+    .copyright {
+      border-top: 1px solid #292929;
+      padding-top: 2rem;
+      text-align: center;
+    }
+
+    /* responsive */
+    @media (max-width: 700px) {
+      .gear-hero h1 { font-size: 2.2rem; }
+      .main-nav { display: none; }
+      .hamburger { display: block; }
+      .filter-btn { padding: 0.5rem 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- header -->
+<header class="site-header">
+  <div class="container header-wrapper">
+    <div class="logo">
+      <a href="https://shotavix.com/">SHOTAVIX<span>·</span></a>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#" class="active">Gear</a></li>
+        <li><a href="#">Techniques</a></li>
+        <li><a href="#">Video</a></li>
+        <li><a href="#">Beginner's</a></li>
+        <li><a href="#">Editing</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- mobile overlay -->
+<div class="mobile-nav-overlay" id="mobileNavOverlay">
+  <div class="mobile-nav-panel">
+    <div class="mobile-nav-header">
+      <div class="logo">SHOTAVIX<span>·</span></div>
+      <button class="close-btn" id="closeNavBtn" aria-label="Close menu">×</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="#">Home</a></li>
+      <li><a href="#" class="active">Gear</a></li>
+      <li><a href="#">Techniques</a></li>
+      <li><a href="#">Video</a></li>
+      <li><a href="#">Beginner's</a></li>
+      <li><a href="#">Editing</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- MAIN GEAR PAGE CONTENT -->
+<main class="gear-container">
+
+  <!-- Hero -->
+  <div class="gear-hero">
+    <h1>Gear & Reviews</h1>
+    <p>We test every camera, lens, and accessory so you can buy with confidence. Honest, in‑depth, and built for photographers.</p>
+  </div>
+
+  <!-- Filter (visual only, actual filtering would need JS, but we can keep it decorative) -->
+  <div class="category-filter">
+    <span class="filter-btn active">All</span>
+    <span class="filter-btn">Cameras</span>
+    <span class="filter-btn">Lenses</span>
+    <span class="filter-btn">Budget</span>
+    <span class="filter-btn">Travel</span>
+    <span class="filter-btn">Video</span>
+  </div>
+
+  <!-- Gear Grid - 12 articles with actual URLs and image paths -->
+  <div class="gear-grid">
+
+    <!-- 1. Canon EOS R5 Mark II Review -->
+    <article class="gear-card">
+      <div class="gear-img">
+        <img src="https://shotavix.com/canon-eos-r5-mark-ii-review.webp" alt="Canon EOS R5 Mark II">
+      </div>
+      <div class="gear-content">
+        <span class="gear-category">Cameras</span>
+        <h3 class="gear-title"><a href="https://shotavix.com/canon-eos-r5-mark-ii-review">Canon EOS R5 Mark II Hands‑On</a></h3>
+        <p class="gear-excerpt">Stacked 45MP sensor, 8K 60p RAW, Eye‑Control AF. The new king of hybrid cameras? Full review.</p>
+        <div class="gear-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/canon-eos-r5-mark-ii-review" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 2. Sony A7C II Review -->
+    <article class="gear-card">
+      <div class="gear-img">
+        <img src="https://shotavix.com/sony-a7c-ii-review.webp" alt="Sony A7C II">
+      </div>
+      <div class="gear-content">
+        <span class="gear-category">Cameras</span>
+        <h3 class="gear-title"><a href="https://shotavix.com/sony-a7c-ii-review">Sony A7C II: The Compact Full‑Frame</a></h3>
+        <p class="gear-excerpt">33MP sensor, AI autofocus, 7‑stop IBIS, 4K 60p. The ultimate travel companion for creators?</p>
+        <div class="gear-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/sony-a7c-ii-review" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 3. Nikon Z6 III Review -->
+    <article class="gear-card">
+      <div class="gear-img">
+        <img src="https://shotavix.com/nikon-z6-iii-review.webp" alt="Nikon Z6 III">
+      </div>
+      <div class="gear-content">
+        <span class="gear-category">Cameras</span>
+        <h3 class="gear-title"><a href="https://shotavix.com/nikon-z6-iii-review">Nikon Z6 III: Perfect Hybrid?</a></h3>
+        <p class="gear-excerpt">Partially stacked 24.5MP, 6K 60p RAW, 8‑stop IBIS, RED LUTs. Real‑world hybrid tested.</p>
+        <div class="gear-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/nikon-z6-iii-review" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 4. Sony A6700 Review -->
+    <article class="gear-card">
+      <div class="gear-img">
+        <img src="https://shotavix.com/sony-a6700-review.webp" alt="Sony A6700">
+      </div>
+      <div class="gear-content">
+        <span class="gear-category">Cameras</span>
+        <h3 class="gear-title"><a href="https://shotavix.com/sony-a6700-review">Sony A6700: Ultimate APS‑C?</a></h3>
+        <p class="gear-excerpt">26MP BSI, AI‑powered autofocus, 4K 120p. Is this the ultimate creator's APS‑C camera?</p>
+        <div class="gear-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/sony-a6700-review" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 5. Best Cameras for Photography 2026 -->
+    <article class="gear-card">
+      <div class="gear-img">
+        <img src="https://shotavix.com/best-cameras-2026.webp" alt="Best cameras 2026">
+      </div>
+      <div class="gear-content">
+        <span class="gear-category">Buying Guides</span>
+        <h3 class="gear-title"><a href="https://shotavix.com/best-cameras-2026">Best Cameras 2026 (Budget to Pro)</a></h3>
+        <p class="gear-excerpt">The ultimate guide: from beginner mirrorless to professional full‑frame flagships. Top picks from Sony, Nikon, Canon, Fujifilm.</p>
+        <div class="gear-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/best-cameras-2026" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 6. Sony vs Canon vs Nikon 2026 -->
+    <article class="gear-card">
+      <div class="gear-img">
+        <img src="https://shotavix.com/sony-canon-nikon-comparison-2026.webp" alt="Sony Canon Nikon">
+      </div>
+      <div class="gear-content">
+        <span class="gear-category">Comparisons</span>
+        <h3 class="gear-title"><a href="https://shotavix.com/sony-canon-nikon-comparison-2026">Sony vs Canon vs Nikon (2026)</a></h3>
+        <p class="gear-excerpt">Market share, pro adoption, lens ecosystems, autofocus, video. Which brand wins in 2026?</p>
+        <div class="gear-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/sony-canon-nikon-comparison-2026" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 7. Best Mirrorless Cameras for Beginners 2026 -->
+    <article class="gear-card">
+      <div class="gear-img">
+        <img src="https://shotavix.com/best-mirrorless-cameras-beginners-2026.webp" alt="Best beginner mirrorless">
+      </div>
+      <div class="gear-content">
+        <span class="gear-category">Buying Guides</span>
+        <h3 class="gear-title"><a href="https://shotavix.com/best-mirrorless-cameras-beginners-2026">Best Beginner Mirrorless 2026</a></h3>
+        <p class="gear-excerpt">Canon R50, Nikon Z50II, Fujifilm X‑T30 III, Sony ZV‑E10. The perfect starter cameras.</p>
+        <div class="gear-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/best-mirrorless-cameras-beginners-2026" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 8. Best Budget Cameras Under $1000 2026 -->
+    <article class="gear-card">
+      <div class="gear-img">
+        <img src="https://shotavix.com/best-cameras-under-1000-2026.webp" alt="Cameras under 1000">
+      </div>
+      <div class="gear-content">
+        <span class="gear-category">Buying Guides</span>
+        <h3 class="gear-title"><a href="https://shotavix.com/best-cameras-under-1000-2026">Best Cameras Under $1000 2026</a></h3>
+        <p class="gear-excerpt">Canon R10, Nikon Z50II, Sony a6100, Fujifilm X‑T30 III. Great cameras that won't break the bank.</p>
+        <div class="gear-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/best-cameras-under-1000-2026" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 9. Top 10 Cameras for Travel Photography 2026 -->
+    <article class="gear-card">
+      <div class="gear-img">
+        <img src="https://shotavix.com/top-travel-cameras-2026.webp" alt="Travel cameras">
+      </div>
+      <div class="gear-content">
+        <span class="gear-category">Buying Guides</span>
+        <h3 class="gear-title"><a href="https://shotavix.com/top-travel-cameras-2026">Top Travel Cameras 2026</a></h3>
+        <p class="gear-excerpt">Fujifilm X‑E5, Ricoh GR IV, Leica Q3, Sony A7C R, OM System TG‑7. Your perfect travel companion.</p>
+        <div class="gear-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/top-travel-cameras-2026" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 10. Best Lenses for Portrait Photography 2026 -->
+    <article class="gear-card">
+      <div class="gear-img">
+        <img src="https://shotavix.com/best-portrait-lenses-2026.webp" alt="Portrait lenses">
+      </div>
+      <div class="gear-content">
+        <span class="gear-category">Lenses</span>
+        <h3 class="gear-title"><a href="https://shotavix.com/best-portrait-lenses-2026">Best Portrait Lenses 2026</a></h3>
+        <p class="gear-excerpt">35mm, 50mm, 85mm, 105mm – expert picks for beautiful bokeh and flattering compression.</p>
+        <div class="gear-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/best-portrait-lenses-2026" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 11. Best Cameras for Video Recording 2026 (Filmmakers) -->
+    <article class="gear-card">
+      <div class="gear-img">
+        <img src="https://shotavix.com/best-video-cameras-2026.webp" alt="Video cameras">
+      </div>
+      <div class="gear-content">
+        <span class="gear-category">Video</span>
+        <h3 class="gear-title"><a href="https://shotavix.com/best-video-cameras-2026">Best Video Cameras 2026</a></h3>
+        <p class="gear-excerpt">S5IIX, GH7, R5 II, Z6 III, ZV‑E10 II. The top tools for filmmakers and content creators.</p>
+        <div class="gear-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/best-video-cameras-2026" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 12. Best Cameras for Documentary Filmmaking 2026 -->
+    <article class="gear-card">
+      <div class="gear-img">
+        <img src="https://shotavix.com/best-documentary-cameras-2026.webp" alt="Documentary cameras">
+      </div>
+      <div class="gear-content">
+        <span class="gear-category">Video</span>
+        <h3 class="gear-title"><a href="https://shotavix.com/best-documentary-cameras-2026">Best Documentary Cameras 2026</a></h3>
+        <p class="gear-excerpt">Sony FX6, Canon C70, ARRI Alexa Mini. Real‑world testing from Sundance filmmakers.</p>
+        <div class="gear-meta">
+          <span><i class="fas fa-calendar-alt"></i> Apr 8, 2026</span>
+          <a href="https://shotavix.com/best-documentary-cameras-2026" class="read-more">Read <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- More gear coming soon teaser -->
+  <div style="text-align: center; margin: 4rem 0; background: #f1ede9; padding: 3rem; border-radius: 40px;">
+    <h2 style="font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 1rem;">🔍 More gear tests coming weekly</h2>
+    <p style="color: #4a4a4a; max-width: 600px; margin: 0 auto;">We're constantly testing the latest cameras, lenses, and accessories. Check back often for fresh reviews.</p>
+  </div>
+</main>
+
+<!-- footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <div class="footer-logo">SHOTAVIX<span>·</span></div>
+        <p>In-depth camera reviews, honest buying advice, and photography inspiration — made for enthusiasts, by enthusiasts.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/olisashedi" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@shotavix" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.threads.com/@olisashedi" target="_blank"><i class="fab fa-threads"></i></a>
+          <a href="https://www.facebook.com/lisa.251771" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+          <ul>
+            <li><a href="https://shotavix.com/gear">Gear & Reviews</a></li>
+            <li><a href="https://shotavix.com/techniques">Tips & Techniques</a></li>
+            <li><a href="https://shotavix.com/video">Video & Film</a></li>
+            <li><a href="https://shotavix.com/beginners">Beginner's Corner</a></li>
+            <li><a href="https://shotavix.com/editing">Editing & Business</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://shotavix.com">Home</a></li>
+            <li><a href="https://shotavix.com/contact">Contact</a></li>
+            <li><a href="https://shotavix.com/about">About</a></li>
+            <li><a href="https://shotavix.com/privacy">Privacy</a></li>
+            <li><a href="https://shotavix.com/terms">Terms</a></li>
+          </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2026 SHOTAVIX Camera Blog. All rights reserved. Shot with passion.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- hamburger functionality -->
+<script>
+  (function() {
+    const hamburger = document.getElementById('hamburgerBtn');
+    const overlay = document.getElementById('mobileNavOverlay');
+    const closeBtn = document.getElementById('closeNavBtn');
+
+    function openMenu() {
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    if (hamburger) hamburger.addEventListener('click', openMenu);
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+
+    overlay.addEventListener('click', function(e) {
+      if (e.target === overlay) closeMenu();
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && overlay.classList.contains('active')) closeMenu();
+    });
+  })();
+</script>
+</body>
+</html>

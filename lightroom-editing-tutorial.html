@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- robots meta -->
+  <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+  <!-- PRIMARY META -->
+  <title>Lightroom Editing Tutorial: Make Your Photos Look Professional (2026)</title>
+  <meta name="description" content="Master Lightroom editing with this step-by-step tutorial. Learn global adjustments, AI masking, color grading, batch editing, and pro workflow secrets for 2026.">
+  <meta name="author" content="Oli Sa">
+  <link rel="canonical" href="https://shotavix.com/lightroom-editing-tutorial">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shotavix.com/lightroom-editing-tutorial">
+  <meta property="og:title" content="Lightroom Editing Tutorial: Make Your Photos Look Professional">
+  <meta property="og:image" content="https://shotavix.com/lightroom-editing-tutorial.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="SHOTAVIX Camera Blog">
+  <meta property="og:description" content="Master Lightroom editing with this step-by-step tutorial. Learn global adjustments, AI masking, color grading, batch editing, and pro workflow secrets for 2026.">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="https://shotavix.com/favicon.ico">
+
+  <!-- SCHEMA MARKUP (Article) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Lightroom Editing Tutorial: Make Your Photos Look Professional (2026)",
+    "description": "Master Lightroom editing with this step-by-step tutorial. Learn global adjustments, AI masking, color grading, batch editing, and pro workflow secrets for 2026.",
+    "image": "https://shotavix.com/lightroom-editing-tutorial.webp",
+    "author": {
+      "@type": "Person",
+      "name": "Oli Sa",
+      "url": "https://shotavix.com/author/oli-sa"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "SHOTAVIX",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://shotavix.com/logo.webp"
+      }
+    },
+    "datePublished": "2026-04-08T10:00:00+00:00",
+    "dateModified": "2026-04-08T10:00:00+00:00",
+    "mainEntityOfPage": "https://shotavix.com/lightroom-editing-tutorial"
+  }
+  </script>
+
+  <!-- Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Only minimal specific styles for this article, no full CSS reset -->
+  <style>
+    /* Only article-specific enhancements, no broad layout changes */
+    .lr-badge {
+      display: inline-block;
+      background: #b85e3a15;
+      color: #b85e3a;
+      font-weight: 600;
+      font-size: 0.8rem;
+      padding: 0.3rem 1rem;
+      border-radius: 50px;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.8rem;
+      border-left: 3px solid #b85e3a;
+    }
+    
+    .step-card {
+      background: white;
+      border-radius: 28px;
+      padding: 1.8rem 2rem;
+      margin: 2.5rem 0;
+      box-shadow: 0 12px 28px -8px rgba(0,0,0,0.05);
+      border: 1px solid #f0f0f0;
+      transition: transform 0.2s;
+    }
+    
+    .step-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 32px -12px rgba(0,0,0,0.1);
+    }
+    
+    .step-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: #1a1a1a;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+    
+    .step-number {
+      display: inline-block;
+      background: #b85e3a;
+      color: white;
+      font-weight: bold;
+      font-size: 1.2rem;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 40px;
+      margin-right: 1rem;
+    }
+    
+    .pro-tip-box {
+      background: #e8f4e8;
+      border-radius: 20px;
+      padding: 1.2rem 1.8rem;
+      margin: 2rem 0;
+      border-left: 6px solid #2e7d32;
+    }
+    
+    .quote-box {
+      background: #f1ede9;
+      border-radius: 20px;
+      padding: 1.2rem 1.8rem;
+      margin: 1.5rem 0;
+      font-style: italic;
+      border-left: 6px solid #b85e3a;
+    }
+    
+    .before-after {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .before-box, .after-box {
+      background: #f8f8f8;
+      border-radius: 20px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    
+    .before-box h4 { color: #b85e3a; }
+    .after-box h4 { color: #2e7d32; }
+    
+    .badge {
+      background: #1e1e1e;
+      color: white;
+      padding: 0.2rem 1rem;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+    
+    .shortcut-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    
+    .shortcut-item {
+      background: #f8f8f8;
+      border-radius: 16px;
+      padding: 1rem;
+      text-align: center;
+    }
+    
+    .shortcut-item strong {
+      display: block;
+      color: #b85e3a;
+      font-size: 1.1rem;
+    }
+    
+    .comparison-table {
+      background: #1e1e1e;
+      color: white;
+      border-radius: 28px;
+      padding: 2rem;
+      margin: 3rem 0;
+    }
+    
+    .comparison-table h3 {
+      color: white;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .comp-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.8rem 0;
+      border-bottom: 1px solid #333;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    
+    .comp-label {
+      font-weight: 600;
+      color: #f7b731;
+      min-width: 160px;
+    }
+    
+    .comp-value {
+      flex: 1;
+      color: #ddd;
+    }
+    
+    .expert-tip {
+      background: #e8f4e8;
+      border-radius: 20px;
+      padding: 1.2rem 1.8rem;
+      margin: 2rem 0;
+      border-left: 6px solid #2e7d32;
+    }
+    
+    .workflow-tip {
+      background: #1e1e1e;
+      color: white;
+      border-radius: 20px;
+      padding: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .workflow-tip strong {
+      color: #f7b731;
+    }
+    
+    @media (max-width: 600px) {
+      .shortcut-grid, .before-after {
+        grid-template-columns: 1fr;
+      }
+      .step-card h3 {
+        font-size: 1.6rem;
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<!-- header with hamburger (same as previous articles) -->
+<header class="site-header">
+  <div class="container header-wrapper">
+    <div class="logo">
+      <a href="https://shotavix.com/">SHOTAVIX<span>·</span></a>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="https://shotavix.com/">Home</a></li>
+        <li><a href="https://shotavix.com/gear">Gear</a></li>
+        <li><a href="https://shotavix.com/techniques">Techniques</a></li>
+        <li><a href="https://shotavix.com/video">Video</a></li>
+        <li><a href="https://shotavix.com/beginners">Beginner's</a></li>
+        <li><a href="https://shotavix.com/editing">Editing</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- mobile overlay -->
+<div class="mobile-nav-overlay" id="mobileNavOverlay">
+  <div class="mobile-nav-panel">
+    <div class="mobile-nav-header">
+      <div class="logo">SHOTAVIX<span>·</span></div>
+      <button class="close-btn" id="closeNavBtn" aria-label="Close menu">×</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="https://shotavix.com/">Home</a></li>
+      <li><a href="https://shotavix.com/gear">Gear</a></li>
+      <li><a href="https://shotavix.com/techniques">Techniques</a></li>
+      <li><a href="https://shotavix.com/video">Video</a></li>
+      <li><a href="https://shotavix.com/beginners">Beginner's</a></li>
+      <li><a href="https://shotavix.com/editing">Editing</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- MAIN ARTICLE CONTENT -->
+<main class="article-container">
+  <div class="article-hero">
+    <h1>Lightroom Editing Tutorial: Make Your Photos Look Professional (2026)</h1>
+    <div class="article-meta">
+      <span><i class="fas fa-calendar-alt"></i> Published: April 8, 2026</span>
+      <span><i class="fas fa-user"></i> by <a href="https://shotavix.com/author/oli-sa" class="author-intro">Oli Sa</a></span>
+    </div>
+  </div>
+
+  
+  <div class="featured-image">
+    <img src="https://shotavix.com/lightroom-editing-tutorial.webp" alt="Lightroom interface showing professional photo editing workflow">
+    <div class="image-caption">The 'perfect photograph' in-camera is still not a completed image. The finished product comes from editing </div>
+  </div>
+
+  <div class="article-content">
+    <p><strong>I've been a professional photographer for close to eight years now, and something I learned very early on is that the 'perfect photograph' in-camera is still not a completed image. The finished product comes from editing .</strong> Whether you're new to photography or fairly seasoned, understanding how to edit photos like a pro is crucial.</p>
+    
+    <p>A professional photo editing workflow in 2026 usually starts with an AI baseline and ends in Lightroom . This comprehensive tutorial will walk you through the essential steps—from importing and organizing to advanced AI masking and batch editing—so you can transform your flat files into professional, polished images.</p>
+
+    <div class="expert-tip">
+      <strong><i class="fas fa-lightbulb" style="color:#2e7d32; margin-right:0.5rem;"></i>The Pro's Mindset:</strong> "Editing is approached as an interpretive process rather than a corrective one. Core concepts such as exposure, contrast, color, and detail should be understood so you can make informed decisions instead of relying on guesswork ."
+    </div>
+
+    <h2>Part 1: Before You Edit—Essential Prep Work</h2>
+
+    <!-- Step 1: Backup Your Images -->
+    <div class="step-card">
+      <div class="lr-badge">WORKFLOW • STEP 1</div>
+      <h3><span class="step-number">1</span> Back Up Your Images (Non-Negotiable)</h3>
+      
+      <p>When it comes to dealing with what is perhaps the biggest day of our clients' lives, the stakes are high, and we need to ensure we're prepared with a solid backup solution. For me, this is absolutely non-negotiable .</p>
+      
+      <div class="workflow-tip">
+        <strong><i class="fas fa-database" style="color:#f7b731;"></i> The 3-2-1 Backup Rule:</strong>
+        <p style="margin-top:0.5rem; color:#ddd;">My goal is to have three copies of the files: my working files, one backup drive, and one stored off-site. In my case, the off-site backup is in the cloud .</p>
+      </div>
+      
+      <p>Losing client photos could potentially destroy a photographer's reputation or even career. From the moment you click the shutter, you need to think about how safe your files are .</p>
+    </div>
+
+    <!-- Step 2: Culling Your Photos -->
+    <div class="step-card">
+      <div class="lr-badge">WORKFLOW • STEP 2</div>
+      <h3><span class="step-number">2</span> Cull Your Photos Efficiently</h3>
+      
+      <p>At weddings, we can shoot thousands of images, and not all of them will be delivered to the client. Culling is the process of selecting the best photos from a larger set .</p>
+      
+      <p>In 2026, AI-assisted culling has become a game-changer. Lightroom's latest addition, AI Assisted Culling, can automatically flag out-of-focus shots and closed eyes . By letting the tool handle the tedious sorting, you can save hours and focus on your best images .</p>
+      
+      <p><strong>Pro tip:</strong> Use Smart Previews within Lightroom for faster culling. This will make it quicker to sift through the images without accessing the heavy RAW files .</p>
+    </div>
+
+    <!-- Step 3: Organize Your Files -->
+    <div class="step-card">
+      <div class="lr-badge">WORKFLOW • STEP 3</div>
+      <h3><span class="step-number">3</span> Keep File Names, Folders, and Backups Predictable</h3>
+      
+      <p>For the sake of your future self, organizing your images is crucial. Create a folder structure that is logical to you, such as organizing by date, event, or client name. Keep this consistent .</p>
+      
+      <p>I like to organize my files in a large folder by year. I then break this down into subcategories like '01. Katie & Andrew' and '02. Joanne & Michael.' Within these folders, I keep subfolders for RAW files, selected images, and the exported JPEG files once edited .</p>
+      
+      <p>A well-organized photo library not only saves time but also helps you stay focused on the creative aspects of editing rather than getting bogged down in administrative tasks .</p>
+    </div>
+
+    <!-- Step 4: Set Up Your Workspace -->
+    <div class="step-card">
+      <div class="lr-badge">WORKFLOW • STEP 4</div>
+      <h3><span class="step-number">4</span> Set Up Your Physical and Digital Workspace</h3>
+      
+      <p>A professional photo editing workflow in 2026 starts before the first slider moves. Creating an efficient and comfortable workspace is crucial .</p>
+      
+      <p>In Lightroom, you can collapse and hide the tools you don't use. I prefer to use the Develop tools in 'Solo Mode,' which lets you concentrate on the specific tools you're working with .</p>
+      
+      <p><strong>Keyboard shortcut tip:</strong> Use 'F' to go full screen, 'G' for grid mode, and 'D' for Develop module .</p>
+    </div>
+
+    <h2>Part 2: The 7-Step Professional Editing Workflow</h2>
+
+    <!-- Step 5: Import Your Images -->
+    <div class="step-card">
+      <div class="lr-badge">EDITING • STEP 1</div>
+      <h3><span class="step-number">5</span> Import Your Images Correctly</h3>
+      
+      <p>As you import, you can add metadata, keywords, and copyright information. This not only helps with future searches but also protects your work .</p>
+      
+      <p>Select the size of your previews. I find 'standard' previews work well for me. I also like to create smart previews, as this allows me to work faster .</p>
+      
+      <p>In Lightroom Classic, understanding how catalogs, folders, previews, and metadata really work is essential—they protect your original files .</p>
+    </div>
+
+    <!-- Step 6: Basic Global Adjustments -->
+    <div class="step-card">
+      <div class="lr-badge">EDITING • STEP 2</div>
+      <h3><span class="step-number">6</span> Master Basic Adjustments</h3>
+      
+      <p>Basic adjustments are the foundation of your editing process .</p>
+      
+      <ul>
+        <li><strong>Exposure:</strong> Start with the Exposure slider to correct overall brightness .</li>
+        <li><strong>Contrast:</strong> Follow with Contrast to add depth .</li>
+        <li><strong>Highlights & Shadows:</strong> Adjust to recover detail in bright and dark areas .</li>
+        <li><strong>Whites & Blacks:</strong> Fine-tune to set the dynamic range .</li>
+        <li><strong>Clarity:</strong> Use the Clarity slider to add midtone contrast, giving your image a punchier look—but be careful not to overdo this .</li>
+      </ul>
+      
+      <p>These adjustments set the stage for more detailed editing, ensuring your image has a balanced and polished appearance .</p>
+    </div>
+
+    <!-- Step 7: Cropping and Straightening -->
+    <div class="step-card">
+      <div class="lr-badge">EDITING • STEP 3</div>
+      <h3><span class="step-number">7</span> Crop and Straighten Like a Pro</h3>
+      
+      <p>Cropping and straightening are essential steps to perfect your composition. In Lightroom, use the Crop Overlay tool to remove distractions or to focus on your subject .</p>
+      
+      <p><strong>Pro tip:</strong> Use the 'R' key to quickly enter the crop tool .</p>
+    </div>
+
+    <!-- Step 8: Color Correction -->
+    <div class="step-card">
+      <div class="lr-badge">EDITING • STEP 4</div>
+      <h3><span class="step-number">8</span> Keep Colors Consistent</h3>
+      
+      <p>Color correction is crucial for creating a consistent and appealing look in your images. For portrait work, pay attention to how well your editor maintains skin tone under mixed light .</p>
+      
+      <p>Start by fine-tuning the Temperature and Tint sliders to achieve the desired warmth or coolness. Next, use the Vibrance and Saturation sliders to enhance colors, being careful not to overdo it .</p>
+      
+      <p>If necessary, use the HSL panel to selectively adjust individual colors, ensuring skin tones and other key elements are natural .</p>
+    </div>
+
+    <!-- Step 9: Masking & Local Adjustments -->
+    <div class="step-card">
+      <div class="lr-badge">EDITING • STEP 5</div>
+      <h3><span class="step-number">9</span> Master AI Masking for Precision</h3>
+      
+      <p>Masking is the secret to making your photos stand out. It gives you total control, letting you brighten a subject or change colors in one specific spot without affecting the rest of the image .</p>
+      
+      <p>In 2026, Lightroom's AI Masking tools are more powerful than ever. You'll learn to use specialized masks for Sky, Vegetation, Architecture, and People, ensuring every element of your photo is perfectly balanced .</p>
+      
+      <div class="pro-tip-box">
+        <strong>Advanced Masking Technique:</strong> Discover the power of Intersection. By finding the sweet spot where two masks overlap—like your Subject and a Radial Gradient—you can create a virtual softbox that brightens only your subject's face .
+      </div>
+      
+      <p><strong>New for 2026:</strong> Snow Masking tool isolates winter textures, while Reflection Removal automatically eliminates unwanted glare .</p>
+    </div>
+
+    <!-- Step 10: Sharpening & Noise Reduction -->
+    <div class="step-card">
+      <div class="lr-badge">EDITING • STEP 6</div>
+      <h3><span class="step-number">10</span> Add Sharpening and Noise Reduction</h3>
+      
+      <p>Sharpening and noise reduction are the finishing touches that can significantly enhance the quality of your images .</p>
+      
+      <p>In Lightroom, use the Detail panel to apply sharpening, focusing on bringing out the fine details without making the image look overly crisp .</p>
+      
+      <p>For noise reduction, increase the SHOTAVIXnce slider to reduce graininess in the image, especially in low-light shots. Balance these adjustments carefully to maintain a natural look .</p>
+    </div>
+
+    <!-- Step 11: Final Touches -->
+    <div class="step-card">
+      <div class="lr-badge">EDITING • STEP 7</div>
+      <h3><span class="step-number">11</span> Add Final Touches</h3>
+      
+      <p>The final touches bring your edit together. Review your image at full screen (use the 'F' key), checking for any remaining spots or distractions using the Spot Removal tool .</p>
+      
+      <p>Consider adding a subtle vignette using the Effects panel to draw attention to the center of the image .</p>
+    </div>
+
+    <h2>Part 3: Pro-Level Techniques</h2>
+
+    <!-- Batch Editing -->
+    <div class="step-card">
+      <div class="lr-badge">PRO • BATCH EDITING</div>
+      <h3><span class="step-number">12</span> Batch Edit Like a Pro</h3>
+      
+      <p>Instead of repeating the same actions dozens of times, you can simply edit one photo to a high standard and then save all the changes as a separate style .</p>
+      
+      <p><strong>How to batch edit in Lightroom:</strong></p>
+      <ol>
+        <li><strong>Create a preset:</strong> Edit one photo, then click the "Presets" section, find the three dots, and select "Create New Preset" .</li>
+        <li><strong>Sync settings:</strong> In Lightroom Classic, select the edited frame, then select the rest using Shift, and click the "Sync" button .</li>
+        <li><strong>Match exposures:</strong> Use the "Match Total Exposures" function to automatically compensate for microscopic fluctuations in the camera's exposure meter .</li>
+      </ol>
+      
+      <p>This approach is especially good for event photography, vlogs, studio sessions, and social media content, as it lets you maintain a consistent style regardless of the total number of images .</p>
+    </div>
+
+    <!-- AI Culling Integration -->
+    <div class="step-card">
+      <div class="lr-badge">PRO • AI WORKFLOW</div>
+      <h3><span class="step-number">13</span> Integrate AI Culling with Lightroom</h3>
+      
+      <p>A professional photo editing workflow in 2026 usually starts with an AI baseline and ends in Lightroom . AI culling tools can process thousands of photos in a matter of minutes, compared to the hours spent on manual reviewing .</p>
+      
+      <p>Advanced AI algorithms can detect minute features like eyes closed or motion blur that could be overlooked manually. Direct integration with Lightroom Classic means no need to import or export between applications, reducing friction .</p>
+    </div>
+
+    <!-- Keyboard Shortcuts -->
+    <div class="step-card">
+      <div class="lr-badge">PRO • SHORTCUTS</div>
+      <h3><span class="step-number">14</span> Essential Keyboard Shortcuts</h3>
+      
+      <div class="shortcut-grid">
+        <div class="shortcut-item"><strong>G</strong><span>Grid view</span></div>
+        <div class="shortcut-item"><strong>D</strong><span>Develop module</span></div>
+        <div class="shortcut-item"><strong>R</strong><span>Crop tool</span></div>
+        <div class="shortcut-item"><strong>F</strong><span>Full screen</span></div>
+        <div class="shortcut-item"><strong>Ctrl/Cmd + C</strong><span>Copy settings</span></div>
+        <div class="shortcut-item"><strong>Ctrl/Cmd + V</strong><span>Paste settings</span></div>
+        <div class="shortcut-item"><strong>Q</strong><span>Spot removal</span></div>
+        <div class="shortcut-item"><strong>K</strong><span>Adjustment brush</span></div>
+      </div>
+      
+      <p>Memorizing these shortcuts can cut your editing time in half .</p>
+    </div>
+
+    <!-- Performance Optimization -->
+    <div class="step-card">
+      <div class="lr-badge">PRO • PERFORMANCE</div>
+      <h3><span class="step-number">15</span> Optimize Lightroom Performance</h3>
+      
+      <p>Editing multiple photos at once is the most resource-intensive process in Lightroom. Even powerful computers can freeze .</p>
+      
+      <ul>
+        <li><strong>Smart previews:</strong> Creating smart preview images during import enables the software to avoid accessing heavy source files .</li>
+        <li><strong>Cache size:</strong> Increase the Camera Raw Cache size to 20-50 GB in the settings. This reduces crashes and speeds up editing .</li>
+        <li><strong>Order of operations:</strong> Leave retouching and neural network applications for the final stages of editing .</li>
+      </ul>
+    </div>
+
+    <h2>Part 4: Before vs After—See the Transformation</h2>
+    
+    <div class="before-after">
+      <div class="before-box">
+        <span class="badge">BEFORE</span>
+        <p>Flat, underexposed, color cast, no separation</p>
+        <p style="font-size:0.9rem;">The raw file straight from camera—all the data is there, but it needs interpretation .</p>
+      </div>
+      <div class="after-box">
+        <span class="badge">AFTER</span>
+        <p>Balanced exposure, accurate colors, selective depth, professional finish</p>
+        <p style="font-size:0.9rem;">The final image after applying the 7-step workflow .</p>
+      </div>
+    </div>
+
+    <h2>2026's New AI Features You Need to Know</h2>
+    
+    <div class="comparison-table">
+      <h3>Lightroom 2026 AI Updates</h3>
+      
+      <div class="comp-row"><span class="comp-label">AI Assisted Culling</span><span class="comp-value">Automatically flag out-of-focus shots and closed eyes </span></div>
+      <div class="comp-row"><span class="comp-label">AI Masking Enhancements</span><span class="comp-value">Snow Masking, Sky, Vegetation, Architecture, People masks </span></div>
+      <div class="comp-row"><span class="comp-label">Distraction Removal</span><span class="comp-value">Automatically eliminate people and reflections </span></div>
+      <div class="comp-row"><span class="comp-label">AI Denoise</span><span class="comp-value">Strips away heavy noise while preserving professional-grade detail </span></div>
+    </div>
+
+    <h2>Exporting for Different Purposes</h2>
+    
+    <div class="step-card">
+      <h3><span class="step-number">16</span> Export Images Correctly</h3>
+      
+      <p>Exporting images correctly is crucial for maintaining quality across different platforms .</p>
+      
+      <ul>
+        <li><strong>For print:</strong> Full-size JPEG, high quality (90-100%), sRGB or Adobe RGB .</li>
+        <li><strong>For web/social:</strong> Resized to appropriate dimensions, sRGB, quality 80-85% for faster loading .</li>
+        <li><strong>For client delivery:</strong> Create a consistent naming convention and folder structure .</li>
+      </ul>
+    </div>
+
+    <h2>Your 7-Day Lightroom Mastery Challenge</h2>
+    
+    <ul>
+      <li><strong>Day 1:</strong> Set up your folder structure and import a test shoot correctly .</li>
+      <li><strong>Day 2:</strong> Practice basic adjustments (exposure, contrast, highlights, shadows) on 10 photos .</li>
+      <li><strong>Day 3:</strong> Master color correction—try matching skin tones across different lighting conditions .</li>
+      <li><strong>Day 4:</strong> Experiment with AI masking—create separate adjustments for subject and background .</li>
+      <li><strong>Day 5:</strong> Create your first custom preset from a photo you love .</li>
+      <li><strong>Day 6:</strong> Batch edit a series of 20 photos using your new preset .</li>
+      <li><strong>Day 7:</strong> Apply sharpening and noise reduction, then export properly for web and print .</li>
+    </ul>
+
+    <h2>Final Thoughts: Editing Is an Interpretive Process</h2>
+    
+    <p>Editing is approached as an interpretive process rather than a corrective one. Core concepts such as exposure, contrast, color, and detail should be understood so you can make informed decisions instead of relying on guesswork .</p>
+    
+    <p>As your skills develop, more advanced techniques can be introduced gradually, encouraging experimentation while reinforcing strong fundamentals .</p>
+    
+    <p>The goal is to be equipped not only with technical skills, but with a confident mindset and a sustainable approach to photo editing—turning editing from a source of frustration into a rewarding extension of your photographic vision .</p>
+    
+    <div class="expert-tip">
+      <strong><i class="fas fa-gem" style="color:#2e7d32; margin-right:0.5rem;"></i>Final Challenge:</strong> Take one photo from your recent shoot and apply the 7-step workflow. Then compare it to your usual edits. You'll see the difference. Your BEST edit is your NEXT edit!
+    </div>
+
+  </div>
+
+  <!-- related posts -->
+<aside class="related-posts">
+  <h2 class="section-title">You may also like</h2>
+  <div class="related-grid">
+
+    <div class="related-card">
+      <img src="https://shotavix.com/best-photo-editing-software-2026.webp" alt="Photo editing software">
+      <h4><a href="https://shotavix.com/best-photo-editing-software-2026">Best Photo Editing Software for Photographers 2026</a></h4>
+      <div class="meta">Apr 8</div>
+    </div>
+
+    <div class="related-card">
+      <img src="https://shotavix.com/lightroom-editing-tutorial.webp" alt="Lightroom tutorial">
+      <h4><a href="https://shotavix.com/lightroom-editing-tutorial">Lightroom Editing Tutorial: Professional Workflow</a></h4>
+      <div class="meta">Apr 8</div>
+    </div>
+
+    <div class="related-card">
+      <img src="https://shotavix.com/photoshop-vs-lightroom-2026.webp" alt="Photoshop vs Lightroom">
+      <h4><a href="https://shotavix.com/photoshop-vs-lightroom-2026">Photoshop vs Lightroom: Which Is Better?</a></h4>
+      <div class="meta">Apr 8</div>
+    </div>
+
+    <div class="related-card">
+      <img src="https://shotavix.com/free-photo-editing-apps-2026.webp" alt="Free editing apps">
+      <h4><a href="https://shotavix.com/free-photo-editing-apps-2026">Best Free Photo Editing Apps 2026</a></h4>
+      <div class="meta">Apr 8</div>
+    </div>
+
+    <div class="related-card">
+      <img src="https://shotavix.com/camera-settings-cheat-sheet.webp" alt="Camera settings cheat sheet">
+      <h4><a href="https://shotavix.com/camera-settings-cheat-sheet">Camera Settings Cheat Sheet for Perfect Photos</a></h4>
+      <div class="meta">Apr 8</div>
+    </div>
+
+    <div class="related-card">
+      <img src="https://shotavix.com/manual-mode-guide.webp" alt="Manual mode guide">
+      <h4><a href="https://shotavix.com/manual-mode-guide">Manual Mode Photography: Beginner Guide</a></h4>
+      <div class="meta">Apr 8</div>
+    </div>
+
+  </div>
+</aside>
+</main>
+
+<!-- footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <div class="footer-logo">SHOTAVIX<span>·</span></div>
+        <p>In-depth camera reviews, honest buying advice, and photography inspiration — made for enthusiasts, by enthusiasts.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/olisashedi" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@shotavix" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.threads.com/@olisashedi" target="_blank"><i class="fab fa-threads"></i></a>
+          <a href="https://www.facebook.com/lisa.251771" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+          <ul>
+            <li><a href="https://shotavix.com/gear">Gear & Reviews</a></li>
+            <li><a href="https://shotavix.com/techniques">Tips & Techniques</a></li>
+            <li><a href="https://shotavix.com/video">Video & Film</a></li>
+            <li><a href="https://shotavix.com/beginners">Beginner's Corner</a></li>
+            <li><a href="https://shotavix.com/editing">Editing & Business</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://shotavix.com">Home</a></li>
+            <li><a href="https://shotavix.com/contact">Contact</a></li>
+            <li><a href="https://shotavix.com/about">About</a></li>
+            <li><a href="https://shotavix.com/privacy">Privacy</a></li>
+            <li><a href="https://shotavix.com/terms">Terms</a></li>
+          </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2026 SHOTAVIX Camera Blog. All rights reserved. Shot with passion.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- hamburger functionality -->
+<script>
+  (function() {
+    const hamburger = document.getElementById('hamburgerBtn');
+    const overlay = document.getElementById('mobileNavOverlay');
+    const closeBtn = document.getElementById('closeNavBtn');
+
+    function openMenu() {
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    if (hamburger) hamburger.addEventListener('click', openMenu);
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+
+    overlay.addEventListener('click', function(e) {
+      if (e.target === overlay) closeMenu();
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && overlay.classList.contains('active')) closeMenu();
+    });
+  })();
+</script>
+</body>
+</html>
