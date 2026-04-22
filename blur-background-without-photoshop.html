@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="alternate" type="application/rss+xml" title="SHOTAVIX Camera Blog RSS Feed" href="https://shotavix.com/feed.xml" />
+
+  <!-- robots meta -->
+  <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+  <!-- PRIMARY META -->
+  <title>How to Blur the Background in Photos (Without Photoshop) — 2026 Guide</title>
+  <meta name="description" content="Learn 5 ways to blur backgrounds without Photoshop: use wide apertures, increase subject distance, choose the right focal length, and master smartphone portrait mode.">
+  <meta name="author" content="Oli Sa">
+  <link rel="canonical" href="https://shotavix.com/blur-background-without-photoshop">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shotavix.com/blur-background-without-photoshop">
+  <meta property="og:title" content="How to Blur the Background in Photos (Without Photoshop)">
+  <meta property="og:image" content="https://shotavix.com/blur-background-without-photoshop.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="SHOTAVIX Camera Blog">
+  <meta property="og:description" content="Learn 5 ways to blur backgrounds without Photoshop: use wide apertures, increase subject distance, choose the right focal length, and master smartphone portrait mode.">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/webp" href="https://shotavix.com/favicon.webp">
+
+  <!-- SCHEMA MARKUP (Article) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How to Blur the Background in Photos (Without Photoshop)",
+    "description": "Learn 5 ways to blur backgrounds without Photoshop: use wide apertures, increase subject distance, choose the right focal length, and master smartphone portrait mode.",
+    "image": "https://shotavix.com/blur-background-without-photoshop.webp",
+    "author": {
+      "@type": "Person",
+      "name": "Oli Sa",
+      "url": "https://shotavix.com/author/oli-sa"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "SHOTAVIX",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://shotavix.com/logo.webp"
+      }
+    },
+    "datePublished": "2026-04-22T10:00:00+00:00",
+    "dateModified": "2026-04-22T10:00:00+00:00",
+    "mainEntityOfPage": "https://shotavix.com/blur-background-without-photoshop"
+  }
+  </script>
+
+  <!-- Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Only minimal specific styles for this article, no full CSS reset -->
+  <style>
+    /* Only article-specific enhancements, no broad layout changes */
+    .guide-badge {
+      display: inline-block;
+      background: #b85e3a15;
+      color: #b85e3a;
+      font-weight: 600;
+      font-size: 0.8rem;
+      padding: 0.3rem 1rem;
+      border-radius: 50px;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.8rem;
+      border-left: 3px solid #b85e3a;
+    }
+    
+    .tip-card {
+      background: white;
+      border-radius: 28px;
+      padding: 1.8rem 2rem;
+      margin: 2.5rem 0;
+      box-shadow: 0 12px 28px -8px rgba(0,0,0,0.05);
+      border: 1px solid #f0f0f0;
+      transition: transform 0.2s;
+    }
+    
+    .tip-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 32px -12px rgba(0,0,0,0.1);
+    }
+    
+    .tip-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: #1a1a1a;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+    
+    .tip-number {
+      display: inline-block;
+      background: #b85e3a;
+      color: white;
+      font-weight: bold;
+      font-size: 1.2rem;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 40px;
+      margin-right: 1rem;
+    }
+    
+    .pro-tip-box {
+      background: #e8f4e8;
+      border-radius: 20px;
+      padding: 1.2rem 1.8rem;
+      margin: 2rem 0;
+      border-left: 6px solid #2e7d32;
+    }
+    
+    .quote-box {
+      background: #f1ede9;
+      border-radius: 20px;
+      padding: 1.2rem 1.8rem;
+      margin: 1.5rem 0;
+      font-style: italic;
+      border-left: 6px solid #b85e3a;
+    }
+    
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .good-box, .bad-box {
+      background: #f8f8f8;
+      border-radius: 20px;
+      padding: 1.5rem;
+    }
+    
+    .good-box h4 { color: #2e7d32; }
+    .bad-box h4 { color: #b85e3a; }
+    
+    .good-box ul, .bad-box ul {
+      margin-top: 1rem;
+      padding-left: 1.2rem;
+    }
+    
+    .settings-guide {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    
+    .setting-item {
+      background: #f8f8f8;
+      border-radius: 16px;
+      padding: 1rem;
+      text-align: center;
+    }
+    
+    .setting-item strong {
+      display: block;
+      color: #b85e3a;
+      font-size: 1rem;
+    }
+    
+    .lens-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    
+    .lens-item {
+      background: #f8f8f8;
+      border-radius: 16px;
+      padding: 1rem;
+      text-align: center;
+    }
+    
+    .lens-item strong {
+      display: block;
+      color: #b85e3a;
+      font-size: 1rem;
+    }
+    
+    .smartphone-tip {
+      background: #1e1e1e;
+      color: white;
+      border-radius: 28px;
+      padding: 2rem;
+      margin: 3rem 0;
+    }
+    
+    .smartphone-tip h3 {
+      color: white;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .app-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.8rem 0;
+      border-bottom: 1px solid #333;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    
+    .app-name {
+      font-weight: 600;
+      color: #f7b731;
+      min-width: 120px;
+    }
+    
+    .app-detail {
+      flex: 1;
+      color: #ddd;
+    }
+    
+    @media (max-width: 600px) {
+      .comparison-grid, .settings-guide, .lens-grid {
+        grid-template-columns: 1fr;
+      }
+      .tip-card h3 {
+        font-size: 1.6rem;
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<!-- header with hamburger (same as previous articles) -->
+<header class="site-header">
+  <div class="container header-wrapper">
+    <div class="logo">
+      <a href="https://shotavix.com/">SHOTAVIX<span>·</span></a>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="https://shotavix.com/">Home</a></li>
+        <li><a href="https://shotavix.com/gear">Gear</a></li>
+        <li><a href="https://shotavix.com/techniques">Techniques</a></li>
+        <li><a href="https://shotavix.com/video">Video</a></li>
+        <li><a href="https://shotavix.com/beginners">Beginner's</a></li>
+        <li><a href="https://shotavix.com/editing">Editing</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- mobile overlay -->
+<div class="mobile-nav-overlay" id="mobileNavOverlay">
+  <div class="mobile-nav-panel">
+    <div class="mobile-nav-header">
+      <div class="logo">SHOTAVIX<span>·</span></div>
+      <button class="close-btn" id="closeNavBtn" aria-label="Close menu">×</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="https://shotavix.com/">Home</a></li>
+      <li><a href="https://shotavix.com/gear">Gear</a></li>
+      <li><a href="https://shotavix.com/techniques">Techniques</a></li>
+      <li><a href="https://shotavix.com/video">Video</a></li>
+      <li><a href="https://shotavix.com/beginners">Beginner's</a></li>
+      <li><a href="https://shotavix.com/editing">Editing</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- MAIN ARTICLE CONTENT -->
+<main class="article-container">
+  <div class="article-hero">
+    <h1>How to Blur the Background in Photos (Without Photoshop)</h1>
+    <div class="article-meta">
+      <span><i class="fas fa-calendar-alt"></i> Published: April 22, 2026</span>
+      <span><i class="fas fa-user"></i> by <a href="https://shotavix.com/author/oli-sa" class="author-intro">Oli Sa</a></span>
+    </div>
+  </div>
+
+  <!-- featured image (no onerror) -->
+  <div class="featured-image">
+    <img src="https://shotavix.com/blur-background-without-photoshop.webp" alt="Portrait with blurred background showing depth of field effect">
+    <div class="image-caption">That creamy background blur makes your subject pop — and you don't need Photoshop to get it</div>
+  </div>
+
+  <div class="article-content">
+    <p><strong>You've seen those portraits where the subject is razor-sharp and the background melts into a beautiful, creamy blur.</strong> That effect — known as bokeh — is one of the most sought-after techniques in photography. It separates your subject from the background, adds depth, and instantly makes your photos look more professional .</p>
+    
+    <p>The good news? You don't need expensive editing software or years of experience to achieve this look. With a few simple techniques, you can blur backgrounds directly in-camera using any camera — even a smartphone. This guide covers five foolproof methods to get that dreamy background blur without ever opening Photoshop.</p>
+
+    <div class="pro-tip-box">
+      <strong><i class="fas fa-lightbulb" style="color:#2e7d32; margin-right:0.5rem;"></i>The Secret to Background Blur:</strong> "To create that beautiful soft-focus background effect in your images (known as 'bokeh'), all you need to understand is depth of field — the zone of sharpness in your photo. A shallow depth of field keeps your subject sharp while throwing the background out of focus" .
+    </div>
+
+    <h2>Method 1: Use a Wide Aperture (The Most Important Technique)</h2>
+
+    <!-- Tip 1 -->
+    <div class="tip-card">
+      <div class="guide-badge">METHOD 1 • APERTURE</div>
+      <h3><span class="tip-number">1</span> Shoot with the Widest Aperture Possible</h3>
+      
+      <p>Aperture is the opening in your lens that lets light through to the sensor. It's measured in f-stops — and here's the key: <strong>the lower the f-number, the wider the aperture, and the blurrier the background becomes</strong> .</p>
+      
+      <div class="settings-guide">
+        <div class="setting-item"><strong>Wide Aperture (f/1.4–f/2.8)</strong><span>Creates shallow depth of field — perfect for blurred backgrounds and portraits</span></div>
+        <div class="setting-item"><strong>Narrow Aperture (f/8–f/16)</strong><span>Creates deep depth of field — keeps everything sharp, like in landscapes</span></div>
+      </div>
+      
+      <p>If you're using a DSLR or mirrorless camera, switch to Aperture Priority mode (often marked "A" or "Av" on your dial). Then, set your aperture to the smallest f-number your lens allows — typically f/1.8, f/2.8, or f/4 . The camera will automatically adjust the shutter speed for a correct exposure.</p>
+      
+      <p><strong>Pro tip:</strong> Prime lenses (lenses with a fixed focal length, like 35mm or 50mm) often have much wider maximum apertures than zoom lenses. A 50mm f/1.8 "nifty fifty" is one of the most affordable and effective lenses for achieving beautiful background blur .</p>
+      
+      <div class="lens-grid">
+        <div class="lens-item"><strong>50mm f/1.8</strong><span>Best budget option — under $200, dramatic blur</span></div>
+        <div class="lens-item"><strong>85mm f/1.8</strong><span>Classic portrait lens, even creamier bokeh</span></div>
+        <div class="lens-item"><strong>35mm f/1.8</strong><span>Wider view for environmental portraits</span></div>
+      </div>
+    </div>
+
+    <h2>Method 2: Get Closer to Your Subject</h2>
+
+    <!-- Tip 2 -->
+    <div class="tip-card">
+      <div class="guide-badge">METHOD 2 • DISTANCE</div>
+      <h3><span class="tip-number">2</span> Decrease the Distance Between Camera and Subject</h3>
+      
+      <p>The closer you physically move your camera to your subject, the shallower your depth of field becomes . This is one of the easiest techniques to master — just take a few steps forward.</p>
+      
+      <div class="comparison-grid">
+        <div class="good-box">
+          <h4><i class="fas fa-check-circle"></i> Get Closer</h4>
+          <ul>
+            <li>Makes depth of field shallower</li>
+            <li>Creates more background blur</li>
+            <li>Emphasizes your subject</li>
+          </ul>
+        </div>
+        <div class="bad-box">
+          <h4><i class="fas fa-times-circle"></i> Stay Far Away</h4>
+          <ul>
+            <li>Makes depth of field deeper</li>
+            <li>Reduces background blur</li>
+            <li>Subject blends into background</li>
+          </ul>
+        </div>
+      </div>
+      
+      <p>There's a catch, though: getting too close can cause distortion, especially with wide-angle lenses. For portraits, aim to fill the frame without getting uncomfortably close. If you can't get physically closer, use a longer focal length (zoom in) instead — which brings us to the next technique.</p>
+    </div>
+
+    <h2>Method 3: Increase the Distance Between Subject and Background</h2>
+
+    <!-- Tip 3 -->
+    <div class="tip-card">
+      <div class="guide-badge">METHOD 3 • SEPARATION</div>
+      <h3><span class="tip-number">3</span> Move Your Subject Away from the Background</h3>
+      
+      <p>This is arguably the most powerful technique for achieving background blur, and it costs nothing. <strong>Simply move your subject as far away from the background as possible</strong> . The greater the distance between your subject and whatever is behind them, the blurrier that background will appear .</p>
+      
+      <div class="quote-box">
+        <i class="fas fa-quote-left" style="color:#b85e3a; margin-right:0.5rem;"></i> "If you want an even blurrier background, move your subject as far away from the background as you can. That extra distance between your subject and the wall or trees behind them will make the background blur dramatically" .
+      </div>
+      
+      <p><strong>Example:</strong> Instead of posing someone against a wall, move them 10-15 feet in front of it. Even at f/4, the wall will become a soft, pleasing blur. This technique works with any camera — even smartphones.</p>
+    </div>
+
+    <h2>Method 4: Use a Longer Focal Length</h2>
+
+    <!-- Tip 4 -->
+    <div class="tip-card">
+      <div class="guide-badge">METHOD 4 • FOCAL LENGTH</div>
+      <h3><span class="tip-number">4</span> Zoom In or Use a Telephoto Lens</h3>
+      
+      <p>Longer focal lengths (telephoto lenses) compress perspective and naturally produce shallower depth of field compared to wide-angle lenses . If you have a zoom lens, zoom all the way in. If you have a prime lens, try a longer one — 85mm or 135mm are excellent for portraits .</p>
+      
+      <div class="lens-grid">
+        <div class="lens-item"><strong>24mm (Wide)</strong><span>Deep depth of field, less background blur</span></div>
+        <div class="lens-item"><strong>50mm (Normal)</strong><span>Balanced, good for beginners</span></div>
+        <div class="lens-item"><strong>85-200mm (Telephoto)</strong><span>Shallow depth of field, maximum blur</span></div>
+      </div>
+      
+      <p><strong>Pro tip:</strong> When using a telephoto lens, you'll need to stand further back to frame your subject properly. That's fine — the longer focal length will compress the scene and make the background appear larger and more blurred .</p>
+    </div>
+
+    <h2>Method 5: Combine All Four Techniques for Maximum Effect</h2>
+
+    <!-- Tip 5 -->
+    <div class="tip-card">
+      <div class="guide-badge">METHOD 5 • THE PERFECT FORMULA</div>
+      <h3><span class="tip-number">5</span> Stack the Techniques Together</h3>
+      
+      <p>For the most dramatic background blur, combine all the methods above simultaneously:</p>
+      
+      <ol>
+        <li><strong>Use the widest aperture your lens allows</strong> (lowest f-number, like f/1.8 or f/2.8)</li>
+        <li><strong>Get as close to your subject as composition allows</strong></li>
+        <li><strong>Move your subject far away from the background</strong></li>
+        <li><strong>Use a longer focal length</strong> (zoom in or use a telephoto lens)</li>
+      </ol>
+      
+      <div class="quote-box">
+        <i class="fas fa-quote-left" style="color:#b85e3a; margin-right:0.5rem;"></i> "Do all four things at once and your backgrounds will become an unrecognizable wash of color — perfect for portraits where you want all attention on your subject" .
+      </div>
+    </div>
+
+    <h2>How to Blur Backgrounds with a Smartphone</h2>
+
+    <!-- Tip 6: Smartphone Portrait Mode -->
+    <div class="tip-card">
+      <div class="guide-badge">SMARTPHONE • PORTRAIT MODE</div>
+      <h3><span class="tip-number">6</span> Use Portrait Mode (But Understand Its Limits)</h3>
+      
+      <p>Modern smartphones use computational photography to simulate background blur. Portrait mode works by using dual cameras (or AI depth mapping) to separate the subject from the background and apply a digital blur .</p>
+      
+      <p><strong>How to get the best results:</strong></p>
+      <ul>
+        <li>Ensure adequate lighting — Portrait mode struggles in dim conditions</li>
+        <li>Keep the subject within 2-8 feet of the camera</li>
+        <li>Make sure there's good separation between subject and background</li>
+        <li>Aim for contrasty edges — the phone needs to detect where the subject ends</li>
+      </ul>
+      
+      <div class="smartphone-tip">
+        <h3>Best Apps for Background Blur (No Photoshop)</h3>
+        
+        <div class="app-row"><span class="app-name">Snapseed</span><span class="app-detail">Free iOS/Android — Lens Blur tool creates adjustable bokeh effects</span></div>
+        <div class="app-row"><span class="app-name">Focos</span><span class="app-detail">Advanced depth editing, adjustable aperture after shooting</span></div>
+        <div class="app-row"><span class="app-name">Adobe Lightroom Mobile</span><span class="app-detail">Free version includes selective blur and masking</span></div>
+        <div class="app-row"><span class="app-name">Google Photos</span><span class="app-detail">Blur tool in the editor (Pixel phones have best results)</span></div>
+      </div>
+    </div>
+
+    <h2>Camera Settings Quick Reference</h2>
+
+    <div class="tip-card">
+      <h3><span class="tip-number">📷</span> Quick Settings for Maximum Blur</h3>
+      
+      <div class="settings-guide">
+        <div class="setting-item"><strong>Shooting Mode</strong><span>Aperture Priority (A/Av)</span></div>
+        <div class="setting-item"><strong>Aperture</strong><span>Lowest possible (f/1.4, f/1.8, f/2.8)</span></div>
+        <div class="setting-item"><strong>ISO</strong><span>Keep low (100-400) for clean images</span></div>
+        <div class="setting-item"><strong>Focal Length</strong><span>50mm, 85mm, or zoomed in</span></div>
+        <div class="setting-item"><strong>Subject Distance</strong><span>As close as composition allows</span></div>
+        <div class="setting-item"><strong>Background Distance</strong><span>As far as possible</span></div>
+      </div>
+    </div>
+
+    <h2>Common Mistakes to Avoid</h2>
+    
+    <div class="comparison-grid">
+      <div class="good-box">
+        <h4><i class="fas fa-check-circle"></i> Do This</h4>
+        <ul>
+          <li>Use a fast prime lens (50mm f/1.8 is best value)</li>
+          <li>Shoot in Aperture Priority mode</li>
+          <li>Check your background for distractions</li>
+          <li>Move your subject away from walls</li>
+          <li>Focus on the eyes in portraits</li>
+        </ul>
+      </div>
+      <div class="bad-box">
+        <h4><i class="fas fa-times-circle"></i> Avoid This</h4>
+        <ul>
+          <li>Using the kit lens at f/5.6 expecting blur</li>
+          <li>Shooting subjects against a wall</li>
+          <li>Forgetting to check what's behind your subject</li>
+          <li>Using Auto mode — it won't prioritize wide apertures</li>
+          <li>Relying only on post-processing to fix a cluttered background</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>When Background Blur Isn't Always Better</h2>
+    
+    <p>While shallow depth of field is a powerful tool, it's not always the right choice. Environmental portraits that tell a story often benefit from keeping some background context visible. For landscapes, architecture, and street photography, you generally want everything sharp . Learn to use blur intentionally, not automatically.</p>
+    
+    <div class="pro-tip-box">
+      <strong><i class="fas fa-gem" style="color:#2e7d32; margin-right:0.5rem;"></i>Practice Challenge:</strong> "Find a subject and take 10 photos of them. For each photo, move them further from the background by 2-3 feet. Notice how the background gets progressively blurrier. This simple exercise will train your eye faster than any tutorial" .
+    </div>
+
+    <h2>Final Thoughts</h2>
+    
+    <p>Mastering background blur is one of the fastest ways to elevate your photography from snapshots to professional-looking images. The techniques here work with any camera — from a flagship mirrorless to a basic DSLR to a smartphone .</p>
+    
+    <p>The key is understanding the relationship between aperture, distance, and focal length. Once you grasp these concepts, you'll be able to create beautiful bokeh on demand, without ever opening Photoshop .</p>
+    
+    <div class="expert-tip">
+      <strong><i class="fas fa-gem" style="color:#2e7d32; margin-right:0.5rem;"></i>Final Challenge:</strong> This week, practice the "move your subject away from the background" technique. It's free, works with any camera, and the results will surprise you. Your BEST shot is your NEXT shot!
+    </div>
+
+  </div>
+
+  <!-- related posts -->
+<aside class="related-posts">
+  <h2 class="section-title">You may also like</h2>
+  <div class="related-grid">
+
+    <!-- Best Cameras Under $500 2026 -->
+    <div class="related-card">
+      <img src="https://shotavix.com/best-cameras-under-500-2026.webp" alt="Best cameras under $500">
+      <h4><a href="https://shotavix.com/best-cameras-under-500-2026">Best Cameras Under $500 in 2026</a></h4>
+    </div>
+
+    <!-- Best SD Cards for Mirrorless Cameras 2026 -->
+    <div class="related-card">
+      <img src="https://shotavix.com/best-sd-cards-2026.webp" alt="Best SD cards">
+      <h4><a href="https://shotavix.com/best-sd-cards-2026">Best SD Cards for Mirrorless Cameras 2026</a></h4>
+    </div>
+
+    <!-- Best Tripods for Photography 2026 -->
+    <div class="related-card">
+      <img src="https://shotavix.com/best-tripods-2026.webp" alt="Best tripods">
+      <h4><a href="https://shotavix.com/best-tripods-2026">Best Tripods for Photography 2026</a></h4>
+    </div>
+
+    <!-- Fujifilm vs Sony 2026 -->
+    <div class="related-card">
+      <img src="https://shotavix.com/fujifilm-vs-sony-2026.webp" alt="Fujifilm vs Sony">
+      <h4><a href="https://shotavix.com/fujifilm-vs-sony-2026">Fujifilm vs Sony 2026: Which Brand?</a></h4>
+    </div>
+
+    <!-- Best Event Cameras 2026 -->
+    <div class="related-card">
+      <img src="https://shotavix.com/best-event-cameras-2026.webp" alt="Best event cameras">
+      <h4><a href="https://shotavix.com/best-event-cameras-2026">Best Event Cameras 2026</a></h4>
+    </div>
+
+    <!-- How to Blur Background Without Photoshop -->
+    <div class="related-card">
+      <img src="https://shotavix.com/blur-background-without-photoshop.webp" alt="Blur background technique">
+      <h4><a href="https://shotavix.com/blur-background-without-photoshop">How to Blur Backgrounds (No Photoshop)</a></h4>
+    </div>
+
+  </div>
+</aside>
+</main>
+
+<!-- footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <div class="footer-logo">SHOTAVIX<span>·</span></div>
+        <p>In-depth camera reviews, honest buying advice, and photography inspiration — made for enthusiasts, by enthusiasts.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/olisashedi" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@shotavix" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.facebook.com/lisa.251771" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://shotavix.com/feed.xml" target="_blank"><i class="fa fa-rss"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+          <ul>
+            <li><a href="https://shotavix.com/gear">Gear & Reviews</a></li>
+            <li><a href="https://shotavix.com/techniques">Tips & Techniques</a></li>
+            <li><a href="https://shotavix.com/video">Video & Film</a></li>
+            <li><a href="https://shotavix.com/beginners">Beginner's Corner</a></li>
+            <li><a href="https://shotavix.com/editing">Editing & Business</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://shotavix.com">Home</a></li>
+            <li><a href="https://shotavix.com/contact">Contact</a></li>
+            <li><a href="https://shotavix.com/about">About</a></li>
+            <li><a href="https://shotavix.com/privacy">Privacy</a></li>
+            <li><a href="https://shotavix.com/terms">Terms</a></li>
+          </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2026 SHOTAVIX Camera Blog. All rights reserved. Shot with passion.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- hamburger functionality -->
+<script>
+  (function() {
+    const hamburger = document.getElementById('hamburgerBtn');
+    const overlay = document.getElementById('mobileNavOverlay');
+    const closeBtn = document.getElementById('closeNavBtn');
+
+    function openMenu() {
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    if (hamburger) hamburger.addEventListener('click', openMenu);
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+
+    overlay.addEventListener('click', function(e) {
+      if (e.target === overlay) closeMenu();
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && overlay.classList.contains('active')) closeMenu();
+    });
+  })();
+</script>
+</body>
+</html>

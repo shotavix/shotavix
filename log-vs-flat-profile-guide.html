@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="alternate" type="application/rss+xml" title="SHOTAVIX Camera Blog RSS Feed" href="https://shotavix.com/feed.xml" />
+
+  <!-- robots meta -->
+  <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+  <!-- PRIMARY META -->
+  <title>Log vs Flat Profile: What It Means and When to Use Each (2026 Guide)</title>
+  <meta name="description" content="Log vs flat picture profiles explained: C-Log, S-Log, N-Log, V-Log differences. Learn when to shoot flat vs standard for video and photography, plus grading tips.">
+  <meta name="author" content="Oli Sa">
+  <link rel="canonical" href="https://shotavix.com/log-vs-flat-profile-guide">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shotavix.com/log-vs-flat-profile-guide">
+  <meta property="og:title" content="Log vs Flat Profile: What It Means and When to Use Each (2026 Guide)">
+  <meta property="og:image" content="https://shotavix.com/log-vs-flat-profile-guide.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="SHOTAVIX Camera Blog">
+  <meta property="og:description" content="Log vs flat picture profiles explained: C-Log, S-Log, N-Log, V-Log differences. Learn when to shoot flat vs standard for video and photography, plus grading tips.">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/webp" href="https://shotavix.com/favicon.webp">
+
+  <!-- SCHEMA MARKUP (Article) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Log vs Flat Profile: What It Means and When to Use Each (2026 Guide)",
+    "description": "Log vs flat picture profiles explained: C-Log, S-Log, N-Log, V-Log differences. Learn when to shoot flat vs standard for video and photography, plus grading tips.",
+    "image": "https://shotavix.com/log-vs-flat-profile-guide.webp",
+    "author": {
+      "@type": "Person",
+      "name": "Oli Sa",
+      "url": "https://shotavix.com/author/oli-sa"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "SHOTAVIX",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://shotavix.com/logo.webp"
+      }
+    },
+    "datePublished": "2026-04-22T10:00:00+00:00",
+    "dateModified": "2026-04-22T10:00:00+00:00",
+    "mainEntityOfPage": "https://shotavix.com/log-vs-flat-profile-guide"
+  }
+  </script>
+
+  <!-- Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Only minimal specific styles for this article, no full CSS reset -->
+  <style>
+    /* Only article-specific enhancements, no broad layout changes */
+    .guide-badge {
+      display: inline-block;
+      background: #b85e3a15;
+      color: #b85e3a;
+      font-weight: 600;
+      font-size: 0.8rem;
+      padding: 0.3rem 1rem;
+      border-radius: 50px;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.8rem;
+      border-left: 3px solid #b85e3a;
+    }
+    
+    .tip-card {
+      background: white;
+      border-radius: 28px;
+      padding: 1.8rem 2rem;
+      margin: 2.5rem 0;
+      box-shadow: 0 12px 28px -8px rgba(0,0,0,0.05);
+      border: 1px solid #f0f0f0;
+      transition: transform 0.2s;
+    }
+    
+    .tip-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 32px -12px rgba(0,0,0,0.1);
+    }
+    
+    .tip-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: #1a1a1a;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+    
+    .step-number {
+      display: inline-block;
+      background: #b85e3a;
+      color: white;
+      font-weight: bold;
+      font-size: 1.2rem;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 40px;
+      margin-right: 1rem;
+    }
+    
+    .pro-tip-box {
+      background: #e8f4e8;
+      border-radius: 20px;
+      padding: 1.2rem 1.8rem;
+      margin: 2rem 0;
+      border-left: 6px solid #2e7d32;
+    }
+    
+    .quote-box {
+      background: #f1ede9;
+      border-radius: 20px;
+      padding: 1.2rem 1.8rem;
+      margin: 1.5rem 0;
+      font-style: italic;
+      border-left: 6px solid #b85e3a;
+    }
+    
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .good-box, .bad-box {
+      background: #f8f8f8;
+      border-radius: 20px;
+      padding: 1.5rem;
+    }
+    
+    .good-box h4 { color: #2e7d32; }
+    .bad-box h4 { color: #b85e3a; }
+    
+    .good-box ul, .bad-box ul {
+      margin-top: 1rem;
+      padding-left: 1.2rem;
+    }
+    
+    .profile-table {
+      background: #1e1e1e;
+      color: white;
+      border-radius: 28px;
+      padding: 2rem;
+      margin: 3rem 0;
+      overflow-x: auto;
+    }
+    
+    .profile-table h3 {
+      color: white;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .profile-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.8rem 0;
+      border-bottom: 1px solid #333;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    
+    .profile-name {
+      font-weight: 600;
+      color: #f7b731;
+      min-width: 120px;
+    }
+    
+    .profile-detail {
+      flex: 1;
+      color: #ddd;
+    }
+    
+    .settings-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    
+    .setting-item {
+      background: #f8f8f8;
+      border-radius: 16px;
+      padding: 1rem;
+      text-align: center;
+    }
+    
+    .setting-item strong {
+      display: block;
+      color: #b85e3a;
+      font-size: 1rem;
+    }
+    
+    .luts-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    
+    .lut-item {
+      background: #f8f8f8;
+      border-radius: 16px;
+      padding: 1rem;
+      text-align: center;
+    }
+    
+    .lut-item strong {
+      display: block;
+      color: #b85e3a;
+      font-size: 1rem;
+    }
+    
+    @media (max-width: 600px) {
+      .settings-grid, .comparison-grid, .luts-grid {
+        grid-template-columns: 1fr;
+      }
+      .tip-card h3 {
+        font-size: 1.6rem;
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<!-- header with hamburger (same as previous articles) -->
+<header class="site-header">
+  <div class="container header-wrapper">
+    <div class="logo">
+      <a href="https://shotavix.com/">SHOTAVIX<span>·</span></a>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="https://shotavix.com/">Home</a></li>
+        <li><a href="https://shotavix.com/gear">Gear</a></li>
+        <li><a href="https://shotavix.com/techniques">Techniques</a></li>
+        <li><a href="https://shotavix.com/video">Video</a></li>
+        <li><a href="https://shotavix.com/beginners">Beginner's</a></li>
+        <li><a href="https://shotavix.com/editing">Editing</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- mobile overlay -->
+<div class="mobile-nav-overlay" id="mobileNavOverlay">
+  <div class="mobile-nav-panel">
+    <div class="mobile-nav-header">
+      <div class="logo">SHOTAVIX<span>·</span></div>
+      <button class="close-btn" id="closeNavBtn" aria-label="Close menu">×</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="https://shotavix.com/">Home</a></li>
+      <li><a href="https://shotavix.com/gear">Gear</a></li>
+      <li><a href="https://shotavix.com/techniques">Techniques</a></li>
+      <li><a href="https://shotavix.com/video">Video</a></li>
+      <li><a href="https://shotavix.com/beginners">Beginner's</a></li>
+      <li><a href="https://shotavix.com/editing">Editing</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- MAIN ARTICLE CONTENT -->
+<main class="article-container">
+  <div class="article-hero">
+    <h1>Log vs Flat Profile: What It Means and When to Use Each (2026 Guide)</h1>
+    <div class="article-meta">
+      <span><i class="fas fa-calendar-alt"></i> Published: April 22, 2026</span>
+      <span><i class="fas fa-user"></i> by <a href="https://shotavix.com/author/oli-sa" class="author-intro">Oli Sa</a></span>
+    </div>
+  </div>
+
+  <!-- featured image (no onerror) -->
+  <div class="featured-image">
+    <img src="https://shotavix.com/log-vs-flat-profile-guide.webp" alt="Comparison of log, flat and standard picture profiles">
+    <div class="image-caption">Log profiles preserve more highlight and shadow detail — but require grading to look natural</div>
+  </div>
+
+  <div class="article-content">
+    <p><strong>You've seen the terms "log" and "flat" in camera menus, but what do they actually mean? And when should you use them?</strong> In 2026, log profiles like C-Log, S-Log, N-Log, and V-Log have become standard features even on mid-range cameras. But shooting log without understanding when and why can lead to flat, lifeless footage that's harder to grade than a standard profile .</p>
+    
+    <p>This guide explains everything: what log profiles actually do, how they differ from flat profiles, which cameras support which logs, and — most importantly — when you should use each one. Whether you're shooting video or stills, you'll learn how to choose the right profile for your workflow.</p>
+
+    <div class="pro-tip-box">
+      <strong><i class="fas fa-lightbulb" style="color:#2e7d32; margin-right:0.5rem;"></i>The Core Difference:</strong> Log profiles compress the highlights and lift the shadows using a logarithmic curve, preserving more dynamic range than a standard Rec.709 profile. Flat profiles also reduce contrast, but without the mathematical precision of log .
+    </div>
+
+    <h2>What Is a Picture Profile?</h2>
+    
+    <p>A picture profile is a preset that determines how your camera processes colors, contrast, saturation, and sharpness before saving the image or video. Standard profiles (like Standard, Vivid, or Portrait) apply significant contrast and saturation for a finished look straight out of camera .</p>
+    
+    <p>Log and flat profiles are different — they're designed to preserve maximum image data at the expense of looking good straight out of camera .</p>
+
+    <div class="profile-table">
+      <h3>Common Log Profiles by Brand (2026)</h3>
+      
+      <div class="profile-row"><span class="profile-name">Canon</span><span class="profile-detail">C-Log 1, 2, and 3 — C-Log 2 offers 16 stops dynamic range, C-Log 3 is easier to grade </span></div>
+      <div class="profile-row"><span class="profile-name">Sony</span><span class="profile-detail">S-Log2, S-Log3, S-Cinetone — S-Log3 with SGamut3.Cine is the professional standard </span></div>
+      <div class="profile-row"><span class="profile-name">Nikon</span><span class="profile-detail">N-Log (Z series) — 12+ stops, works with RED LUTs since acquisition </span></div>
+      <div class="profile-row"><span class="profile-name">Panasonic</span><span class="profile-detail">V-Log (S-series), V-Log L (GH series) — 14+ stops, cinema-quality </span></div>
+      <div class="profile-row"><span class="profile-name">Fujifilm</span><span class="profile-detail">F-Log, F-Log2 — F-Log2 offers 13+ stops, excellent color science </span></div>
+      <div class="profile-row"><span class="profile-name">Blackmagic</span><span class="profile-detail">Film Gen 5 — 16 stops, designed for heavy grading </span></div>
+    </div>
+
+    <h2>Log vs Flat: What's the Difference?</h2>
+    
+    <div class="tip-card">
+      <div class="guide-badge">LOG vs FLAT</div>
+      <h3><span class="step-number">1</span> The Technical Difference</h3>
+      
+      <p><strong>Log profiles</strong> use a mathematical logarithmic curve to compress highlights and raise shadows, preserving maximum dynamic range. They're designed specifically for color grading and have a known technical specification (gamma curve, color space, and sometimes LUTs provided by the manufacturer) .</p>
+      
+      <p><strong>Flat profiles</strong> (sometimes called Neutral, Natural, or Cine-like) simply reduce contrast and saturation without the mathematical precision of a log curve. They're a middle ground between standard profiles and log — more grading flexibility than standard, but less dynamic range than true log .</p>
+      
+      <div class="comparison-grid">
+        <div class="good-box">
+          <h4><i class="fas fa-check-circle"></i> Log Profile</h4>
+          <ul>
+            <li>Maximizes dynamic range (14-16 stops)</li>
+            <li>Requires grading/LUTs to look natural</li>
+            <li>Industry standard for cinema</li>
+            <li>More latitude for color correction</li>
+            <li>Larger file sizes</li>
+          </ul>
+        </div>
+        <div class="bad-box">
+          <h4><i class="fas fa-times-circle"></i> Flat Profile</h4>
+          <ul>
+            <li>Moderate dynamic range (10-12 stops)</li>
+            <li>Easier to grade than log</li>
+            <li>Good for quick-turnaround projects</li>
+            <li>Less risk of grading mistakes</li>
+            <li>Not suitable for heavy color grading</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <h2>When to Use Log Profiles</h2>
+
+    <div class="tip-card">
+      <div class="guide-badge">LOG • VIDEO</div>
+      <h3><span class="step-number">2</span> Use Log for High-End Video Production</h3>
+      
+      <p>Log is the industry standard for professional video. You should use log when:</p>
+      
+      <ul>
+        <li>You're shooting in high-contrast scenes with bright skies and dark shadows</li>
+        <li>You plan to color grade in post-production using professional tools like DaVinci Resolve</li>
+        <li>You need to match footage across multiple cameras (log gives a consistent starting point)</li>
+        <li>You're delivering for broadcast, cinema, or high-end commercial work</li>
+        <li>You have the time and expertise to grade properly</li>
+      </ul>
+      
+      <div class="quote-box">
+        <i class="fas fa-quote-left" style="color:#b85e3a; margin-right:0.5rem;"></i> "Log gives you the latitude to push colors and exposure further than any other profile. If you know what you're doing, the results can be spectacular" .
+      </div>
+      
+      <p><strong>2026 update:</strong> Nikon's acquisition of RED has brought RED LUTs to N-Log footage, making it easier to achieve a filmic look directly from Z series cameras . Canon's C-Log 2 offers up to 16 stops of dynamic range, rivaling ARRI. Sony's S-Log3 with S-Gamut3.Cine is the most widely supported log profile among third-party LUT creators .</p>
+    </div>
+
+    <div class="tip-card">
+      <div class="guide-badge">LOG • PHOTOGRAPHY</div>
+      <h3><span class="step-number">3</span> Using Log for Photography</h3>
+      
+      <p>Some photographers shoot in log for stills, but it's less common than in video. The benefits:</p>
+      
+      <ul>
+        <li>Maximum dynamic range capture in a single shot</li>
+        <li>More flexibility for extreme color grading</li>
+        <li>Better highlight and shadow recovery</li>
+      </ul>
+      
+      <p><strong>The downside:</strong> RAW files already capture maximum dynamic range. For most photographers, shooting RAW + a standard profile gives you the best of both worlds — a usable JPEG and a RAW file for extensive editing . Only shoot log for stills if your camera doesn't have RAW (some cameras shoot log video but not RAW) or if you're delivering video-first content and want consistent color.</p>
+    </div>
+
+    <h2>When to Use Flat Profiles</h2>
+
+    <div class="tip-card">
+      <div class="guide-badge">FLAT • VIDEO</div>
+      <h3><span class="step-number">4</span> Use Flat for Quick-Turnaround Video</h3>
+      
+      <p>Flat profiles are ideal for:</p>
+      
+      <ul>
+        <li>YouTube and social media content where you need to edit and upload quickly</li>
+        <li>Event videography (weddings, corporate events) with tight deadlines</li>
+        <li>When your camera doesn't have a true log profile</li>
+        <li>When you're learning color grading and log feels intimidating</li>
+        <li>Shooting in controlled lighting where dynamic range isn't extreme</li>
+      </ul>
+      
+      <div class="settings-grid">
+        <div class="setting-item"><strong>Canon</strong><span>Neutral with contrast -4, saturation -2</span></div>
+        <div class="setting-item"><strong>Sony</strong><span>PP Off or Cinema with adjustments</span></div>
+        <div class="setting-item"><strong>Nikon</strong><span>Flat Picture Control</span></div>
+        <div class="setting-item"><strong>Fujifilm</strong><span>Eterna Bleach Bypass or Pro Neg. Std</span></div>
+      </div>
+    </div>
+
+    <div class="tip-card">
+      <div class="guide-badge">FLAT • PHOTOGRAPHY</div>
+      <h3><span class="step-number">5</span> Flat Profiles for Photography</h3>
+      
+      <p>For photography, flat profiles can be useful when:</p>
+      
+      <ul>
+        <li>You're shooting JPEG and want more editing flexibility</li>
+        <li>Your camera doesn't have RAW</li>
+        <li>You're shooting tethered and want a neutral preview</li>
+      </ul>
+      
+      <p>However, if your camera shoots RAW, the profile you choose doesn't affect the RAW data — only the JPEG preview. Shoot RAW + JPEG with a neutral/flat profile to get the best of both worlds .</p>
+    </div>
+
+    <h2>Canon C-Log: A 2026 Update</h2>
+
+    <div class="tip-card">
+      <div class="guide-badge">CANON • C-LOG</div>
+      <h3><span class="step-number">6</span> C-Log 1, 2, and 3 Explained</h3>
+      
+      <p>Canon offers three log profiles on its cinema and mirrorless cameras:</p>
+      
+      <ul>
+        <li><strong>C-Log 1:</strong> Oldest, simplest, easiest to grade. Good for beginners.</li>
+        <li><strong>C-Log 2:</strong> Extended highlight and shadow range (up to 16 stops). Ideal for high-contrast scenes but more challenging to grade.</li>
+        <li><strong>C-Log 3:</strong> The sweet spot. Retains the dynamic range of C-Log 2 but with a grade closer to C-Log 1. The 2026 firmware updates on R5 Mark II and R6 Mark II have made C-Log 3 the standard recommendation .</li>
+      </ul>
+      
+      <div class="quote-box">
+        <i class="fas fa-quote-left" style="color:#b85e3a; margin-right:0.5rem;"></i> "With the latest firmware, C-Log 3 on the R5 Mark II is noticeably cleaner in the shadows and easier to grade than previous iterations" .
+      </div>
+    </div>
+
+    <h2>Sony S-Log: The Industry Standard</h2>
+
+    <div class="tip-card">
+      <div class="guide-badge">SONY • S-LOG</div>
+      <h3><span class="step-number">7</span> S-Log2 vs S-Log3</h3>
+      
+      <p>Sony offers two log profiles on its Alpha and Cinema Line cameras:</p>
+      
+      <ul>
+        <li><strong>S-Log2:</strong> Older, steeper curve, can be harder to grade. Best for very high-contrast scenes.</li>
+        <li><strong>S-Log3:</strong> Smoother curve, easier to grade, more forgiving. The professional standard.</li>
+      </ul>
+      
+      <p><strong>S-Gamut3.Cine</strong> is the recommended color space to pair with S-Log3. It's designed to match the color space of cinema cameras, making it easier to match Sony mirrorless footage with Venice or FX series cameras .</p>
+    </div>
+
+    <h2>Nikon N-Log: The RED Advantage</h2>
+
+    <div class="tip-card">
+      <div class="guide-badge">NIKON • N-LOG</div>
+      <h3><span class="step-number">8</span> N-Log and RED LUTs</h3>
+      
+      <p>Nikon's acquisition of RED in 2025 has begun showing results. The Z6 III and Z8 now include RED LUTs (Look-Up Tables) designed for N-Log footage, allowing you to apply a filmic look directly in-camera or in post .</p>
+      
+      <div class="quote-box">
+        <i class="fas fa-quote-left" style="color:#b85e3a; margin-right:0.5rem;"></i> "RED LUTs on Nikon Z series are a game-changer for documentary shooters who want a filmic look without spending hours grading" .
+      </div>
+    </div>
+
+    <h2>How to Grade Log and Flat Footage</h2>
+
+    <div class="tip-card">
+      <div class="guide-badge">GRADING • LOG</div>
+      <h3><span class="step-number">9</span> The Log Grading Workflow</h3>
+      
+      <p><strong>Step 1 — Apply a conversion LUT:</strong> Start by applying your camera manufacturer's official conversion LUT (e.g., Canon Log 3 to Rec.709). This brings your footage into a standard color space .</p>
+      
+      <p><strong>Step 2 — Correct exposure and white balance:</strong> Use your editing software's controls to adjust exposure, contrast, and white balance.</p>
+      
+      <p><strong>Step 3 — Apply creative grade:</strong> Add your creative LUTs or manual adjustments (curves, saturation, color wheels).</p>
+      
+      <p><strong>Step 4 — Secondary corrections:</strong> Use masks and qualifiers to adjust specific areas (skin tones, skies).</p>
+      
+      <div class="luts-grid">
+        <div class="lut-item"><strong>Free LUTs</strong><span>Manufacturer LUTs, Leeming LUT Pro, Ground Control</span></div>
+        <div class="lut-item"><strong>Paid LUTs</strong><span>Buttery LUTs, Joel Famularo, IWLTBAP</span></div>
+      </div>
+    </div>
+
+    <div class="tip-card">
+      <div class="guide-badge">GRADING • FLAT</div>
+      <h3><span class="step-number">10</span> The Flat Profile Workflow</h3>
+      
+      <p>Grading flat footage is simpler than log:</p>
+      
+      <ul>
+        <li>Add contrast using the curves or contrast slider</li>
+        <li>Adjust saturation to taste (flat profiles are often desaturated)</li>
+        <li>Apply a subtle creative LUT if desired</li>
+        <li>Less risk of introducing artifacts or banding</li>
+      </ul>
+    </div>
+
+    <h2>Exposing Log Correctly</h2>
+
+    <div class="tip-card">
+      <div class="guide-badge">EXPOSURE • LOG</div>
+      <h3><span class="step-number">11</span> Expose to the Right (ETTR)</h3>
+      
+      <p>Log profiles are designed to preserve highlight detail. The general rule: expose log footage 1-2 stops brighter than a standard profile .</p>
+      
+      <div class="settings-grid">
+        <div class="setting-item"><strong>Use Zebras</strong><span>Set zebras to 70% IRE for skin tones</span></div>
+        <div class="setting-item"><strong>Use False Color</strong><span>Skin tones should read around 50-60% IRE</span></div>
+        <div class="setting-item"><strong>Don't Clip Highlights</strong><span>Protect highlights even at the cost of shadows</span></div>
+      </div>
+      
+      <p><strong>Canon C-Log 3:</strong> Expose skin tones to 55-60% IRE. <strong>Sony S-Log3:</strong> Expose skin tones to 60-65% IRE. <strong>Nikon N-Log:</strong> Expose skin tones to 60-70% IRE .</p>
+    </div>
+
+    <h2>When NOT to Use Log</h2>
+    
+    <div class="comparison-grid">
+      <div class="bad-box">
+        <h4><i class="fas fa-times-circle"></i> Avoid Log When</h4>
+        <ul>
+          <li>You're delivering directly to clients without grading</li>
+          <li>You're shooting 8-bit video (log needs 10-bit to avoid banding) </li>
+          <li>You're in extremely low light (log amplifies noise)</li>
+          <li>You're a beginner still learning exposure</li>
+          <li>You need quick turnaround with minimal editing</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pro-tip-box">
+      <strong><i class="fas fa-gem" style="color:#2e7d32; margin-right:0.5rem;"></i>Final Pro Tip:</strong> "The best profile is the one that matches your workflow and skill level. Log isn't automatically 'better' — it's just different. If you're not going to grade your footage, shoot in a standard or flat profile. Your footage will look better than ungraded log" .
+    </div>
+
+  </div>
+
+  <!-- related posts -->
+  <aside class="related-posts">
+    <h2 class="section-title">You may also like</h2>
+    <div class="related-grid">
+      <div class="related-card">
+        <img src="https://shotavix.com/diy-product-photography-guide.webp" alt="DIY product photography setup with lights and backdrop">
+        <h4><a href="https://shotavix.com/diy-product-photography-guide">DIY Product Photography at Home: Setup, Lighting & Editing Guide (2026)</a></h4>
+    </div>
+      <div class="related-card">
+        <img src="https://shotavix.com/wedding-photography-guide.webp" alt="Wedding photography setup">
+        <h4><a href="https://shotavix.com/wedding-photography-guide">Wedding Photography Guide</a></h4>
+    </div>
+      <div class="related-card">
+        <img src="https://shotavix.com/low-light-photography-settings.webp" alt="Low light portrait">
+        <h4><a href="https://shotavix.com/low-light-photography-settings">Low Light Photography Settings</a></h4>
+    </div>
+    <div class="related-card">
+        <img src="https://shotavix.com/log-vs-flat-profile-guide.webp" alt="Log vs. flat profile comparison">
+        <h4><a href="https://shotavix.com/log-vs-flat-profile-guide">Log vs. Flat Profile Guide</a></h4>
+    </div>
+      <div class="related-card">
+        <img src="https://shotavix.com/best-camera-microphones-2026.webp" alt="Best camera microphones">
+        <h4><a href="https://shotavix.com/best-camera-microphones-2026">Best Camera Microphones (2026)</a></h4>
+    </div>
+      <div class="related-card">
+        <img src="https://shotavix.com/ai-headshots-vs-photographer-2026.webp" alt="AI headshots vs. photographer comparison">
+        <h4><a href="https://shotavix.com/ai-headshots-vs-photographer-2026">AI Headshots vs. Photographer (2026)</a></h4>
+    </div>
+    </div>
+  </aside>
+</main>
+
+<!-- footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <div class="footer-logo">SHOTAVIX<span>·</span></div>
+        <p>In-depth camera reviews, honest buying advice, and photography inspiration — made for enthusiasts, by enthusiasts.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/olisashedi" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@shotavix" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.facebook.com/lisa.251771" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://shotavix.com/feed.xml" target="_blank"><i class="fa fa-rss"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+          <ul>
+            <li><a href="https://shotavix.com/gear">Gear & Reviews</a></li>
+            <li><a href="https://shotavix.com/techniques">Tips & Techniques</a></li>
+            <li><a href="https://shotavix.com/video">Video & Film</a></li>
+            <li><a href="https://shotavix.com/beginners">Beginner's Corner</a></li>
+            <li><a href="https://shotavix.com/editing">Editing & Business</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://shotavix.com">Home</a></li>
+            <li><a href="https://shotavix.com/contact">Contact</a></li>
+            <li><a href="https://shotavix.com/about">About</a></li>
+            <li><a href="https://shotavix.com/privacy">Privacy</a></li>
+            <li><a href="https://shotavix.com/terms">Terms</a></li>
+          </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2026 SHOTAVIX Camera Blog. All rights reserved. Shot with passion.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- hamburger functionality -->
+<script>
+  (function() {
+    const hamburger = document.getElementById('hamburgerBtn');
+    const overlay = document.getElementById('mobileNavOverlay');
+    const closeBtn = document.getElementById('closeNavBtn');
+
+    function openMenu() {
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    if (hamburger) hamburger.addEventListener('click', openMenu);
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+
+    overlay.addEventListener('click', function(e) {
+      if (e.target === overlay) closeMenu();
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && overlay.classList.contains('active')) closeMenu();
+    });
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="alternate" type="application/rss+xml" title="SHOTAVIX Camera Blog RSS Feed" href="https://shotavix.com/feed.xml" />
+
+  <!-- robots meta -->
+  <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+  <!-- PRIMARY META -->
+  <title>Low Light Photography Settings: How to Get Sharp, Clean Photos Indoors (2026)</title>
+  <meta name="description" content="Master low light photography settings: aperture priority, ISO management, stabilization techniques, and AI noise reduction for sharp indoor photos.">
+  <meta name="author" content="Oli Sa">
+  <link rel="canonical" href="https://shotavix.com/low-light-photography-settings">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shotavix.com/low-light-photography-settings">
+  <meta property="og:title" content="Low Light Photography Settings: How to Get Sharp, Clean Photos Indoors">
+  <meta property="og:image" content="https://shotavix.com/low-light-photography-settings.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="SHOTAVIX Camera Blog">
+  <meta property="og:description" content="Master low light photography settings: aperture priority, ISO management, stabilization techniques, and AI noise reduction for sharp indoor photos.">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/webp" href="https://shotavix.com/favicon.webp">
+
+  <!-- SCHEMA MARKUP (Article) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Low Light Photography Settings: How to Get Sharp, Clean Photos Indoors (2026)",
+    "description": "Master low light photography settings: aperture priority, ISO management, stabilization techniques, and AI noise reduction for sharp indoor photos.",
+    "image": "https://shotavix.com/low-light-photography-settings.webp",
+    "author": {
+      "@type": "Person",
+      "name": "Oli Sa",
+      "url": "https://shotavix.com/author/oli-sa"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "SHOTAVIX",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://shotavix.com/logo.webp"
+      }
+    },
+    "datePublished": "2026-04-22T10:00:00+00:00",
+    "dateModified": "2026-04-22T10:00:00+00:00",
+    "mainEntityOfPage": "https://shotavix.com/low-light-photography-settings"
+  }
+  </script>
+
+  <!-- Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Only minimal specific styles for this article, no full CSS reset -->
+  <style>
+    /* Only article-specific enhancements, no broad layout changes */
+    .guide-badge {
+      display: inline-block;
+      background: #b85e3a15;
+      color: #b85e3a;
+      font-weight: 600;
+      font-size: 0.8rem;
+      padding: 0.3rem 1rem;
+      border-radius: 50px;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.8rem;
+      border-left: 3px solid #b85e3a;
+    }
+    
+    .tip-card {
+      background: white;
+      border-radius: 28px;
+      padding: 1.8rem 2rem;
+      margin: 2.5rem 0;
+      box-shadow: 0 12px 28px -8px rgba(0,0,0,0.05);
+      border: 1px solid #f0f0f0;
+      transition: transform 0.2s;
+    }
+    
+    .tip-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 32px -12px rgba(0,0,0,0.1);
+    }
+    
+    .tip-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: #1a1a1a;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+    
+    .step-number {
+      display: inline-block;
+      background: #b85e3a;
+      color: white;
+      font-weight: bold;
+      font-size: 1.2rem;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 40px;
+      margin-right: 1rem;
+    }
+    
+    .pro-tip-box {
+      background: #e8f4e8;
+      border-radius: 20px;
+      padding: 1.2rem 1.8rem;
+      margin: 2rem 0;
+      border-left: 6px solid #2e7d32;
+    }
+    
+    .quote-box {
+      background: #f1ede9;
+      border-radius: 20px;
+      padding: 1.2rem 1.8rem;
+      margin: 1.5rem 0;
+      font-style: italic;
+      border-left: 6px solid #b85e3a;
+    }
+    
+    .settings-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    
+    .setting-item {
+      background: #f8f8f8;
+      border-radius: 16px;
+      padding: 1rem;
+      text-align: center;
+    }
+    
+    .setting-item strong {
+      display: block;
+      color: #b85e3a;
+      font-size: 1rem;
+    }
+    
+    .scenario-table {
+      background: #1e1e1e;
+      color: white;
+      border-radius: 28px;
+      padding: 2rem;
+      margin: 3rem 0;
+      overflow-x: auto;
+    }
+    
+    .scenario-table h3 {
+      color: white;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .scenario-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.8rem 0;
+      border-bottom: 1px solid #333;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    
+    .scenario-label {
+      font-weight: 600;
+      color: #f7b731;
+      min-width: 120px;
+    }
+    
+    .scenario-value {
+      flex: 1;
+      color: #ddd;
+    }
+    
+    .checklist {
+      background: #1e1e1e;
+      color: white;
+      border-radius: 28px;
+      padding: 2rem;
+      margin: 3rem 0;
+    }
+    
+    .checklist h3 {
+      color: white;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .checklist-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.8rem 0;
+      border-bottom: 1px solid #333;
+    }
+    
+    .checklist-item i {
+      color: #f7b731;
+      width: 24px;
+    }
+    
+    .dos-donts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .dos-box, .donts-box {
+      background: #f8f8f8;
+      border-radius: 20px;
+      padding: 1.5rem;
+    }
+    
+    .dos-box h4 { color: #2e7d32; }
+    .donts-box h4 { color: #b85e3a; }
+    
+    .dos-box ul, .donts-box ul {
+      margin-top: 1rem;
+      padding-left: 1.2rem;
+    }
+    
+    .shutter-chart {
+      background: #f8f8f8;
+      border-radius: 20px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .shutter-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+      border-bottom: 1px dashed #ccc;
+    }
+    
+    .shutter-row:last-child {
+      border-bottom: none;
+    }
+    
+    @media (max-width: 600px) {
+      .settings-grid, .dos-donts {
+        grid-template-columns: 1fr;
+      }
+      .tip-card h3 {
+        font-size: 1.6rem;
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<!-- header with hamburger (same as previous articles) -->
+<header class="site-header">
+  <div class="container header-wrapper">
+    <div class="logo">
+      <a href="https://shotavix.com/">SHOTAVIX<span>·</span></a>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="https://shotavix.com/">Home</a></li>
+        <li><a href="https://shotavix.com/gear">Gear</a></li>
+        <li><a href="https://shotavix.com/techniques">Techniques</a></li>
+        <li><a href="https://shotavix.com/video">Video</a></li>
+        <li><a href="https://shotavix.com/beginners">Beginner's</a></li>
+        <li><a href="https://shotavix.com/editing">Editing</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- mobile overlay -->
+<div class="mobile-nav-overlay" id="mobileNavOverlay">
+  <div class="mobile-nav-panel">
+    <div class="mobile-nav-header">
+      <div class="logo">SHOTAVIX<span>·</span></div>
+      <button class="close-btn" id="closeNavBtn" aria-label="Close menu">×</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="https://shotavix.com/">Home</a></li>
+      <li><a href="https://shotavix.com/gear">Gear</a></li>
+      <li><a href="https://shotavix.com/techniques">Techniques</a></li>
+      <li><a href="https://shotavix.com/video">Video</a></li>
+      <li><a href="https://shotavix.com/beginners">Beginner's</a></li>
+      <li><a href="https://shotavix.com/editing">Editing</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- MAIN ARTICLE CONTENT -->
+<main class="article-container">
+  <div class="article-hero">
+    <h1>Low Light Photography Settings: How to Get Sharp, Clean Photos Indoors (2026)</h1>
+    <div class="article-meta">
+      <span><i class="fas fa-calendar-alt"></i> Published: April 22, 2026</span>
+      <span><i class="fas fa-user"></i> by <a href="https://shotavix.com/author/oli-sa" class="author-intro">Oli Sa</a></span>
+    </div>
+  </div>
+
+  <!-- featured image (no onerror) -->
+  <div class="featured-image">
+    <img src="https://shotavix.com/low-light-photography-settings.webp" alt="Low light photography setup with camera on tripod indoors">
+    <div class="image-caption">Master these settings and you'll never fear the dark again</div>
+  </div>
+
+  <div class="article-content">
+    <p><strong>Every dark scene has enough light to work with — if you know how to find it.</strong> The difference between a sharp, moody indoor shot and a blurry, noisy disaster comes down to three settings and one fundamental shift in how you think about ambient lighting .</p>
+    
+    <p>In 2026, low-light photography is more accessible than ever. Modern cameras handle high ISO better, AI denoising tools can rescue images that would have been unusable five years ago, and even smartphones now have sophisticated night modes . This guide covers everything you need to know to get sharp, clean photos indoors — from understanding the exposure triangle to mastering stabilization, and using AI to eliminate noise.</p>
+
+    <div class="pro-tip-box">
+      <strong><i class="fas fa-lightbulb" style="color:#2e7d32; margin-right:0.5rem;"></i>The Light Budget Framework:</strong> Every low-light shot is a three-way trade-off between aperture, shutter speed, and ISO — spend wisely based on your scenario . Aperture first, then shutter speed, then ISO as your last resort.
+    </div>
+
+    <h2>Understanding the Challenge: Why Low Light Is Hard</h2>
+    
+    <p>When shooting in low light, your camera faces three typical problems: blurry images from camera shake, digital noise from high ISO, and loss of detail from aggressive noise reduction .</p>
+    
+    <p><strong>Blurry photos</strong> occur when the camera uses a long shutter speed to capture enough light, but our shaky hands can't stay perfectly still. Even a fraction of a second can be too long to shoot handheld .</p>
+    
+    <p><strong>Digital noise</strong> appears when the camera compensates for low light by raising ISO. While this brightens the photo, it also amplifies unwanted grain .</p>
+    
+    <p><strong>Loss of detail</strong> often happens when in-camera noise reduction blurs away fine textures to smooth out noise — an intelligent blurring that reduces noise but sacrifices sharpness .</p>
+
+    <h2>The Light Budget: Your Three Settings</h2>
+    
+    <div class="tip-card">
+      <div class="guide-badge">THE EXPOSURE TRIANGLE</div>
+      <h3><span class="step-number">1</span> Aperture: Your Primary Weapon</h3>
+      
+      <p>Aperture is the first account you spend from — always. In low-light photography, your default position is to shoot wide open: f/1.8, f/2.0, or f/2.8 whenever your lens allows it .</p>
+      
+      <div class="quote-box">
+        <i class="fas fa-quote-left" style="color:#b85e3a; margin-right:0.5rem;"></i> "A fast lens at f/1.8 lets in 4× more light than a kit lens at f/3.5 — that's the difference between ISO 800 and ISO 3200 with no trade-off in shutter speed" .
+      </div>
+      
+      <div class="settings-grid">
+        <div class="setting-item"><strong>f/1.4 – f/2.8</strong><span>Maximum light, shallow depth of field — ideal for portraits and events</span></div>
+        <div class="setting-item"><strong>f/2.8 – f/4</strong><span>Good balance for groups and wider scenes</span></div>
+        <div class="setting-item"><strong>f/5.6 – f/8</strong><span>Only when you have abundant light or use a tripod</span></div>
+      </div>
+    </div>
+
+    <div class="tip-card">
+      <div class="guide-badge">THE EXPOSURE TRIANGLE</div>
+      <h3><span class="step-number">2</span> Shutter Speed: Finding Your Safe Minimum</h3>
+      
+      <p>Shutter speed is where most photographers overspend — they slow it down too far trying to compensate for lack of light, and end up with motion blur that no amount of post-processing can fix .</p>
+      
+      <div class="shutter-chart">
+        <div class="shutter-row"><span><strong>Focal Length</strong></span><span><strong>Full-Frame Minimum</strong></span><span><strong>APS-C Minimum</strong></span></div>
+        <div class="shutter-row"><span>24mm</span><span>1/25s</span><span>1/40s</span></div>
+        <div class="shutter-row"><span>35mm</span><span>1/35s</span><span>1/50s</span></div>
+        <div class="shutter-row"><span>50mm</span><span>1/50s</span><span>1/80s</span></div>
+        <div class="shutter-row"><span>85mm</span><span>1/100s</span><span>1/125s</span></div>
+        <div class="shutter-row"><span>135mm</span><span>1/160s</span><span>1/200s</span></div>
+      </div>
+      
+      <p><strong>The reciprocal rule:</strong> Your minimum handheld shutter speed equals 1 divided by your focal length . With IBIS (in-body image stabilization), you can often go 3–5 stops below this rule for static subjects .</p>
+    </div>
+
+    <div class="tip-card">
+      <div class="guide-badge">THE EXPOSURE TRIANGLE</div>
+      <h3><span class="step-number">3</span> ISO: Your Last Resort (But Don't Fear It)</h3>
+      
+      <p>ISO is the last account you touch — not because it's unimportant, but because it's the only one with a direct quality cost. Raising ISO amplifies your sensor's signal, which also amplifies digital noise .</p>
+      
+      <p>For most modern full-frame sensors: ISO 3200 is clean. ISO 6400 is acceptable with good denoising. ISO 12800+ requires AI noise reduction to recover well. For APS-C cameras, knock those numbers down by roughly one stop .</p>
+      
+      <div class="quote-box">
+        <i class="fas fa-quote-left" style="color:#b85e3a; margin-right:0.5rem;"></i> "In 2026, AI denoising tools like Topaz DeNoise AI and Lightroom's AI Denoise can recover usable images from ISO 6400+ that would previously have been unusable" .
+      </div>
+    </div>
+
+    <div class="scenario-table">
+      <h3>Low Light Settings by Scenario</h3>
+      
+      <div class="scenario-row"><span class="scenario-label">Indoor Portrait (Window Light)</span><span class="scenario-value">ISO 400-800, f/2.8, 1/60s — natural light only</span></div>
+      <div class="scenario-row"><span class="scenario-label">Dim Room with Lamps</span><span class="scenario-value">ISO 800-1600, f/2.8, 1/60s — use dual LED lamps</span></div>
+      <div class="scenario-row"><span class="scenario-label">Evening Candlelit Dinner</span><span class="scenario-value">ISO 1600-3200, f/1.8, 1/60s — tripod recommended</span></div>
+      <div class="scenario-row"><span class="scenario-label">Concert / Event (Handheld)</span><span class="scenario-value">ISO 3200-6400, f/1.8–f/2.8, 1/125s — freeze motion</span></div>
+      <div class="scenario-row"><span class="scenario-label">City Streets (Handheld)</span><span class="scenario-value">ISO 3200-6400, f/1.8–f/2.8, 1/60s–1/125s </span></div>
+      <div class="scenario-row"><span class="scenario-label">Light Trails (Tripod)</span><span class="scenario-value">ISO 100, f/8–f/11, 10-30 seconds </span></div>
+      <div class="scenario-row"><span class="scenario-label">Neon Signs / Shopfronts</span><span class="scenario-value">ISO 800-1600, f/2.8–f/4, 1/60s–1/125s </span></div>
+      <div class="scenario-row"><span class="scenario-label">Macro / Detail Shots</span><span class="scenario-value">ISO 800, f/4–f/5.6, 1/30s — use tripod</span></div>
+    </div>
+
+    <h2>Step 1: Find and Shape the Light</h2>
+
+    <div class="tip-card">
+      <div class="guide-badge">LIGHTING • NATURAL</div>
+      <h3><span class="step-number">4</span> Master Natural Window Light</h3>
+      
+      <p>Natural light is your most powerful ally. Unlike artificial bulbs or built-in flashes that create harsh shadows and unnatural color tones, daylight offers balanced, diffused ilSHOTAVIXtion ideal for clean, vibrant photos .</p>
+      
+      <p><strong>Positioning matters:</strong> Place your subject 2–5 feet in front of a window during daytime hours, especially those facing east or south in the Northern Hemisphere, where sunlight is strongest. Avoid direct midday sun if it creates strong contrasts; instead, aim for early morning or late afternoon when light is softer .</p>
+      
+      <p>Use sheer white curtains to diffuse harsh sunlight while still allowing brightness into the room. Turn off overhead lights — they often cast unflattering shadows and introduce yellow color casts .</p>
+    </div>
+
+    <div class="tip-card">
+      <div class="guide-badge">LIGHTING • ARTIFICIAL</div>
+      <h3><span class="step-number">5</span> Supplement with Household Lamps</h3>
+      
+      <p>When natural light isn't enough, supplement with household lamps. Choose warm-white or daylight-balanced LED bulbs (around 5000K) for more neutral tones. Place two lamps on either side of your subject to reduce deep shadows. Never rely solely on ceiling lights — they often cast unflattering overhead shadows and introduce yellow tints .</p>
+      
+      <div class="quote-box">
+        <i class="fas fa-quote-left" style="color:#b85e3a; margin-right:0.5rem;"></i> "Even an ordinary lamp can make a big difference. Instead of cranking ISO to the extreme, try adding light to the scene" .
+      </div>
+    </div>
+
+    <h2>Step 2: Stabilization — The Non-Negotiable</h2>
+
+    <div class="tip-card">
+      <div class="guide-badge">STABILIZATION</div>
+      <h3><span class="step-number">6</span> Use a Tripod or Stable Surface</h3>
+      
+      <p>A tripod is your best friend in low light. If you don't have one, use a stack of books, a table edge, a wall, or even a bag of rice as a makeshift base .</p>
+      
+      <p><strong>Always use a remote trigger or 2-second timer.</strong> Even pressing the shutter button can introduce camera shake that ruins a long exposure. A 2-second self-timer is equally effective and available on every camera .</p>
+      
+      <div class="settings-grid">
+        <div class="setting-item"><strong>Handheld</strong><span>Minimum 1/60s, use reciprocal rule, enable IBIS</span></div>
+        <div class="setting-item"><strong>Stable Surface</strong><span>1/4s – 2 seconds, use 2-second timer</span></div>
+        <div class="setting-item"><strong>Tripod</strong><span>Unlimited, use remote shutter</span></div>
+      </div>
+    </div>
+
+    <h2>Step 3: Master Your Camera Settings</h2>
+
+    <div class="tip-card">
+      <div class="guide-badge">CAMERA SETTINGS</div>
+      <h3><span class="step-number">7</span> Shoot in RAW and Use Manual Mode</h3>
+      
+      <p>RAW files retain full sensor data — roughly 12–14 stops of dynamic range depending on your camera. A JPEG compresses that data immediately and discards what it decides you don't need. In low light, that discarded data is often exactly what you need to recover shadow detail, fix white balance, and apply AI denoising effectively .</p>
+      
+      <p>Use Aperture Priority (Av/A) mode as a starting point. Set your aperture as wide as your scene allows, then let the camera choose shutter speed. Watch your shutter speed — if it drops below your reciprocal rule minimum, raise ISO or stabilize the camera .</p>
+      
+      <div class="checklist">
+        <h3>Quick Settings Checklist</h3>
+        <div class="checklist-item"><i class="fas fa-check-circle"></i> ✅ Switch to Aperture Priority (Av/A) mode</div>
+        <div class="checklist-item"><i class="fas fa-check-circle"></i> ✅ Set aperture to widest possible (f/1.8–f/2.8)</div>
+        <div class="checklist-item"><i class="fas fa-check-circle"></i> ✅ Check shutter speed — keep above reciprocal rule minimum</div>
+        <div class="checklist-item"><i class="fas fa-check-circle"></i> ✅ Use Auto ISO with max limit (6400-12800 depending on camera)</div>
+        <div class="checklist-item"><i class="fas fa-check-circle"></i> ✅ Enable RAW + JPEG or RAW only</div>
+        <div class="checklist-item"><i class="fas fa-check-circle"></i> ✅ Turn off flash — let ambient light set the mood</div>
+        <div class="checklist-item"><i class="fas fa-check-circle"></i> ✅ Clean your lens — smudges reduce clarity </div>
+      </div>
+    </div>
+
+    <h2>Step 4: Focus in Low Light</h2>
+
+    <div class="tip-card">
+      <div class="guide-badge">FOCUS</div>
+      <h3><span class="step-number">8</span> Lock Focus Manually</h3>
+      
+      <p>Autofocus often struggles in dim conditions. Tap to set focus manually on your subject's eyes or the central detail of an object. This prevents the lens from hunting or locking onto the background .</p>
+      
+      <p>For DSLR and mirrorless cameras, use a single AF point placed directly on your subject. If autofocus won't lock, switch to manual focus and use focus peaking if available.</p>
+    </div>
+
+    <h2>Step 5: Fix Noise in Post-Processing</h2>
+
+    <div class="tip-card">
+      <div class="guide-badge">POST-PROCESSING</div>
+      <h3><span class="step-number">9</span> Use AI Denoising Tools</h3>
+      
+      <p>In 2026, AI denoising has revolutionized low-light photography. Tools like Topaz DeNoise AI and Lightroom's AI Denoise can recover usable images from ISO 6400+ that would previously have been unusable .</p>
+      
+      <div class="settings-grid">
+        <div class="setting-item"><strong>Lightroom AI Denoise</strong><span>Best for general use — excellent balance of speed and quality</span></div>
+        <div class="setting-item"><strong>Topaz DeNoise AI</strong><span>Most powerful, best for extremely high ISO (12800+)</span></div>
+        <div class="setting-item"><strong>DxO PureRAW</strong><span>Excellent for optical corrections + denoise</span></div>
+      </div>
+      
+      <div class="quote-box">
+        <i class="fas fa-quote-left" style="color:#b85e3a; margin-right:0.5rem;"></i> "DeNoise AI is the perfect solution to remove distracting noise while also retaining, and enhancing, edge details" .
+      </div>
+      
+      <p><strong>Editing workflow for low-light images:</strong></p>
+      <ul>
+        <li>Apply AI denoise first — before any other adjustments</li>
+        <li>Adjust exposure and contrast subtly</li>
+        <li>Lift shadows carefully — too much reveals hidden noise</li>
+        <li>Sharpen selectively, avoiding noisy areas</li>
+        <li>Consider black and white conversion — grain becomes character</li>
+      </ul>
+    </div>
+
+    <h2>Step 6: Smartphone Low-Light Photography</h2>
+
+    <div class="tip-card">
+      <div class="guide-badge">SMARTPHONE</div>
+      <h3><span class="step-number">10</span> Use Night Mode and Hold Steady</h3>
+      
+      <p>Modern smartphones have excellent low-light capabilities. Use Night Mode (iPhone) or Night Sight (Android) — these capture multiple frames and stack them for cleaner results .</p>
+      
+      <div class="settings-grid">
+        <div class="setting-item"><strong>Use Night Mode</strong><span>Enable automatically in low light, or tap the moon icon</span></div>
+        <div class="setting-item"><strong>Stabilize</strong><span>Set phone on a surface or use a mini tripod</span></div>
+        <div class="setting-item"><strong>Tap to focus</strong><span>Lock focus on your subject</span></div>
+        <div class="setting-item"><strong>Hold still</strong><span>Night Mode takes 2-3 seconds — don't move</span></div>
+      </div>
+    </div>
+
+    <h2>Common Low-Light Mistakes to Avoid</h2>
+    
+    <div class="dos-donts">
+      <div class="dos-box">
+        <h4><i class="fas fa-check-circle"></i> Do</h4>
+        <ul>
+          <li>Use a tripod or stable surface for any shutter speed below 1/60s</li>
+          <li>Shoot in RAW format — JPEG discards recovery data</li>
+          <li>Use a 2-second timer or remote shutter to eliminate camera shake </li>
+          <li>Position subjects near windows for natural, flattering light</li>
+          <li>Turn off overhead lights to avoid mixed color temperatures </li>
+          <li>Use AI denoising tools for high-ISO images</li>
+          <li>Clean your lens before shooting — smudges reduce clarity </li>
+        </ul>
+      </div>
+      <div class="donts-box">
+        <h4><i class="fas fa-times-circle"></i> Don't</h4>
+        <ul>
+          <li>Rely on built-in flash — it creates harsh, flat lighting</li>
+          <li>Handhold exposures longer than 1/60s without stabilization</li>
+          <li>Max out ISO without checking your camera's noise tolerance</li>
+          <li>Use auto white balance — it can shift between shots</li>
+          <li>Over-sharpen noisy images — it amplifies grain</li>
+          <li>Mix warm and cool light sources (window + yellow bulbs) </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pro-tip-box">
+      <strong><i class="fas fa-gem" style="color:#2e7d32; margin-right:0.5rem;"></i>Final Pro Tip:</strong> "The Light Budget Framework changes how you approach every low-light situation. Ask yourself: What must I prioritize? If freezing motion matters, allocate your budget to faster shutter speed. If maximum image quality matters, allocate to lower ISO and use a tripod" . Your BEST shot is your NEXT shot!
+    </div>
+
+  </div>
+
+  <!-- related posts -->
+  <aside class="related-posts">
+    <h2 class="section-title">You may also like</h2>
+    <div class="related-grid">
+      <div class="related-card">
+        <img src="https://shotavix.com/diy-product-photography-guide.webp" alt="DIY product photography setup with lights and backdrop">
+        <h4><a href="https://shotavix.com/diy-product-photography-guide">DIY Product Photography at Home: Setup, Lighting & Editing Guide (2026)</a></h4>
+    </div>
+      <div class="related-card">
+        <img src="https://shotavix.com/wedding-photography-guide.webp" alt="Wedding photography setup">
+        <h4><a href="https://shotavix.com/wedding-photography-guide">Wedding Photography Guide</a></h4>
+    </div>
+      <div class="related-card">
+        <img src="https://shotavix.com/low-light-photography-settings.webp" alt="Low light portrait">
+        <h4><a href="https://shotavix.com/low-light-photography-settings">Low Light Photography Settings</a></h4>
+    </div>
+    <div class="related-card">
+        <img src="https://shotavix.com/log-vs-flat-profile-guide.webp" alt="Log vs. flat profile comparison">
+        <h4><a href="https://shotavix.com/log-vs-flat-profile-guide">Log vs. Flat Profile Guide</a></h4>
+    </div>
+      <div class="related-card">
+        <img src="https://shotavix.com/best-camera-microphones-2026.webp" alt="Best camera microphones">
+        <h4><a href="https://shotavix.com/best-camera-microphones-2026">Best Camera Microphones (2026)</a></h4>
+    </div>
+      <div class="related-card">
+        <img src="https://shotavix.com/ai-headshots-vs-photographer-2026.webp" alt="AI headshots vs. photographer comparison">
+        <h4><a href="https://shotavix.com/ai-headshots-vs-photographer-2026">AI Headshots vs. Photographer (2026)</a></h4>
+    </div>
+    </div>
+  </aside>
+</main>
+
+<!-- footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <div class="footer-logo">SHOTAVIX<span>·</span></div>
+        <p>In-depth camera reviews, honest buying advice, and photography inspiration — made for enthusiasts, by enthusiasts.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/olisashedi" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@shotavix" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.facebook.com/lisa.251771" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://shotavix.com/feed.xml" target="_blank"><i class="fa fa-rss"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+          <ul>
+            <li><a href="https://shotavix.com/gear">Gear & Reviews</a></li>
+            <li><a href="https://shotavix.com/techniques">Tips & Techniques</a></li>
+            <li><a href="https://shotavix.com/video">Video & Film</a></li>
+            <li><a href="https://shotavix.com/beginners">Beginner's Corner</a></li>
+            <li><a href="https://shotavix.com/editing">Editing & Business</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://shotavix.com">Home</a></li>
+            <li><a href="https://shotavix.com/contact">Contact</a></li>
+            <li><a href="https://shotavix.com/about">About</a></li>
+            <li><a href="https://shotavix.com/privacy">Privacy</a></li>
+            <li><a href="https://shotavix.com/terms">Terms</a></li>
+          </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2026 SHOTAVIX Camera Blog. All rights reserved. Shot with passion.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- hamburger functionality -->
+<script>
+  (function() {
+    const hamburger = document.getElementById('hamburgerBtn');
+    const overlay = document.getElementById('mobileNavOverlay');
+    const closeBtn = document.getElementById('closeNavBtn');
+
+    function openMenu() {
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    if (hamburger) hamburger.addEventListener('click', openMenu);
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+
+    overlay.addEventListener('click', function(e) {
+      if (e.target === overlay) closeMenu();
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && overlay.classList.contains('active')) closeMenu();
+    });
+  })();
+</script>
+</body>
+</html>
