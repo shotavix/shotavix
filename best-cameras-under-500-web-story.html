@@ -22,9 +22,45 @@
 
     <link rel="canonical" href="https://shotavix.com/best-cameras-under-500-web-story" />
 
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
-    <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-boilerplate>
+body {
+  -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+  -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+  -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+  animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+}
 
+@-webkit-keyframes -amp-start {
+  from { visibility: hidden; }
+  to { visibility: visible; }
+}
+@-moz-keyframes -amp-start {
+  from { visibility: hidden; }
+  to { visibility: visible; }
+}
+@-ms-keyframes -amp-start {
+  from { visibility: hidden; }
+  to { visibility: visible; }
+}
+@-o-keyframes -amp-start {
+  from { visibility: hidden; }
+  to { visibility: visible; }
+}
+@keyframes -amp-start {
+  from { visibility: hidden; }
+  to { visibility: visible; }
+}
+</style>
+<noscript>
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: none;
+      -moz-animation: none;
+      -ms-animation: none;
+      animation: none;
+    }
+  </style>
+</noscript>
     <style amp-custom>
       /* ── Global ── */
       * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -521,5 +557,18 @@
 
 
     </amp-story>
+    <!-- AMP Analytics must be INSIDE body but AFTER amp-story -->
+    <amp-analytics type="gtag" data-credentials="include">
+      <script type="application/json">
+        {
+          "vars": {
+            "gtag_id": "G-8EB67E6RKH",
+            "config": {
+              "G-8EB67E6RKH": { "groups": "default" }
+            }
+          }
+        }
+      </script>
+    </amp-analytics>
   </body>
 </html>
