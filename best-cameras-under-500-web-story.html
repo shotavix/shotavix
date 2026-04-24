@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html ⚡ lang="en">
+<html amp lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
     <meta name="robots" content="max-image-preview:large" />
     <title>Best Cameras Under $500 in 2026 — SHOTAVIX</title>
     <meta name="description" content="5 cameras under $500 that actually take great photos. Tested and ranked by SHOTAVIX." />
@@ -11,14 +11,21 @@
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
     <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8EB67E6RKH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 
-  gtag('config', 'G-8EB67E6RKH');
-</script>
+    <!-- Google Analytics with amp-analytics component -->
+    <amp-analytics type="gtag" data-credentials="include">
+      <script type="application/json">
+        {
+          "vars": {
+            "gtag_id": "G-8EB67E6RKH",
+            "config": {
+              "G-8EB67E6RKH": { "groups": "default" }
+            }
+          }
+        }
+      </script>
+    </amp-analytics>
 
     <link rel="canonical" href="https://shotavix.com/best-cameras-under-500-web-story" />
 
@@ -161,6 +168,11 @@
         line-height: 1;
         user-select: none;
       }
+      
+      /* Additional fix for attachment page background */
+      .attachment-page amp-story-page-attachment {
+        --story-page-attachment-background-color: #0a0a0a !important;
+      }
     </style>
   </head>
 
@@ -173,6 +185,7 @@
       poster-portrait-src="https://placehold.co/640x853/0a0a0a/e8c97a?text=SHOTAVIX"
       poster-square-src="https://placehold.co/640x640/0a0a0a/e8c97a?text=SHOTAVIX"
       poster-landscape-src="https://placehold.co/853x640/0a0a0a/e8c97a?text=SHOTAVIX"
+      supports-landscape
     >
 
       <!-- ══════════════════════════════════════════
@@ -182,7 +195,7 @@
         <amp-story-grid-layer template="fill">
           <div style="width:100%;height:100%;background:linear-gradient(160deg,#0a0a0a 0%,#1c1508 50%,#0a0a0a 100%);">
             <!-- Decorative shutter circles -->
-            <svg width="100%" height="100%" viewBox="0 0 450 800" xmlns="http://www.w3.org/2000/svg" style="opacity:0.18;">
+            <svg width="100%" height="100%" viewBox="0 0 450 800" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" style="opacity:0.18;">
               <circle cx="225" cy="320" r="260" fill="none" stroke="#e8c97a" stroke-width="0.5"/>
               <circle cx="225" cy="320" r="200" fill="none" stroke="#e8c97a" stroke-width="0.5"/>
               <circle cx="225" cy="320" r="140" fill="none" stroke="#e8c97a" stroke-width="1"/>
@@ -215,7 +228,7 @@
       <amp-story-page id="intro" auto-advance-after="6s">
         <amp-story-grid-layer template="fill">
           <div style="width:100%;height:100%;background:linear-gradient(180deg,#111 0%,#0a0a0a 100%);">
-            <svg width="100%" height="100%" viewBox="0 0 450 800" xmlns="http://www.w3.org/2000/svg" style="opacity:0.06;">
+            <svg width="100%" height="100%" viewBox="0 0 450 800" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" style="opacity:0.06;">
               <rect x="60" y="200" width="330" height="220" rx="24" fill="none" stroke="#e8c97a" stroke-width="2"/>
               <circle cx="225" cy="310" r="70" fill="none" stroke="#e8c97a" stroke-width="2"/>
               <circle cx="225" cy="310" r="40" fill="none" stroke="#e8c97a" stroke-width="1.5"/>
@@ -299,7 +312,7 @@
             <li>20.9MP APS-C sensor</li>
             <li>4K 30p uncropped video</li>
             <li>No viewfinder (vlogger-friendly)</li>
-            <li>In-body stabilisation</li>
+            <li>Digital stabilization only</li>
           </ul>
           <div class="verdict-box" style="margin-top:16px;">
             <div class="verdict-label">Verdict</div>
@@ -373,12 +386,14 @@
       <amp-story-page id="cam1" auto-advance-after="8s">
         <amp-story-grid-layer template="fill">
           <div style="width:100%;height:100%;background:linear-gradient(145deg,#12100a 0%,#1e1a08 100%);">
-            <!-- Gold glow using SVG radial so no position:absolute needed -->
-            <svg width="100%" height="100%" viewBox="0 0 450 800" xmlns="http://www.w3.org/2000/svg">
-              <radialGradient id="goldglow" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" stop-color="#e8c97a" stop-opacity="0.15"/>
-                <stop offset="100%" stop-color="#e8c97a" stop-opacity="0"/>
-              </radialGradient>
+            <!-- Gold glow using SVG radial -->
+            <svg width="100%" height="100%" viewBox="0 0 450 800" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialGradient id="goldglow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#e8c97a" stop-opacity="0.15"/>
+                  <stop offset="100%" stop-color="#e8c97a" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
               <rect x="75" y="250" width="300" height="300" rx="150" fill="url(#goldglow)"/>
               <text x="440" y="520" font-size="320" font-weight="900" fill="rgba(232,201,122,0.06)" text-anchor="end" font-family="Arial">1</text>
             </svg>
@@ -386,7 +401,7 @@
         </amp-story-grid-layer>
 
         <amp-story-grid-layer template="vertical" style="padding: 60px 32px 60px;">
-          <div class="tag">&#127942; Our top pick</div>
+          <div class="tag">🏆 Our top pick</div>
           <div class="rank-num" style="font-size:88px;">#1</div>
           <div class="price-badge">~$499</div>
           <div class="camera-name" style="font-size:38px;">Canon EOS<br/>R50</div>
@@ -408,7 +423,7 @@
       <amp-story-page id="verdict" auto-advance-after="7s">
         <amp-story-grid-layer template="fill">
           <div style="width:100%;height:100%;background:linear-gradient(160deg,#12100a 0%,#1e1a08 100%);">
-            <svg width="100%" height="100%" viewBox="0 0 450 800" xmlns="http://www.w3.org/2000/svg" style="opacity:0.07;">
+            <svg width="100%" height="100%" viewBox="0 0 450 800" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" style="opacity:0.07;">
               <polygon points="225,100 275,250 430,250 310,340 355,490 225,400 95,490 140,340 20,250 175,250" fill="#e8c97a"/>
             </svg>
           </div>
@@ -486,10 +501,13 @@
       </amp-story-page>
 
 
+      <!-- ══════════════════════════════════════════
+           PAGE 10 — CTA (LAST PAGE)
+      ══════════════════════════════════════════ -->
       <amp-story-page id="cta">
         <amp-story-grid-layer template="fill">
           <div style="width:100%;height:100%;background:linear-gradient(160deg,#0a0a0a 0%,#1c1508 100%);">
-            <svg width="100%" height="100%" viewBox="0 0 450 800" xmlns="http://www.w3.org/2000/svg" style="opacity:0.12;">
+            <svg width="100%" height="100%" viewBox="0 0 450 800" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" style="opacity:0.12;">
               <circle cx="225" cy="400" r="300" fill="none" stroke="#e8c97a" stroke-width="0.5"/>
               <circle cx="225" cy="400" r="200" fill="none" stroke="#e8c97a" stroke-width="0.5"/>
               <circle cx="225" cy="400" r="100" fill="none" stroke="#e8c97a" stroke-width="1"/>
@@ -508,17 +526,14 @@
           </div>
         </amp-story-grid-layer>
 
-        <!-- amp-story-page-attachment is the correct AMP-native outlink.
-             The theme and CTA text are rendered by the AMP runtime as a
-             "swipe up" drawer — no inner text content needed. -->
-        <amp-story-page-attachment
+        <!-- Correct amp-story-page-attachment implementation with proper attributes -->
+        <amp-story-page-outlink
           layout="nodisplay"
-          href="https://shotavix.com/best-cameras-under-500-2026"
-          cta-text="Read Full Article"
+          cta-image="https://placehold.co/48x48/0a0a0a/e8c97a?text=→"
           theme="dark">
-        </amp-story-page-attachment>
+          <a href="https://shotavix.com/best-cameras-under-500-2026" title="Read Full Article">Read Full Article</a>
+        </amp-story-page-outlink>
       </amp-story-page>
-
 
     </amp-story>
   </body>
