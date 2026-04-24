@@ -527,6 +527,181 @@
       </div>
     </div>
   </section>
+  
+  <!-- Featured Web Story Section - Add to your homepage -->
+<section class="featured-story-section">
+  <div class="featured-story-wrapper">
+    <div class="story-featured-card">
+      <a href="https://shotavix.com/best-cameras-under-500-web-story" class="story-card-link">
+        <div class="story-card-media">
+          <img src="https://shotavix.com/best-cameras-under-500-web-story.webp" alt="Best cameras under $500 web story">
+          <div class="story-play-badge">
+            <i class="fas fa-play"></i>
+            <span>Web Story</span>
+          </div>
+        </div>
+        <div class="story-card-content">
+          <span class="story-category">📹 Web Story</span>
+          <h3 class="story-card-title">Best Cameras Under $500 in 2026</h3>
+          <p class="story-card-excerpt">5 cameras that actually take great photos — tested and ranked. Watch the full story.</p>
+          <div class="story-card-meta">
+            <span><i class="fas fa-clock"></i> 2 min read</span>
+            <span class="watch-story">Watch now →</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Featured Web Story Section Styles */
+  .featured-story-section {
+    margin: 3rem 0;
+  }
+  
+  .featured-story-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .story-featured-card {
+    background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+    border-radius: 32px;
+    overflow: hidden;
+    box-shadow: 0 20px 35px -12px rgba(0,0,0,0.25);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+  
+  .story-featured-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 30px 45px -15px rgba(0,0,0,0.35);
+  }
+  
+  .story-card-link {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .story-card-media {
+    flex: 1;
+    min-width: 240px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .story-card-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+    display: block;
+  }
+  
+  .story-featured-card:hover .story-card-media img {
+    transform: scale(1.05);
+  }
+  
+  .story-play-badge {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    background: rgba(184,94,58,0.95);
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    backdrop-filter: blur(4px);
+  }
+  
+  .story-play-badge i {
+    font-size: 0.8rem;
+  }
+  
+  .story-card-content {
+    flex: 1.5;
+    padding: 2rem;
+    min-width: 280px;
+  }
+  
+  .story-category {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #b85e3a;
+    margin-bottom: 0.75rem;
+  }
+  
+  .story-card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+  }
+  
+  .story-card-excerpt {
+    color: rgba(255,255,255,0.7);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+  }
+  
+  .story-card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    color: rgba(255,255,255,0.5);
+    font-size: 0.85rem;
+  }
+  
+  .story-card-meta i {
+    margin-right: 0.3rem;
+  }
+  
+  .watch-story {
+    color: #b85e3a;
+    font-weight: 600;
+    transition: color 0.2s;
+  }
+  
+  .story-card-link:hover .watch-story {
+    color: #d1734f;
+  }
+  
+  /* Mobile responsive */
+  @media (max-width: 700px) {
+    .story-card-link {
+      flex-direction: column;
+    }
+    
+    .story-card-media {
+      min-height: 220px;
+      height: auto;
+    }
+    
+    .story-card-title {
+      font-size: 1.4rem;
+    }
+    
+    .story-card-content {
+      padding: 1.5rem;
+    }
+  }
+</style>
 
   <h2 class="section-title">Latest Articles</h2>
 <div class="category-grid">
