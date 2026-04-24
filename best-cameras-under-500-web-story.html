@@ -7,25 +7,15 @@
     <title>Best Cameras Under $500 in 2026 — SHOTAVIX</title>
     <meta name="description" content="5 cameras under $500 that actually take great photos. Tested and ranked by SHOTAVIX." />
 
-    <!-- AMP Web Story scripts -->
+    <!-- AMP Framework -->
     <script async src="https://cdn.ampproject.org/v0.js"></script>
+    
+    <!-- AMP Web Story Components -->
     <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
     <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+    
+    <!-- Proper AMP Analytics Implementation -->
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-
-    <!-- Google Analytics with amp-analytics component -->
-    <amp-analytics type="gtag" data-credentials="include">
-      <script type="application/json">
-        {
-          "vars": {
-            "gtag_id": "G-8EB67E6RKH",
-            "config": {
-              "G-8EB67E6RKH": { "groups": "default" }
-            }
-          }
-        }
-      </script>
-    </amp-analytics>
 
     <link rel="canonical" href="https://shotavix.com/best-cameras-under-500-web-story" />
 
@@ -151,7 +141,6 @@
         color: #e8c97a;
         text-transform: uppercase;
       }
-      /* Large decorative number — static, in-flow via fill layer */
       .number-bg-wrap {
         width: 100%;
         height: 100%;
@@ -167,11 +156,6 @@
         color: rgba(232,201,122,0.07);
         line-height: 1;
         user-select: none;
-      }
-      
-      /* Additional fix for attachment page background */
-      .attachment-page amp-story-page-attachment {
-        --story-page-attachment-background-color: #0a0a0a !important;
       }
     </style>
   </head>
@@ -194,7 +178,6 @@
       <amp-story-page id="cover" auto-advance-after="5s">
         <amp-story-grid-layer template="fill">
           <div style="width:100%;height:100%;background:linear-gradient(160deg,#0a0a0a 0%,#1c1508 50%,#0a0a0a 100%);">
-            <!-- Decorative shutter circles -->
             <svg width="100%" height="100%" viewBox="0 0 450 800" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" style="opacity:0.18;">
               <circle cx="225" cy="320" r="260" fill="none" stroke="#e8c97a" stroke-width="0.5"/>
               <circle cx="225" cy="320" r="200" fill="none" stroke="#e8c97a" stroke-width="0.5"/>
@@ -386,7 +369,6 @@
       <amp-story-page id="cam1" auto-advance-after="8s">
         <amp-story-grid-layer template="fill">
           <div style="width:100%;height:100%;background:linear-gradient(145deg,#12100a 0%,#1e1a08 100%);">
-            <!-- Gold glow using SVG radial -->
             <svg width="100%" height="100%" viewBox="0 0 450 800" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <radialGradient id="goldglow" cx="50%" cy="50%" r="50%">
@@ -401,7 +383,7 @@
         </amp-story-grid-layer>
 
         <amp-story-grid-layer template="vertical" style="padding: 60px 32px 60px;">
-          <div class="tag">🏆 Our top pick</div>
+          <div class="tag">&#127942; Our top pick</div>
           <div class="rank-num" style="font-size:88px;">#1</div>
           <div class="price-badge">~$499</div>
           <div class="camera-name" style="font-size:38px;">Canon EOS<br/>R50</div>
@@ -464,13 +446,11 @@
           <h2 class="headline-sm" style="margin-bottom:20px;">All 5 at a glance</h2>
 
           <div style="display:flex;flex-direction:column;gap:8px;">
-            <!-- Header -->
             <div style="display:grid;grid-template-columns:1fr 60px 60px;gap:4px;padding:0 8px;">
               <div style="font-family:Arial,sans-serif;font-size:10px;color:rgba(255,255,255,0.4);letter-spacing:1px;text-transform:uppercase;">Camera</div>
               <div style="font-family:Arial,sans-serif;font-size:10px;color:rgba(255,255,255,0.4);letter-spacing:1px;text-transform:uppercase;text-align:center;">Price</div>
               <div style="font-family:Arial,sans-serif;font-size:10px;color:rgba(255,255,255,0.4);letter-spacing:1px;text-transform:uppercase;text-align:center;">Score</div>
             </div>
-            <!-- Winner row -->
             <div style="display:grid;grid-template-columns:1fr 60px 60px;gap:4px;background:rgba(232,201,122,0.12);border:1px solid rgba(232,201,122,0.3);border-radius:10px;padding:12px 8px;align-items:center;">
               <div style="font-family:Arial,sans-serif;font-size:13px;font-weight:700;color:#fff;">Canon EOS R50</div>
               <div style="font-family:Arial,sans-serif;font-size:12px;color:#e8c97a;text-align:center;">$499</div>
@@ -503,6 +483,7 @@
 
       <!-- ══════════════════════════════════════════
            PAGE 10 — CTA (LAST PAGE)
+           Using the modern amp-story-page-outlink
       ══════════════════════════════════════════ -->
       <amp-story-page id="cta">
         <amp-story-grid-layer template="fill">
@@ -526,15 +507,30 @@
           </div>
         </amp-story-grid-layer>
 
-        <!-- Correct amp-story-page-attachment implementation with proper attributes -->
+        <!-- Modern amp-story-page-outlink with child <a> element as per latest AMP specs -->
         <amp-story-page-outlink
           layout="nodisplay"
           cta-image="https://placehold.co/48x48/0a0a0a/e8c97a?text=→"
+          cta-text="Read Full Article"
           theme="dark">
-          <a href="https://shotavix.com/best-cameras-under-500-2026" title="Read Full Article">Read Full Article</a>
+          <a href="https://shotavix.com/best-cameras-under-500-2026" title="Read Full Article"></a>
         </amp-story-page-outlink>
       </amp-story-page>
 
     </amp-story>
+
+    <!-- Proper AMP Analytics -->
+    <amp-analytics type="gtag" data-credentials="include">
+      <script type="application/json">
+        {
+          "vars": {
+            "gtag_id": "G-8EB67E6RKH",
+            "config": {
+              "G-8EB67E6RKH": { "groups": "default" }
+            }
+          }
+        }
+      </script>
+    </amp-analytics>
   </body>
 </html>
