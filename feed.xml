@@ -6,7 +6,7 @@
     <atom:link href="https://shotavix.com/feed.xml" rel="self" type="application/rss+xml" />
     <description><![CDATA[In-depth camera reviews, honest buying advice, and photography inspiration — made for enthusiasts, by enthusiasts.]]></description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Apr 2026 10:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 29 Apr 2026 10:00:00 GMT</lastBuildDate>
     <category>Photography</category>
     <category>Camera Reviews</category>
     <category>Filmmaking</category>
@@ -15,6 +15,18 @@
       <title>SHOTAVIX Camera Blog</title>
       <link>https://shotavix.com/</link>
     </image>
+
+
+<item>
+  <title><![CDATA[DIY vs Professional Product Photography: When Should You Upgrade?]]></title>
+  <link>https://shotavix.com/diy-vs-professional-product-photography</link>
+  <guid isPermaLink="true">hhttps://shotavix.com/diy-vs-professional-product-photography</guid>
+  <pubDate>wed, 29 Apr 2026 11:20:00 GMT</pubDate>
+  <dc:creator><![CDATA[Oli Sa]]></dc:creator>
+  <category><![CDATA[Gear]]></category>
+  <description><![CDATA[Not sure when to ditch DIY product photography for the real deal? We break down exactly when it's worth hiring a pro.]]></description>
+  <content:encoded><![CDATA[Not sure when to ditch DIY product photography for the real deal? We break down exactly when it's worth hiring a pro.]]></content:encoded>
+</item>
 
 
     <!-- 1. I Shot a Full Wedding With the Nikon Z8 -->
