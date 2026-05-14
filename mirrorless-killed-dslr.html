@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="alternate" type="application/rss+xml" title="SHOTAVIX Camera Blog RSS Feed" href="https://shotavix.com/feed.xml" />
+
+  <!-- robots meta -->
+  <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+  <!-- PRIMARY META -->
+  <title>Mirrorless Killed the DSLR — But Was That Actually a Good Thing?</title>
+  <meta name="description" content="After 5 years with DSLRs, I finally switched to mirrorless in 2026. Here's what I gained, what I lost, and whether the death of the DSLR is something to celebrate or mourn.">
+  <meta name="author" content="Oli Sa">
+  <link rel="canonical" href="https://shotavix.com/mirrorless-killed-dslr">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shotavix.com/mirrorless-killed-dslr">
+  <meta property="og:title" content="Mirrorless Killed the DSLR — But Was That Actually a Good Thing?">
+  <meta property="og:image" content="https://shotavix.com/mirrorless-killed-dslr.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="SHOTAVIX Camera Blog">
+  <meta property="og:description" content="After 5 years with DSLRs, I finally switched to mirrorless in 2026. Here's what I gained, what I lost, and whether the death of the DSLR is something to celebrate or mourn.">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/webp" href="https://shotavix.com/favicon.webp">
+
+  <!-- SCHEMA MARKUP (Article) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Mirrorless Killed the DSLR — But Was That Actually a Good Thing?",
+    "description": "After 5 years with DSLRs, I finally switched to mirrorless in 2026. Here's what I gained, what I lost, and whether the death of the DSLR is something to celebrate or mourn.",
+    "image": "https://shotavix.com/mirrorless-killed-dslr.webp",
+    "author": {
+      "@type": "Person",
+      "name": "Oli Sa",
+      "url": "https://shotavix.com/author/oli-sa"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "SHOTAVIX",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://shotavix.com/logo.webp"
+      }
+    },
+    "datePublished": "2026-05-14T10:00:00+00:00",
+    "dateModified": "2026-05-14T10:00:00+00:00",
+    "mainEntityOfPage": "https://shotavix.com/mirrorless-killed-dslr"
+  }
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8EB67E6RKH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8EB67E6RKH');
+</script>
+
+  <!-- Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Only minimal specific styles for this article, no full CSS reset -->
+  <style>
+    /* Only article-specific enhancements, no broad layout changes */
+    .essay-badge {
+      display: inline-block;
+      background: #b85e3a15;
+      color: #b85e3a;
+      font-weight: 600;
+      font-size: 0.8rem;
+      padding: 0.3rem 1rem;
+      border-radius: 50px;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.8rem;
+      border-left: 3px solid #b85e3a;
+    }
+    
+    .reflection-card {
+      background: white;
+      border-radius: 28px;
+      padding: 1.8rem 2rem;
+      margin: 2.5rem 0;
+      box-shadow: 0 12px 28px -8px rgba(0,0,0,0.05);
+      border: 1px solid #f0f0f0;
+      transition: transform 0.2s;
+    }
+    
+    .reflection-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 32px -12px rgba(0,0,0,0.1);
+    }
+    
+    .reflection-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: #1a1a1a;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+    
+    .reflection-number {
+      display: inline-block;
+      background: #b85e3a;
+      color: white;
+      font-weight: bold;
+      font-size: 1.2rem;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 40px;
+      margin-right: 1rem;
+    }
+    
+    .pro-tip-box {
+      background: #e8f4e8;
+      border-radius: 20px;
+      padding: 1.2rem 1.8rem;
+      margin: 2rem 0;
+      border-left: 6px solid #2e7d32;
+    }
+    
+    .quote-box {
+      background: #f1ede9;
+      border-radius: 20px;
+      padding: 1.2rem 1.8rem;
+      margin: 1.5rem 0;
+      font-style: italic;
+      border-left: 6px solid #b85e3a;
+    }
+    
+    .stats-box {
+      background: #1e1e1e;
+      color: white;
+      border-radius: 28px;
+      padding: 2rem;
+      margin: 3rem 0;
+      text-align: center;
+    }
+    
+    .stats-box h3 {
+      color: white;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #f7b731;
+    }
+    
+    .feature-compare {
+      background: #f8f8f8;
+      border-radius: 20px;
+      padding: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .feature-compare h4 {
+      color: #b85e3a;
+      margin-bottom: 0.5rem;
+    }
+    
+    @media (max-width: 600px) {
+      .reflection-card h3 {
+        font-size: 1.6rem;
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<!-- header with hamburger (same as previous articles) -->
+<header class="site-header">
+  <div class="container header-wrapper">
+    <div class="logo">
+      <a href="https://shotavix.com/">SHOTAVIX<span>·</span></a>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="https://shotavix.com/">Home</a></li>
+        <li><a href="https://shotavix.com/gear">Gear</a></li>
+        <li><a href="https://shotavix.com/techniques">Techniques</a></li>
+        <li><a href="https://shotavix.com/video">Video</a></li>
+        <li><a href="https://shotavix.com/beginners">Beginner's</a></li>
+        <li><a href="https://shotavix.com/editing">Editing</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- mobile overlay -->
+<div class="mobile-nav-overlay" id="mobileNavOverlay">
+  <div class="mobile-nav-panel">
+    <div class="mobile-nav-header">
+      <div class="logo">SHOTAVIX<span>·</span></div>
+      <button class="close-btn" id="closeNavBtn" aria-label="Close menu">×</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="https://shotavix.com/">Home</a></li>
+      <li><a href="https://shotavix.com/gear">Gear</a></li>
+      <li><a href="https://shotavix.com/techniques">Techniques</a></li>
+      <li><a href="https://shotavix.com/video">Video</a></li>
+      <li><a href="https://shotavix.com/beginners">Beginner's</a></li>
+      <li><a href="https://shotavix.com/editing">Editing</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- MAIN ARTICLE CONTENT -->
+<main class="article-container">
+  <div class="article-hero">
+    <h1>Mirrorless Killed the DSLR — But Was That Actually a Good Thing?</h1>
+    <div class="article-meta">
+      <span><i class="fas fa-calendar-alt"></i> Published: May 14, 2026</span>
+      <span><i class="fas fa-user"></i> by <a href="https://shotavix.com/author/oli-sa" class="author-intro">Oli Sa</a></span>
+    </div>
+  </div>
+
+  <!-- featured image (no onerror) -->
+  <div class="featured-image">
+    <img src="https://shotavix.com/mirrorless-killed-dslr.webp" alt="DSLR camera next to mirrorless camera comparison">
+    <div class="image-caption">The DSLR on the left feels like a relic. The mirrorless on the right is the future. But which one actually makes you a better photographer?</div>
+  </div>
+
+  <div class="article-content">
+    <p><strong>I made the switch in 2026. After fifteen years of shooting Nikon DSLRs, I finally sold my D850 and bought a mirrorless camera. And honestly? I'm still not sure if it was the right decision.</strong></p>
+    
+    <p>The numbers tell a clear story. Canon's Executive Vice President Go Tokura recently stated that "90% has now become mirrorless" in the interchangeable-lens camera market . In 2025, global DSLR shipments fell to just 690,911 units — a fraction of what they were a decade ago . The last professional DSLRs, the Nikon D6 and Canon 1D X Mark III, were both released in 2020, designed for the Tokyo Olympics that never happened . No new pro DSLRs have been released since.</p>
+    
+    <p>Mirrorless has won. The DSLR, as a product category, is effectively dead in the primary market. But was this transition actually good for photographers? Or did we trade one set of compromises for another?</p>
+
+    <div class="pro-tip-box">
+      <strong><i class="fas fa-lightbulb" style="color:#2e7d32; margin-right:0.5rem;"></i>The Hard Truth:</strong> "The mirrorless era has nearly killed this once common DSLR feature – but is it even missed?" — Digital Camera World . The pop-up flash is gone. So is the optical viewfinder. So is the satisfying "clunk" of a mirror flipping up. But are we better off?
+    </div>
+
+    <div class="stats-box">
+      <h3>By The Numbers</h3>
+      <div class="stat-number">90%</div>
+      <p>of the camera market is now mirrorless </p>
+      <div class="stat-number">690k</div>
+      <p>DSLRs shipped globally in 2025 (down from millions) </div>
+      <div class="stat-number">6</div>
+      <p>years since the last new pro DSLR </div>
+    </div>
+
+    <h2>What We Lost: Eulogy for the DSLR</h2>
+    
+    <div class="reflection-card">
+      <h3><span class="reflection-number">1</span> The Optical Viewfinder</h3>
+      <p>The optical viewfinder (OVF) was the soul of the DSLR. It showed you reality — not a digitized approximation, not a processed image, but actual light passing through the lens and bouncing off a mirror . There was no lag. No blackout during bursts. No battery drain. It was, for lack of a better word, pure.</p>
+      <p>Pentax, the last holdout defending the DSLR, put it this way: the OVF lets photographers "directly face the subject with natural light," which they argue is "the original experience of photography" . I never thought I'd miss it until it was gone.</p>
+    </div>
+    
+    <div class="reflection-card">
+      <h3><span class="reflection-number">2</span> The Pop-Up Flash</h3>
+      <p>Once a staple on entry-level DSLRs, the pop-up flash has nearly disappeared from mirrorless cameras. "The camera industry has gradually shifted from DSLR to mirrorless, but there's a key piece of tech that's much easier to find on a DSLR than a mirrorless: a pop-up flash" .</p>
+      <p>There are practical reasons for its disappearance: pop-up flashes are harder to weather-seal, they add bulk, and mirrorless cameras prioritize compact size . But ironically, "the direct flash look seems to be trending, as the harsh light carries a bit of a retro, candid feel to it" . I still miss having that emergency fill light in my pocket, no extra batteries required.</p>
+    </div>
+    
+    <div class="reflection-card">
+      <h3><span class="reflection-number">3</span> Battery Life That Lasted All Day</h3>
+      <p>This is the one advantage I genuinely mourn. My Nikon D850 could shoot 1,800 images on a single charge. My new mirrorless camera struggles to hit 400 .</p>
+      <p>The reason is simple: mirrorless cameras constantly power the sensor, the EVF, and the rear screen. DSLRs only used power when you pressed the shutter . For wedding photographers covering 10+ hour days, this trade-off is significant.</p>
+    </div>
+
+    <div class="quote-box">
+      <i class="fas fa-quote-left" style="color:#b85e3a; margin-right:0.5rem;"></i> "In the mirrorless era, a pop-up flash seems less of a must-have feature. Ironically, the direct flash look seems to be trending, as the harsh light carries a bit of a retro, candid feel to it." — Digital Camera World 
+    </div>
+
+    <div class="reflection-card">
+      <h3><span class="reflection-number">4</span> The Legacy Lens Ecosystem</h3>
+      <p>For photographers who invested thousands of dollars in Canon EF or Nikon F-mount glass, the transition to mirrorless has been painful. While adapters exist (like Canon's EF-EOS R and Nikon's FTZ), they add bulk and can sometimes reduce performance .</p>
+      <p>Canon has stopped developing new EF-mount lenses entirely . Nikon has released only a handful of F-mount lenses since 2018. The message is clear: your investment in DSLR glass is frozen in time.</p>
+    </div>
+
+    <div class="feature-compare">
+      <h4>⚡ Feature Comparison: DSLR vs Mirrorless (2026)</h4>
+      <ul>
+        <li><strong>Viewfinder:</strong> Optical (DSLR) vs Electronic (Mirrorless) — real-time preview vs no lag</li>
+        <li><strong>Battery Life:</strong> 800-1500 shots (DSLR) vs 200-400 shots (Mirrorless) </li>
+        <li><strong>Autofocus Coverage:</strong> Limited (DSLR) vs 100% frame coverage (Mirrorless) </li>
+        <li><strong>Video:</strong> Basic (DSLR) vs 4K/60fps+ with log profiles (Mirrorless) </li>
+        <li><strong>Size & Weight:</strong> Bulkier (DSLR) vs Compact (Mirrorless) </li>
+        <li><strong>Future Support:</strong> Stagnant (DSLR) vs Active development (Mirrorless) </li>
+      </ul>
+    </div>
+
+    <h2>What We Gained: The Mirrorless Revolution</h2>
+    
+    <div class="reflection-card">
+      <h3><span class="reflection-number">5</span> Autofocus That Actually Works</h3>
+      <p>This is the single biggest reason I switched. On-sensor phase detection covers up to 100% of the frame, and AI-powered subject recognition tracks eyes, faces, animals, birds, and even vehicles .</p>
+      <p>My DSLR's autofocus was reliable, but it only worked in the center of the frame. I had to focus-and-recompose, which often meant missing the moment. My mirrorless camera locks onto eyes anywhere in the frame and never lets go. For portraits and events, this is transformative.</p>
+    </div>
+    
+    <div class="reflection-card">
+      <h3><span class="reflection-number">6</span> Real-Time Exposure Preview</h3>
+      <p>The electronic viewfinder (EVF) shows you exactly what your image will look like before you press the shutter . Change the aperture? You see the depth of field change in real-time. Adjust shutter speed? You see the motion blur appear. Boost ISO? You see the noise.</p>
+      <p>For beginners, this is a game-changer. "Mirrorless cameras have lowered the barrier to entry. New photographers can achieve technically sound images faster, which keeps them engaged and motivated" .</p>
+    </div>
+    
+    <div class="reflection-card">
+      <h3><span class="reflection-number">7</span> Size and Weight</h3>
+      <p>My mirrorless body is 30% lighter than my D850. The lenses are smaller too . I carry my camera everywhere now — something I rarely did with my DSLR kit. "For creators who travel, hike, or carry gear all day, this reduction in weight adds up" .</p>
+    </div>
+
+    <div class="quote-box">
+      <i class="fas fa-quote-left" style="color:#b85e3a; margin-right:0.5rem;"></i> "The writing has been on the wall since 2018. Mirrorless isn't just the future—it's the present. For new pros entering the field, starting with DSLR is like learning word processing on a typewriter." — Marcus Tran, Imaging Technology Analyst 
+    </div>
+
+    <div class="reflection-card">
+      <h3><span class="reflection-number">8</span> Video Capabilities</h3>
+      <p>DSLRs revolutionized indie filmmaking when the Canon 5D Mark II introduced video in 2008. But mirrorless cameras have taken video to another level: 4K 60fps, 10-bit color, log profiles, and even 8K recording .</p>
+      <p>I now shoot hybrid — photos and video at the same event — with a single camera. That wasn't practical with my DSLR.</p>
+    </div>
+
+    <div class="stats-box">
+      <h3>My Personal Transition</h3>
+      <div class="stat-number">15</div>
+      <p>years shooting DSLR</p>
+      <div class="stat-number">6</div>
+      <p>months with mirrorless</p>
+      <div class="stat-number">Mixed</div>
+      <p>feelings about the switch</p>
+    </div>
+
+    <h2>Why I Finally Switched (After 15 Years of Resistance)</h2>
+    
+    <p>I resisted mirrorless for a long time. I loved the clunk of the mirror. I trusted the optical viewfinder. I had thousands of dollars invested in F-mount glass.</p>
+    
+    <p>But three things pushed me over the edge:</p>
+    
+    <ol>
+      <li><strong>Canon and Nikon stopped developing new DSLR lenses.</strong> Canon announced in 2023 that no new EF-mount lenses would be developed . Nikon followed suit. The message was clear: my system was frozen.</li>
+      <li><strong>I started shooting video.</strong> My D850's video was fine, but it wasn't great. The mirrorless system's 10-bit 4:2:2 color and log profiles transformed my video work.</li>
+      <li><strong>I got tired of carrying heavy gear.</strong> My back hurt. My shoulder hurt. I started leaving my camera at home. And as Chase Jarvis famously said, "the best camera is the one you have with you."</li>
+    </ol>
+    
+    <div class="pro-tip-box">
+      <strong><i class="fas fa-gem" style="color:#2e7d32; margin-right:0.5rem;"></i>My Honest Advice:</strong> If you're a stills-only shooter who loves the optical viewfinder and values battery life above all else, stick with your DSLR. It's still a fantastic tool. But if you shoot hybrid, need advanced autofocus, or want to future-proof your investment, mirrorless is the only sensible choice.
+    </div>
+
+    <h2>Who Is Still Shooting DSLR in 2026?</h2>
+    
+    <p>Despite the industry's pivot, DSLRs aren't gone. "A loyal base remains — one that isn't in a hurry to give up the familiar DSLR experience" . In fact, Canon still shipped around 600,000-620,000 DSLR units in 2025, dominating a shrinking but persistent market .</p>
+    
+    <p>Who's still using them?</p>
+    
+    <ul>
+      <li><strong>Budget-conscious beginners:</strong> Entry-level DSLRs like the Canon Rebel T7 remain one of the most affordable ways into interchangeable-lens photography .</li>
+      <li><strong>Photographers with significant legacy investment:</strong> "There's a massive legacy audience out there — photographers with decades of EF-mount lenses, built-out kits, and little or no reason to switch systems" .</li>
+      <li><strong>Enthusiasts who prefer the OVF experience:</strong> Pentax continues to defend the DSLR, arguing that the optical viewfinder offers a "pure" photography experience that EVFs can't replicate .</li>
+    </ul>
+
+    <div class="quote-box">
+      <i class="fas fa-quote-left" style="color:#b85e3a; margin-right:0.5rem;"></i> "Cameras last for a long time, usually decades, lenses even more. If someone has a DSLR and a selection of lenses they happen to like, there is little point in replacing it. It is OK to skip a generation of technology and leapfrog to the subsequent one." — Pixls.us forum discussion 
+    </div>
+
+    <h2>What the Death of the DSLR Means for Beginners</h2>
+    
+    <p>If you're buying your first camera in 2026, the advice is clear: start with mirrorless .</p>
+    
+    <p>"For the majority of beginner photographers today, mirrorless is the smarter choice. Its advantages in size, autofocus intelligence, video capability, and real-time feedback create a smoother, more rewarding learning curve" .</p>
+    
+    <p>But there's a caveat: mirrorless cameras are becoming increasingly expensive. "Major technological leaps are less frequent – pushing more photographers toward the second-hand market" . A used DSLR can be an excellent entry point if budget is tight.</p>
+
+    <div class="reflection-card">
+      <h3><span class="reflection-number">9</span> The Death of the Pop-Up Flash (And What Replaced It)</h3>
+      <p>The pop-up flash is all but extinct on mirrorless cameras. "There are a handful of options, including the Nikon Z50 II, the Canon EOS R50, and the Sony A6400, to name just a few. But, the number of cameras with pop-up flashes feels as if it's diminishing quickly" .</p>
+      <p>Instead, there's a growing market for compact, budget-friendly hotshoe flashes. The Westcott S18 Mini Flash (3.5 oz, under $40) and the Godox iM20 / iM22 are examples of the new generation of portable flashes .</p>
+      <p>Personally, I don't miss the pop-up flash — I never used it because the light was harsh and unflattering. But I understand why some photographers miss having an emergency fill light built into their camera.</p>
+    </div>
+
+    <div class="stats-box">
+      <h3>The Verdict</h3>
+      <div class="stat-number">Yes</div>
+      <p>for hybrid shooters</p>
+      <div class="stat-number">Maybe</div>
+      <p>for stills-only photographers</p>
+      <div class="stat-number">No</div>
+      <p>if you love the OVF experience</p>
+    </div>
+
+    <h2>Final Thoughts: Was the Death of the DSLR a Good Thing?</h2>
+    
+    <p>Here's my honest answer: it's complicated.</p>
+    
+    <p>The death of the DSLR is good for the photography industry. Mirrorless technology is objectively better in most ways. The autofocus is smarter. The video is more capable. The bodies are lighter. The real-time preview in the EVF accelerates the learning curve for beginners.</p>
+    
+    <p>But the death of the DSLR is also a loss. We lost the optical viewfinder — a direct, unmediated connection to the scene. We lost the satisfying mechanical clunk of the mirror. We lost battery life that lasted all day. And we lost a system that, for decades, was reliable, proven, and good enough.</p>
+    
+    <p>I don't regret switching to mirrorless. The autofocus alone is worth the price of admission. But I also don't think the DSLR deserved to die the way it did — abandoned by manufacturers, left to wither in a secondary market, its legacy reduced to eBay listings and camera store clearance bins.</p>
+    
+    <p>The DSLR deserved a gentler farewell. It was a remarkable technology that democratized professional photography. It put full-frame sensors in the hands of millions. It launched countless careers.</p>
+    
+    <p>So rest in peace, DSLR. You served us well. And mirrorless, you'd better be worth it.</p>
+    
+    <div class="pro-tip-box">
+      <strong><i class="fas fa-gem" style="color:#2e7d32; margin-right:0.5rem;"></i>My Final Advice:</strong> If you're still happy with your DSLR, keep using it. Don't let marketing convince you that you need to upgrade. But if you're buying new or ready to move on, mirrorless is the only sensible choice. The industry has spoken, and the future is electronic.
+    </div>
+
+    <h2>What About You?</h2>
+    
+    <p>Have you made the switch to mirrorless? Are you still shooting DSLR? I'd love to hear your perspective. What do you miss most about the DSLR era? What do you love about mirrorless?</p>
+    
+    <p>Share your thoughts in the comments. Let's have an honest conversation about what we've gained — and what we've lost — in the mirrorless revolution.</p>
+
+  </div>
+
+  <!-- related posts -->
+<aside class="related-posts">
+  <h2 class="section-title">You may also like</h2>
+  <div class="related-grid">
+
+    <!-- 1. Is the Canon R5 Mark II Actually Worth $4,000? -->
+    <div class="related-card">
+      <img src="https://shotavix.com/canon-r5-mark-ii-worth-it.webp" alt="Canon R5 Mark II worth it">
+      <h4><a href="https://shotavix.com/canon-r5-mark-ii-worth-it">Is the Canon R5 Mark II Actually Worth $4,000?</a></h4>
+    </div>
+
+    <!-- 2. Everyone Is Buying the Wrong First Camera in 2026 -->
+    <div class="related-card">
+      <img src="https://shotavix.com/wrong-first-camera-2026.webp" alt="Wrong first camera">
+      <h4><a href="https://shotavix.com/wrong-first-camera-2026">Everyone Is Buying the Wrong First Camera in 2026</a></h4>
+    </div>
+
+    <!-- 3. Mirrorless Killed the DSLR — But Was That a Good Thing? -->
+    <div class="related-card">
+      <img src="https://shotavix.com/mirrorless-killed-dslr.webp" alt="Mirrorless killed DSLR">
+      <h4><a href="https://shotavix.com/mirrorless-killed-dslr">Mirrorless Killed the DSLR — Was That a Good Thing?</a></h4>
+    </div>
+
+    <!-- 4. The Photography Advice I Wish Someone Had Told Me 10 Years Ago -->
+    <div class="related-card">
+      <img src="https://shotavix.com/photography-advice-10-years.webp" alt="Photography advice">
+      <h4><a href="https://shotavix.com/photography-advice-10-years">The Photography Advice I Wish Someone Had Told Me 10 Years Ago</a></h4>
+    </div>
+
+    <!-- 5. I Shot an Entire Event in RAW for the First Time — Here's What Changed -->
+    <div class="related-card">
+      <img src="https://shotavix.com/raw-event-photography-experience.webp" alt="RAW event photography">
+      <h4><a href="https://shotavix.com/raw-event-photography-experience">I Shot an Entire Event in RAW for the First Time</a></h4>
+    </div>
+
+    <!-- 6. Your Camera Doesn't Matter as Much as You Think. Here's Proof -->
+    <div class="related-card">
+      <img src="https://shotavix.com/camera-doesnt-matter.webp" alt="Camera doesn't matter">
+      <h4><a href="https://shotavix.com/camera-doesnt-matter">Your Camera Doesn't Matter as Much as You Think</a></h4>
+    </div>
+
+  </div>
+</aside>
+</main>
+
+<!-- footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <div class="footer-logo">SHOTAVIX<span>·</span></div>
+        <p>In-depth camera reviews, honest buying advice, and photography inspiration — made for enthusiasts, by enthusiasts.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/olisashedi" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@shotavix" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.facebook.com/lisa.251771" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://shotavix.com/feed.xml" target="_blank"><i class="fa fa-rss"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+          <ul>
+            <li><a href="https://shotavix.com/gear">Gear & Reviews</a></li>
+            <li><a href="https://shotavix.com/techniques">Tips & Techniques</a></li>
+            <li><a href="https://shotavix.com/video">Video & Film</a></li>
+            <li><a href="https://shotavix.com/beginners">Beginner's Corner</a></li>
+            <li><a href="https://shotavix.com/editing">Editing & Business</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://shotavix.com">Home</a></li>
+            <li><a href="https://shotavix.com/contact">Contact</a></li>
+            <li><a href="https://shotavix.com/about">About</a></li>
+            <li><a href="https://shotavix.com/privacy">Privacy</a></li>
+            <li><a href="https://shotavix.com/terms">Terms</a></li>
+          </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2026 SHOTAVIX Camera Blog. All rights reserved. Shot with passion.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- hamburger functionality -->
+<script>
+  (function() {
+    const hamburger = document.getElementById('hamburgerBtn');
+    const overlay = document.getElementById('mobileNavOverlay');
+    const closeBtn = document.getElementById('closeNavBtn');
+
+    function openMenu() {
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    if (hamburger) hamburger.addEventListener('click', openMenu);
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+
+    overlay.addEventListener('click', function(e) {
+      if (e.target === overlay) closeMenu();
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && overlay.classList.contains('active')) closeMenu();
+    });
+  })();
+</script>
+</body>
+</html>

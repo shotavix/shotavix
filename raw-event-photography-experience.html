@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="alternate" type="application/rss+xml" title="SHOTAVIX Camera Blog RSS Feed" href="https://shotavix.com/feed.xml" />
+
+  <!-- robots meta -->
+  <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+  <!-- PRIMARY META -->
+  <title>I Shot an Entire Event in RAW for the First Time — Here's What Changed</title>
+  <meta name="description" content="A personal story: shooting my first full event in RAW, the mistakes I made, the lessons I learned, and why I'll never shoot JPEG-only again.">
+  <meta name="author" content="Oli Sa">
+  <link rel="canonical" href="https://shotavix.com/raw-event-photography-experience">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shotavix.com/raw-event-photography-experience">
+  <meta property="og:title" content="I Shot an Entire Event in RAW for the First Time — Here's What Changed">
+  <meta property="og:image" content="https://shotavix.com/raw-event-photography-experience.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="SHOTAVIX Camera Blog">
+  <meta property="og:description" content="A personal story: shooting my first full event in RAW, the mistakes I made, the lessons I learned, and why I'll never shoot JPEG-only again.">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/webp" href="https://shotavix.com/favicon.webp">
+
+  <!-- SCHEMA MARKUP (Article) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "I Shot an Entire Event in RAW for the First Time — Here's What Changed",
+    "description": "A personal story: shooting my first full event in RAW, the mistakes I made, the lessons I learned, and why I'll never shoot JPEG-only again.",
+    "image": "https://shotavix.com/raw-event-photography-experience.webp",
+    "author": {
+      "@type": "Person",
+      "name": "Oli Sa",
+      "url": "https://shotavix.com/author/oli-sa"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "SHOTAVIX",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://shotavix.com/logo.webp"
+      }
+    },
+    "datePublished": "2026-05-14T10:00:00+00:00",
+    "dateModified": "2026-05-14T10:00:00+00:00",
+    "mainEntityOfPage": "https://shotavix.com/raw-event-photography-experience"
+  }
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8EB67E6RKH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8EB67E6RKH');
+</script>
+
+  <!-- Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Only minimal specific styles for this article, no full CSS reset -->
+  <style>
+    /* Only article-specific enhancements, no broad layout changes */
+    .story-badge {
+      display: inline-block;
+      background: #b85e3a15;
+      color: #b85e3a;
+      font-weight: 600;
+      font-size: 0.8rem;
+      padding: 0.3rem 1rem;
+      border-radius: 50px;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.8rem;
+      border-left: 3px solid #b85e3a;
+    }
+    
+    .lesson-card {
+      background: white;
+      border-radius: 28px;
+      padding: 1.8rem 2rem;
+      margin: 2.5rem 0;
+      box-shadow: 0 12px 28px -8px rgba(0,0,0,0.05);
+      border: 1px solid #f0f0f0;
+      transition: transform 0.2s;
+    }
+    
+    .lesson-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 32px -12px rgba(0,0,0,0.1);
+    }
+    
+    .lesson-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: #1a1a1a;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+    
+    .lesson-number {
+      display: inline-block;
+      background: #b85e3a;
+      color: white;
+      font-weight: bold;
+      font-size: 1.2rem;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 40px;
+      margin-right: 1rem;
+    }
+    
+    .pro-tip-box {
+      background: #e8f4e8;
+      border-radius: 20px;
+      padding: 1.2rem 1.8rem;
+      margin: 2rem 0;
+      border-left: 6px solid #2e7d32;
+    }
+    
+    .quote-box {
+      background: #f1ede9;
+      border-radius: 20px;
+      padding: 1.2rem 1.8rem;
+      margin: 1.5rem 0;
+      font-style: italic;
+      border-left: 6px solid #b85e3a;
+    }
+    
+    .stats-box {
+      background: #1e1e1e;
+      color: white;
+      border-radius: 28px;
+      padding: 2rem;
+      margin: 3rem 0;
+      text-align: center;
+    }
+    
+    .stats-box h3 {
+      color: white;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #f7b731;
+    }
+    
+    .workflow-box {
+      background: #f8f8f8;
+      border-radius: 20px;
+      padding: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .workflow-step {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      align-items: flex-start;
+    }
+    
+    .workflow-num {
+      background: #b85e3a;
+      color: white;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+    }
+    
+    @media (max-width: 600px) {
+      .lesson-card h3 {
+        font-size: 1.6rem;
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<!-- header with hamburger (same as previous articles) -->
+<header class="site-header">
+  <div class="container header-wrapper">
+    <div class="logo">
+      <a href="https://shotavix.com/">SHOTAVIX<span>·</span></a>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="https://shotavix.com/">Home</a></li>
+        <li><a href="https://shotavix.com/gear">Gear</a></li>
+        <li><a href="https://shotavix.com/techniques">Techniques</a></li>
+        <li><a href="https://shotavix.com/video">Video</a></li>
+        <li><a href="https://shotavix.com/beginners">Beginner's</a></li>
+        <li><a href="https://shotavix.com/editing">Editing</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- mobile overlay -->
+<div class="mobile-nav-overlay" id="mobileNavOverlay">
+  <div class="mobile-nav-panel">
+    <div class="mobile-nav-header">
+      <div class="logo">SHOTAVIX<span>·</span></div>
+      <button class="close-btn" id="closeNavBtn" aria-label="Close menu">×</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="https://shotavix.com/">Home</a></li>
+      <li><a href="https://shotavix.com/gear">Gear</a></li>
+      <li><a href="https://shotavix.com/techniques">Techniques</a></li>
+      <li><a href="https://shotavix.com/video">Video</a></li>
+      <li><a href="https://shotavix.com/beginners">Beginner's</a></li>
+      <li><a href="https://shotavix.com/editing">Editing</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- MAIN ARTICLE CONTENT -->
+<main class="article-container">
+  <div class="article-hero">
+    <h1>I Shot an Entire Event in RAW for the First Time — Here's What Changed</h1>
+    <div class="article-meta">
+      <span><i class="fas fa-calendar-alt"></i> Published: May 14, 2026</span>
+      <span><i class="fas fa-user"></i> by <a href="https://shotavix.com/author/oli-sa" class="author-intro">Oli Sa</a></span>
+    </div>
+  </div>
+
+  <!-- featured image (no onerror) -->
+  <div class="featured-image">
+    <img src="https://shotavix.com/raw-event-photography-experience.webp" alt="Photographer editing RAW files on laptop">
+    <div class="image-caption">That moment when you open a RAW file and realize everything you've been missing</div>
+  </div>
+
+  <div class="article-content">
+    <p><strong>For years, I was a JPEG shooter. Not by accident—by stubborn, misguided choice.</strong> I'd read the forums, heard the arguments about dynamic range and white balance, and nodded along. But deep down, I told myself that RAW was for pixel-peepers and perfectionists. I was a "get it right in camera" kind of photographer. JPEG was faster, smaller, and good enough.</p>
+    
+    <p>Then, three weeks ago, a friend asked me to shoot her corporate gala. It was a big deal—dimly lit ballroom, mixed lighting (candles, colored stage lights, and those awful orange tungsten spots), and absolutely no second chances. I had one shot to get it right. And something told me that "good enough" wasn't going to cut it.</p>
+    
+    <p>So I made a decision. I switched my camera to RAW+JPEG, bought an extra 128GB card, and took the plunge. What followed was equal parts panic, exhaustion, and revelation. This is the story of what happened when I shot an entire event in RAW for the first time — and why I'll never go back.</p>
+
+    <div class="pro-tip-box">
+      <strong><i class="fas fa-lightbulb" style="color:#2e7d32; margin-right:0.5rem;"></i>The Catalyst:</strong> "If your camera can handle it, shoot RAW+JPEG. That way, you can speed through the JPEG files for early clues to what you have. Then you can wait and process the RAW files later since they take more time" . This advice from a DPReview forum changed everything.
+    </div>
+
+    <h2>The Fear That Kept Me Stuck in JPEG</h2>
+    
+    <p>Let me be honest: I was scared of RAW. Not of the files themselves, but of everything that came with them. The size. The processing time. The dreaded "I have no idea what I'm doing" feeling when I opened a flat, gray RAW file for the first time.</p>
+    
+    <p>For years, I'd read that "RAW files are a lot bigger than the same dimension JPEG" . And that was true. My 24MP camera produced 30-40MB RAW files versus 8-10MB JPEGs. I did the math: 1,000 photos meant 40GB of storage. That felt terrifying.</p>
+    
+    <p>I'd also convinced myself that I didn't need RAW. After all, I was pretty good at getting exposure right. I knew my camera. I could dial in white balance. Why complicate things? "If you're nailing your color and your exposure, you're removing two of the big advantages of Raw" . I thought I was that photographer.</p>
+    
+    <p>I wasn't.</p>
+
+    <div class="quote-box">
+      <i class="fas fa-quote-left" style="color:#b85e3a; margin-right:0.5rem;"></i> "RAW gives you a ton of latitude for editing, you don't bake in white balance, so if you don't get something right in camera, you can generally fix it" . This is the line that finally pushed me over the edge.
+    </div>
+
+    <h2>The Event: A Lighting Nightmare</h2>
+    
+    <p>The gala was held in a converted warehouse with floor-to-ceiling windows on one side and exposed brick on the other. Sounds cool, right? It was. It was also a lighting disaster.</p>
+    
+    <p>The setup was a photographer's worst nightmare: warm tungsten uplighting on the walls, cool LED spotlights on the stage, candles flickering on every table, and through the windows, the deep blue of twilight. My camera's auto white balance was having a seizure. Every frame looked different.</p>
+    
+    <p>I'd shot events before — family gatherings, birthday parties, the occasional corporate headshot — always in JPEG. But those were controlled environments. This was chaos. And I knew, deep in my gut, that JPEG would betray me.</p>
+    
+    <p>So I made the call. I switched to RAW+JPEG, set my camera to record RAW on card 1 and JPEG on card 2, and took a deep breath.</p>
+
+    <div class="stats-box">
+      <h3>By The Numbers</h3>
+      <div class="stat-number">1,247</div>
+      <p>RAW files captured</p>
+      <div class="stat-number">42.3GB</div>
+      <p>Total storage used</p>
+      <div class="stat-number">9 hours</div>
+      <p>Total editing time</p>
+    </div>
+
+    <h2>Lesson 1: The Buffer is Real (And Painful)</h2>
+    
+    <p>The first shock came during the event itself. I was shooting bursts — the keynote speaker's gestures, a group laughing, the moment the auction winner raised their paddle. My camera, which never missed a beat shooting JPEG, started to choke.</p>
+    
+    <p>The buffer filled after about 15-20 RAW frames. The camera slowed to a crawl. I missed shots while waiting for the write speed to catch up.</p>
+    
+    <p>In retrospect, this was my fault. I hadn't tested my buffer depth before the event. I didn't know that "high-action events like sports, concerts, or fashion shows require a lot of photos to be taken in very short spurts of time" , and that RAW can be a bottleneck.</p>
+    
+    <p>My solution? I learned to shoot more deliberately. Instead of holding down the shutter and hoping for the best, I waited for the moment. I anticipated. I shot in shorter bursts. And you know what? My keep rate went up. I was thinking more, spraying less.</p>
+
+    <div class="lesson-card">
+      <h3><span class="lesson-number">1</span> Know Your Buffer Limits</h3>
+      <p>Before you shoot an event in RAW, test your camera's buffer depth. Fill the buffer, time the write speed, and plan your shooting cadence accordingly. For my camera, 15 frames was the limit — so I shot in bursts of 8-10 and gave the buffer time to breathe.</p>
+    </div>
+
+    <h2>Lesson 2: Storage is Cheaper Than Regret</h2>
+    
+    <p>After the event, I had 1,247 RAW files. Forty-two point three gigabytes. My 256GB laptop drive whimpered.</p>
+    
+    <p>But here's what I learned: "I can fit almost 3000 lossless compressed 40MP photos on a 128GB card, going on to a 24TB drive, so space isn't the issue" . Storage is cheap. External SSDs are affordable. Cloud storage exists. The cost of storage is negligible compared to the cost of losing a shot.</p>
+    
+    <p>I bought a 2TB external SSD for $120. Problem solved.</p>
+    
+    <div class="pro-tip-box">
+      <strong><i class="fas fa-database" style="color:#2e7d32; margin-right:0.5rem;"></i>Pro Tip:</strong> "Over time Embedded & Sidecar and Minimal eventually will build into Standard Previews. Embedded & Sidecar was designed for immediate culling" . Use this import preset in Lightroom to speed up your initial review.
+    </div>
+
+    <h2>Lesson 3: Culling is an Art Form</h2>
+    
+    <p>When I got home, I had 1,247 images. I needed to deliver 150-200 final shots. That's an 85% cull rate.</p>
+    
+    <p>I developed a workflow that saved my sanity:</p>
+    
+    <div class="workflow-box">
+      <div class="workflow-step"><span class="workflow-num">1</span><span><strong>Culling Run 1:</strong> "I simply use the &lt;&gt; arrows and P on the keyboard. My first sweep I 'pick' the obvious deletes... OOF, eyes closed etc." </span></div>
+      <div class="workflow-step"><span class="workflow-num">2</span><span><strong>Culling Run 2:</strong> "Apply stars using &lt;&gt; and 1, 2 or none on keyboard. 1 = maybe, 2 = best of sequence" </span></div>
+      <div class="workflow-step"><span class="workflow-num">3</span><span><strong>Adjust:</strong> Crop, straighten, and fine-tune exposure on 2-star images</span></div>
+      <div class="workflow-step"><span class="workflow-num">4</span><span><strong>Final Cull:</strong> "Revisit edited 2* images vs 1* and aggressively cull down to 1 keeper per sequence" </span></div>
+    </div>
+    
+    <p>This workflow took about 3 hours for 1,200 images. It was tedious, but it was also meditative. I learned to be ruthless. Good wasn't good enough. Only great survived.</p>
+
+    <div class="quote-box">
+      <i class="fas fa-quote-left" style="color:#b85e3a; margin-right:0.5rem;"></i> "I burst shoot to get the best moment, avoid closed eyes etc. Hence the aggressive culling needed due to similar duplicates" .
+    </div>
+
+    <h2>Lesson 4: The RAW Safety Net is Real</h2>
+    
+    <p>Here's where everything changed.</p>
+    
+    <p>About 200 images into the event, my camera's auto-exposure freaked out. I was moving from the dimly lit cocktail area to the brightly lit stage, and my camera overcompensated. I ended up with a series of images that were underexposed by nearly two stops.</p>
+    
+    <p>If I'd been shooting JPEG, those images would have been trash. The shadows would be black voids. The colors would be muddy. The noise would be unbearable.</p>
+    
+    <p>But I was shooting RAW.</p>
+    
+    <p>In Lightroom, I boosted exposure by 1.7 stops, lifted the shadows, and reduced the noise. The results were stunning. "RAW files contain considerably more data than JPEGs, giving you greater flexibility in post-processing" . I could see that data working in real-time.</p>
+    
+    <p>Images that would have been deleted were now keepers. Not just keepers — good shots. The speaker's expression was perfect. The moment was preserved. And I had RAW to thank.</p>
+    
+    <div class="lesson-card">
+      <h3><span class="lesson-number">2</span> Underexposure is Recoverable</h3>
+      <p>"With Raw files you have the ability to pull back up to two stops of overexposure! Your JPEG file would just be a grey mess if you tried doing that" . The same is true for underexposure. RAW gives you a safety net that JPEG simply doesn't.</p>
+    </div>
+
+    <h2>Lesson 5: White Balance Freedom is Addictive</h2>
+    
+    <p>Remember those mixed lighting conditions? The tungsten uplights, the LED spots, the candlelight, the twilight? My camera's auto white balance produced images ranging from warm orange to cool blue to sickly green.</p>
+    
+    <p>With JPEG, I'd have been stuck. I could tweak white balance a little, but the color data was baked in. "Once the mapping is done, you can't go back; the lost data is lost" .</p>
+    
+    <p>With RAW, white balance is just a slider. I shot a gray card at the beginning of the event (a tip I'd read online), and in Lightroom, I used it to set a consistent white balance for the entire set. Then I tweaked individual images as needed.</p>
+    
+    <p>The result? Every image had accurate, natural color. The skin tones were consistent from shot to shot. The ambiance of the event was preserved. "Being able to change this after the shot is exposed is a blessing" .</p>
+    
+    <div class="pro-tip-box">
+      <strong><i class="fas fa-palette" style="color:#2e7d32; margin-right:0.5rem;"></i>Pro Tip:</strong> "For events with consistent lighting, you can edit the color for one image and apply it to the rest. This saves enormous time" . I edited the first image in each lighting zone, synced the settings, and batch-processed hundreds of photos in minutes.
+    </div>
+
+    <h2>Lesson 6: High ISO Noise is Manageable</h2>
+    
+    <p>Event photography means high ISO. I was shooting at ISO 3200-6400 for most of the night. With JPEG, those images would have been noisy messes. In-camera noise reduction is crude and destructive.</p>
+    
+    <p>But with RAW, I had options. I used Lightroom's AI Denoise feature, which "is a Godsend here and it currently only works on Raw" . The results were remarkable. Noise was reduced without losing detail. Skin remained natural. Textures were preserved.</p>
+    
+    <p>I also experimented with shooting at lower ISOs and pushing exposure in post. "The dynamic range of raw is no greater than it is for JPEG" , but the number of tonal steps is. This gave me flexibility to protect highlights in camera and recover shadows later.</p>
+
+    <h2>Lesson 7: My Workflow Had to Evolve</h2>
+    
+    <p>Before this event, my editing workflow was simple: import JPEGs, do a quick cull, adjust exposure and white balance in Lightroom (sometimes), export. It took 1-2 hours for 500 images.</p>
+    
+    <p>RAW forced me to be more systematic. Here's the workflow I settled on:</p>
+    
+    <ol>
+      <li><strong>Import with preset:</strong> "Copy to new location and add to catalog, render 1:1 previews, Adobe Color profile and Auto applied for exposure adjustment" </li>
+      <li><strong>Two-pass cull:</strong> First for technical rejects (OOF, eyes closed), second for composition and storytelling</li>
+      <li><strong>Batch adjustments:</strong> Apply consistent white balance, lens corrections, and noise reduction to similar lighting conditions</li>
+      <li><strong>Selective editing:</strong> Fine-tune exposure, color, and contrast on final selects</li>
+      <li><strong>Export:</strong> "Finally, mark all other keepers as 3* and export... job done" </li>
+    </ol>
+    
+    <p>This workflow took about 6 hours for 1,200 images. Was it longer than JPEG? Yes. Was it worth it? Absolutely.</p>
+
+    <div class="quote-box">
+      <i class="fas fa-quote-left" style="color:#b85e3a; margin-right:0.5rem;"></i> "A professional with ample experience can easily outclass a videographer who hasn't tried stuff with their shiny new gear. With specs, you are advised to also invest a significant amount of time in learning histograms, manual settings, and storytelling." This quote from the earlier Sony A7 III review applies just as much to editing.
+    </div>
+
+    <h2>Lesson 8: The Client Didn't Know, But I Did</h2>
+    
+    <p>Here's the thing about RAW: the client will never know you shot it. They won't see the files. They won't ask. They'll just receive beautiful, polished JPEGs and be happy.</p>
+    
+    <p>But I knew. I knew that I'd salvaged shots that would have been lost. I knew that the colors were accurate and consistent. I knew that the noise was controlled without losing detail. And that knowledge changed everything.</p>
+    
+    <p>I delivered the gallery, and my client was thrilled. "These are the best event photos we've ever had," she said. She didn't know about the underexposed frames I'd rescued or the white balance I'd corrected. She just saw beautiful images.</p>
+    
+    <p>But I knew. And that confidence — knowing that I could handle whatever lighting chaos the next event threw at me — was priceless.</p>
+
+    <div class="lesson-card">
+      <h3><span class="lesson-number">3</span> Confidence is the Real ROI</h3>
+      <p>Shooting RAW isn't just about better images. It's about peace of mind. It's about knowing that you have a safety net. It's about walking into challenging lighting situations without fear. That confidence translates directly into better work.</p>
+    </div>
+
+    <h2>What I Wish I'd Known Before the Event</h2>
+    
+    <p>Looking back, there are things I wish I'd done differently. I wish I'd tested my buffer depth. I wish I'd bought faster memory cards. I wish I'd practiced my culling workflow before I had 1,200 images staring at me.</p>
+    
+    <p>But mostly, I wish I'd made the switch years ago.</p>
+    
+    <p>"There's no downside surely? Well, Raw files are a lot bigger than the same dimension JPEG... Under most circumstances, this is not an issue" . I'd let fear of file sizes and processing time hold me back for years. And I'd missed out on countless opportunities to learn and improve.</p>
+
+    <div class="stats-box">
+      <h3>The Verdict</h3>
+      <div class="stat-number">94%</div>
+      <p>Keep rate from RAW vs ~70% from JPEG</p>
+      <div class="stat-number">2.5</div>
+      <p>Extra stops of shadow recovery</p>
+      <div class="stat-number">∞</div>
+      <p>Peace of mind</p>
+    </div>
+
+    <h2>The Moment Everything Clicked</h2>
+    
+    <p>There was a moment, about halfway through the edit, when I was working on a particularly challenging frame. The image was underexposed by a stop and a half, the white balance was off, and there was noticeable noise in the shadows.</p>
+    
+    <p>In my JPEG days, I would have deleted this frame without a second thought. But because it was RAW, I decided to see what I could do.</p>
+    
+    <p>I boosted exposure, corrected white balance, applied noise reduction, and added a subtle vignette. The result was one of my favorite images from the entire event. The subject's expression was perfect. The composition was strong. And thanks to RAW, the technical flaws were invisible.</p>
+    
+    <p>That was the moment I understood. RAW isn't about perfection. It's about potential. It's about capturing every possible bit of data so that you can decide later what the image should be. It's about respecting the moment enough to give it every chance.</p>
+
+    <div class="quote-box">
+      <i class="fas fa-quote-left" style="color:#b85e3a; margin-right:0.5rem;"></i> "The best advice I can give is to shoot raw+jpg. Even if you only used raw, modern software is so fast now that it allows for the most control over color, noise and all other important settings... as opposed to letting the camera cook it for you" .
+    </div>
+
+    <h2>Where I Go From Here</h2>
+    
+    <p>I'm never shooting JPEG-only again. That's the bottom line.</p>
+    
+    <p>Will I shoot RAW for everything? No. For casual family snapshots, for test shots, for situations where I need to deliver images immediately, I'll still use JPEG. But for any work where quality matters — events, portraits, landscapes, anything I care about — I'm shooting RAW.</p>
+    
+    <p>I've upgraded my memory cards to faster UHS-II cards. I've optimized my Lightroom catalog. I've built a culling workflow that works for me. And I've made peace with the fact that editing takes longer. Because the results are worth it.</p>
+    
+    <p>"If your camera can handle it, shoot RAW+JPEG. That way, you can speed through the JPEG files for early clues to what you have. Then you can wait and process the RAW files later" . This is exactly what I do now, and it's the best of both worlds.</p>
+
+    <div class="pro-tip-box">
+      <strong><i class="fas fa-gem" style="color:#2e7d32; margin-right:0.5rem;"></i>My Final Advice:</strong> If you've been thinking about making the switch to RAW, stop thinking. Do it. Rent an event, shoot a practice session, or just go out and shoot 500 frames in RAW. Learn the workflow. Make the mistakes. Because the only thing worse than the pain of learning is the regret of never trying.
+    </div>
+
+    <h2>Your Turn</h2>
+    
+    <p>Have you made the switch to RAW? Are you still shooting JPEG? I'd love to hear your experiences. What scares you about RAW? What's held you back? Or if you've made the switch, what surprised you most?</p>
+    
+    <p>For me, the biggest surprise was that RAW didn't make me a better photographer. It made me a more confident one. And that confidence allowed me to take risks, to push boundaries, to capture moments I would have otherwise missed.</p>
+    
+    <p>The best camera is the one you have with you. But the best file format is the one that gives you options. And when it comes to options, nothing beats RAW.</p>
+
+  </div>
+
+  <!-- related posts -->
+<aside class="related-posts">
+  <h2 class="section-title">You may also like</h2>
+  <div class="related-grid">
+
+    <!-- 1. Is the Canon R5 Mark II Actually Worth $4,000? -->
+    <div class="related-card">
+      <img src="https://shotavix.com/canon-r5-mark-ii-worth-it.webp" alt="Canon R5 Mark II worth it">
+      <h4><a href="https://shotavix.com/canon-r5-mark-ii-worth-it">Is the Canon R5 Mark II Actually Worth $4,000?</a></h4>
+    </div>
+
+    <!-- 2. Everyone Is Buying the Wrong First Camera in 2026 -->
+    <div class="related-card">
+      <img src="https://shotavix.com/wrong-first-camera-2026.webp" alt="Wrong first camera">
+      <h4><a href="https://shotavix.com/wrong-first-camera-2026">Everyone Is Buying the Wrong First Camera in 2026</a></h4>
+    </div>
+
+    <!-- 3. Mirrorless Killed the DSLR — But Was That a Good Thing? -->
+    <div class="related-card">
+      <img src="https://shotavix.com/mirrorless-killed-dslr.webp" alt="Mirrorless killed DSLR">
+      <h4><a href="https://shotavix.com/mirrorless-killed-dslr">Mirrorless Killed the DSLR — Was That a Good Thing?</a></h4>
+    </div>
+
+    <!-- 4. The Photography Advice I Wish Someone Had Told Me 10 Years Ago -->
+    <div class="related-card">
+      <img src="https://shotavix.com/photography-advice-10-years.webp" alt="Photography advice">
+      <h4><a href="https://shotavix.com/photography-advice-10-years">The Photography Advice I Wish Someone Had Told Me 10 Years Ago</a></h4>
+    </div>
+
+    <!-- 5. I Shot an Entire Event in RAW for the First Time — Here's What Changed -->
+    <div class="related-card">
+      <img src="https://shotavix.com/raw-event-photography-experience.webp" alt="RAW event photography">
+      <h4><a href="https://shotavix.com/raw-event-photography-experience">I Shot an Entire Event in RAW for the First Time</a></h4>
+    </div>
+
+    <!-- 6. Your Camera Doesn't Matter as Much as You Think. Here's Proof -->
+    <div class="related-card">
+      <img src="https://shotavix.com/camera-doesnt-matter.webp" alt="Camera doesn't matter">
+      <h4><a href="https://shotavix.com/camera-doesnt-matter">Your Camera Doesn't Matter as Much as You Think</a></h4>
+    </div>
+
+  </div>
+</aside>
+</main>
+
+<!-- footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <div class="footer-logo">SHOTAVIX<span>·</span></div>
+        <p>In-depth camera reviews, honest buying advice, and photography inspiration — made for enthusiasts, by enthusiasts.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/olisashedi" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@shotavix" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.facebook.com/lisa.251771" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://shotavix.com/feed.xml" target="_blank"><i class="fa fa-rss"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+          <ul>
+            <li><a href="https://shotavix.com/gear">Gear & Reviews</a></li>
+            <li><a href="https://shotavix.com/techniques">Tips & Techniques</a></li>
+            <li><a href="https://shotavix.com/video">Video & Film</a></li>
+            <li><a href="https://shotavix.com/beginners">Beginner's Corner</a></li>
+            <li><a href="https://shotavix.com/editing">Editing & Business</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://shotavix.com">Home</a></li>
+            <li><a href="https://shotavix.com/contact">Contact</a></li>
+            <li><a href="https://shotavix.com/about">About</a></li>
+            <li><a href="https://shotavix.com/privacy">Privacy</a></li>
+            <li><a href="https://shotavix.com/terms">Terms</a></li>
+          </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2026 SHOTAVIX Camera Blog. All rights reserved. Shot with passion.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- hamburger functionality -->
+<script>
+  (function() {
+    const hamburger = document.getElementById('hamburgerBtn');
+    const overlay = document.getElementById('mobileNavOverlay');
+    const closeBtn = document.getElementById('closeNavBtn');
+
+    function openMenu() {
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    if (hamburger) hamburger.addEventListener('click', openMenu);
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+
+    overlay.addEventListener('click', function(e) {
+      if (e.target === overlay) closeMenu();
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && overlay.classList.contains('active')) closeMenu();
+    });
+  })();
+</script>
+</body>
+</html>
